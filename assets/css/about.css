@@ -1,0 +1,275 @@
+.about-hero img {
+    height: 100vh;
+    width: 99vw;
+    object-fit: cover;
+}
+
+.custom-dropdown-menu {
+    position: absolute;
+    z-index: 1050;
+}
+
+/* CORPORATE PROFILE */
+
+.corporate-profile {
+    background-color: var(--color-aboutback-corporate);
+}
+
+.corporate-profile p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.bottom-0-right-0 {
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+/* .img-fluid-corporate {
+    width: 34vw;
+} */
+
+/* ABOUT PAGE TAB SECTION */
+
+.about-page-tab-section-tabs {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+}
+
+.about-page-tab-section-tab {
+    flex: 1;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.about-page-tab-section-tab.active {
+    border-bottom: 4px solid orange;
+}
+
+.about-page-tab-section-content {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.about-page-tab-section-content-item {
+    display: none;
+    width: 100%;
+}
+
+.about-page-tab-section-content-item.active {
+    display: flex;
+}
+
+/* .about-page-tab-section-image {
+    width: 25%;
+    margin-right: 20px;
+} */
+
+/* .about-page-tab-section-content p {
+    width: 75%;
+} */
+
+@media (max-width: 768px) {
+    /* .about-page-tab-section-content {
+        flex-direction: column;
+    } */
+
+    /* .about-page-tab-section-image {
+        width: 100%;
+        margin: 0 0 10px 0;
+    } */
+
+    /* .about-page-tab-section-content p {
+        width: 100%;
+    } */
+}
+
+/* LEADERSHIP SECTION */
+
+.leadership {
+    background: rgba(255, 165, 35, 1);
+    padding-top: 30px;
+    margin-bottom: 45px;
+    height: 100vh;
+}
+
+.icon-leader {
+    padding-top: 50px;
+}
+
+.icon-leader h6 {
+    padding-top: 60px;
+}
+
+.card-text-leader {
+    padding-top: 20px;
+}
+
+.leadership-card {
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 12px;
+    transition: all 0.6s linear;
+}
+
+.card-body:hover .card-body:active {
+    transform: translateY(-5rem);
+}
+
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text-leader {
+    font-size: 1rem;
+}
+
+/* STRATEGIC FRAMEWORK SECTION  */
+
+.Strategic-Framework {
+    /* background: rgba(255, 224, 193, 1); */
+    padding-bottom: 20px;
+    background-image: url(/assets/images/our-services-icon-img/Group\ 28.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-200px);
+    padding: 30px 0;
+}
+
+@media (max-width: 768px) {
+    .Strategic-Framework {
+        /* transform: translateY(-400px);  */
+        padding: 30px 0;
+        padding-top: 40px;
+    }
+}
+
+.img-fluid-stratagic {
+    max-width: 100%;
+    height: auto;
+}
+
+.strategic-content h6 {
+    font-weight: bold;
+}
+
+.top-Strategic-content {
+    margin-top: 100px;
+}
+
+/* PARTNERS & GROWING RESPONSIBILITY SECTION */
+
+.Partners-Growing-Responsibility {
+    margin-top: -200px;
+}
+
+.img-fluid-partner {
+    height: 100vh;
+    width: 34vw;
+    /* margin-top: -22px; */
+}
+
+@media (max-width: 430px) {
+    .img-fluid-partner {
+        width: 100vw;
+        padding-left: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-fluid-partner {
+        width: 70vw;
+    }
+}
+
+@media (max-width:820px) {
+    .img-fluid-partner {
+        width: 80vw;
+    }
+}
+
+/* CORPORATE ORGANOGRAM SECTION */
+
+.Corporate-Organogram {
+    background: url(/assets/images/about-page/Corporate-Organogram/Rectangle\ 36.png);
+    height: 45vh;
+    padding-top: 2rem;
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    position: relative;
+    transition: all 0.7s linear;
+    opacity: 0.9;
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* background-position: top center; */
+    background-size: cover;
+}
+
+@media (max-width:430px) {
+    .Corporate-Organogram {
+        height: 50vh !important;
+    }
+
+    .leadership {
+        height: 130vh;
+    }
+
+    .img-fluid-partner {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .img-fluid-stratagic {
+        height: 500px;
+        width: 500px;
+    }
+
+    .Strategic-Framework {
+        transform: translateY(-358px);
+    }
+
+    .top-Strategic-content {
+        padding-top: 100px !important;
+    }
+
+    .partner-growing-content {
+        padding-top: -80px !important;
+    }
+
+    /* .img-fluid-corporate {
+        height: 400px;
+        width: 400px;
+    } */
+}
+
+.BIPL {
+    padding: 12px 24px 12px 24px;
+    border-radius: 12px;
+    background: rgba(255, 209, 84, 1);
+    padding-bottom: 20px;
+}
+
+/* EXTRAS */
+
+.justified-text {
+    text-align: justify !important;
+}
