@@ -1544,3 +1544,14 @@ h6 {
 .red-bg {
     background-color: red !important;
 }
+
+.black-icon {
+    color: var(--color-black);
+    transform: translateY(4px);
+}
+
+.justify-space-around {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}

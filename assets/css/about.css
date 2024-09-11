@@ -36,12 +36,12 @@
 .about-page-tab-section-tabs {
     display: flex;
     justify-content: space-between;
-    background-color: darkblue;
+    background-color: var(--color-navy-blue);
 }
 
 .about-page-tab-section-tab {
     flex: 1;
-    background-color: darkblue;
+    background-color: var(--color-navy-blue);
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -50,8 +50,14 @@
     outline: none;
 }
 
+@media (max-width: 768px) {
+    .about-page-tab-section-tab {
+        font-size: 0.8rem;
+    }
+}
+
 .about-page-tab-section-tab.active {
-    border-bottom: 4px solid orange;
+    border-bottom: 4px solid var(--color-orange);
 }
 
 .about-page-tab-section-content {
@@ -98,17 +104,17 @@
 
 .leadership {
     background: rgba(255, 165, 35, 1);
-    padding-top: 30px;
+    /* padding-top: 30px; */
     margin-bottom: 45px;
     height: 100vh;
 }
 
 .icon-leader {
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .icon-leader h6 {
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .card-text-leader {
@@ -116,8 +122,8 @@
 }
 
 .leadership-card {
-    margin: 10px 0;
-    padding: 20px;
+    /* margin: 10px 0; */
+    /* padding: 20px; */
     border: 1px solid #ddd;
     background-color: white;
     border-radius: 12px;
@@ -128,10 +134,9 @@
     transform: translateY(-5rem);
 }
 
-
 .card-title {
     font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
 }
 
 .card-text-leader {
@@ -140,7 +145,7 @@
 
 /* STRATEGIC FRAMEWORK SECTION  */
 
-.Strategic-Framework {
+.strategic-framework {
     /* background: rgba(255, 224, 193, 1); */
     padding-bottom: 20px;
     background-image: url(/assets/images/our-services-icon-img/Group\ 28.png);
@@ -152,7 +157,7 @@
 }
 
 @media (max-width: 768px) {
-    .Strategic-Framework {
+    .strategic-framework {
         /* transform: translateY(-400px);  */
         padding: 30px 0;
         padding-top: 40px;
@@ -174,41 +179,46 @@
 
 /* PARTNERS & GROWING RESPONSIBILITY SECTION */
 
-.Partners-Growing-Responsibility {
+/* .partners-growing-responsibility {
     margin-top: -200px;
-}
+} */
 
-.img-fluid-partner {
+/* .img-fluid-partner {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+} */
+
+/* .img-fluid-partner {
     height: 100vh;
     width: 34vw;
-    /* margin-top: -22px; */
-}
+} */
 
 @media (max-width: 430px) {
-    .img-fluid-partner {
+    /* .img-fluid-partner {
         width: 100vw;
         padding-left: 35px;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
-    .img-fluid-partner {
+    /* .img-fluid-partner {
         width: 70vw;
-    }
+    } */
 }
 
 @media (max-width:820px) {
-    .img-fluid-partner {
+    /* .img-fluid-partner {
         width: 80vw;
-    }
+    } */
 }
 
 /* CORPORATE ORGANOGRAM SECTION */
 
-.Corporate-Organogram {
+.corporate-organogram {
     background: url(/assets/images/about-page/Corporate-Organogram/Rectangle\ 36.png);
-    height: 45vh;
-    padding-top: 2rem;
+    /* height: 45vh; */
+    /* padding-top: 2rem; */
     background-image: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -225,25 +235,25 @@
 }
 
 @media (max-width:430px) {
-    .Corporate-Organogram {
+    /* .corporate-organogram {
         height: 50vh !important;
-    }
+    } */
 
     .leadership {
         height: 130vh;
     }
 
-    .img-fluid-partner {
+    /* .img-fluid-partner {
         width: 100%;
         padding-right: 30px;
-    }
+    } */
 
     .img-fluid-stratagic {
         height: 500px;
         width: 500px;
     }
 
-    .Strategic-Framework {
+    .strategic-framework {
         transform: translateY(-358px);
     }
 
@@ -251,9 +261,9 @@
         padding-top: 100px !important;
     }
 
-    .partner-growing-content {
+    /* .partner-growing-content {
         padding-top: -80px !important;
-    }
+    } */
 
     /* .img-fluid-corporate {
         height: 400px;
@@ -262,10 +272,12 @@
 }
 
 .BIPL {
-    padding: 12px 24px 12px 24px;
+    /* padding: 12px 24px 12px 24px; */
+    background-color: var(--color-orange);
+    box-shadow: 2px 2px 2px #00000030;
     border-radius: 12px;
-    background: rgba(255, 209, 84, 1);
-    padding-bottom: 20px;
+    border: none;
+    /* padding-bottom: 20px; */
 }
 
 /* EXTRAS */
