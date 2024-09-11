@@ -1,0 +1,143 @@
+.our-company-hero img {
+    height: 100vh;
+    width: 99vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .img-fluid-Strategic-Business-Proposition{
+    width: 380px;
+    height: 314px;
+}
+@media (max-width: 768px) {
+.stratagic-content{
+    flex-direction: column;
+}
+} */
+
+/* make a stratagic business section  */
+.img-fluid-Strategic-Business-Proposition {
+    transition: 0.35s ease;
+}
+
+.img-fluid-Strategic-Business-Proposition:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.stratagic-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 1.25rem;
+    /* 5 * 0.25rem (base unit) */
+}
+
+.content-stratgic-p,
+.stratagic-img {
+    padding: 1rem;
+}
+
+.content-stratgic-p {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+}
+
+.stratagic-img {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+.img-fluid-Strategic-Business-Proposition {
+    width: 100%;
+    height: 50vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    .content-stratgic-p,
+    .stratagic-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .row {
+        text-align: center;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+}
+
+/* <!-- make a Vertically Integrated Business Model --> */
+.Vertically-Integrated-Business-Model {
+    background-color: var(--color-orange);
+}
+
+.vertical-img {
+    width: 100%;
+    height: 40vh;
+    transition: 0.35s ease;
+    padding-left: 20px;
+}
+
+.vertical-img:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.spinner-border-lg {
+    width: 250px;
+    margin-right: 20px;
+    height: 3rem;
+    border-width: 2px;
+    /* Adjust this value to reduce the border width */
+}
+
+.card-header.border-success {
+    border: none;
+    /* Remove the border */
+}
+
+.card-line {
+    border-top: 1px solid black;
+    width: 300px;
+    margin-left: 30px !important;
+}
+
+.quick-apply {
+    background: linear-gradient(90deg, rgba(180, 213, 255, 1) 0%, rgba(255, 193, 131, 1) 49.93%, rgba(255, 224, 193, 1) 100%);
+    height: 100vh;
+    margin: 0;
+}
+
+/* OUR BUSINESSES SECTION */
+
+.our-business-img {
+    padding: 10px 0px 10px 0px;
+}
+
+@media (max-width: 768px) {
+    .our-business-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-business-img img {
+        /* Optional: if you want the image to be centered */
+        max-width: 100%;
+        height: auto;
+    }
+}

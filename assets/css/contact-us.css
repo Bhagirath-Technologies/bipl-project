@@ -1,0 +1,36 @@
+.iframe {
+  transform: translateY(-90px);
+
+}
+
+.contact-us-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-us-box {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us-box {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* QUERY SECTION */
+
+.query {
+  background: linear-gradient(90deg, #C4C5F3 0%, #FFC183 42.29%, #FFE0C1 72.29%);
+}
+
+.btn-quick {
+  /* background: rgba(253, 129, 6, 1); */
+  border-radius: 8px;
+  padding: 12px 40px 12px 40px;
+  border: none;
+}
