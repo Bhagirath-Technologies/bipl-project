@@ -10,13 +10,15 @@
     width: 380px;
     height: 314px;
 }
+
 @media (max-width: 768px) {
 .stratagic-content{
     flex-direction: column;
 }
 } */
 
-/* make a stratagic business section  */
+/* STRATEGIC BUSINESS */
+
 .img-fluid-Strategic-Business-Proposition {
     transition: 0.35s ease;
 }
@@ -81,7 +83,8 @@ ul li {
     }
 }
 
-/* <!-- make a Vertically Integrated Business Model --> */
+/* <!-- Vertically Integrated Business Model --> */
+
 .Vertically-Integrated-Business-Model {
     background-color: var(--color-orange);
 }
