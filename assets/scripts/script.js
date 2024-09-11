@@ -1,4 +1,5 @@
-// make a slider script  
+// SLIDER SCRIPT 
+
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
@@ -50,7 +51,7 @@ const initSlider = () => {
         slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
         slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
     }
-  
+
     // Update scrollbar thumb position based on image scroll
     const updateScrollThumbPosition = () => {
         const scrollPosition = imageList.scrollLeft;
@@ -68,12 +69,8 @@ const initSlider = () => {
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
+// COUNTER SECTION SCRIPT
 
-
-// make a counting section java script 
-
-// make a count section    
-// Animate Number Counter
 const counterNum = document.querySelectorAll(".counter-numbers");
 
 const speed = 80;
@@ -81,9 +78,9 @@ const speed = 80;
 counterNum.forEach((curElem) => {
     const updateNumber = () => {
         const targetNumber = parseInt(curElem.dataset.number);
-        console.log(targetNumber);
+        // console.log(targetNumber);
         const initialNum = parseInt(curElem.innerText);
-        console.log(initialNum);
+        // console.log(initialNum);
         const incrementNumber = Math.trunc(targetNumber / speed);
 
         if (initialNum < targetNumber) {
@@ -93,11 +90,10 @@ counterNum.forEach((curElem) => {
             curElem.innerText = `${targetNumber} %`;
         }
     };
-
     updateNumber();
 });
 
-// make a caraosel animation script 
+// CAROUSEL ANIMATION SCRIPT 
 
 const carousel = document.querySelector('#carouselExampleFade');
 
@@ -110,17 +106,30 @@ carousel.addEventListener('slid.bs.carousel', (event) => {
 });
 
 
-// make a carer page card script 
+// CAREER PAGE CARD SCRIPT
+
 function toggleContent(id) {
     const content = document.getElementById(id);
     content.classList.toggle('content-hidden');
     content.classList.toggle('content-visible');
-  }
+}
 
-//   make a navbar dropdowan script 
+// TRADING PORTFOLIO SECTION - HOME PAGE 
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     document.querySelectorAll('.icon-trading-portfolio a').forEach(item => {
+//         item.addEventListener('click', function (e) {
+//             e.preventDefault(); // Prevent default link behavior
 
+//             // Get the new image URLs from the data attributes
+//             const newImg1 = this.getAttribute('data-img1');
+//             const newImg2 = this.getAttribute('data-img2');
+//             const newImg3 = this.getAttribute('data-img3');
 
-
-
-    
+//             // Update the image sources
+//             document.getElementById('img1').src = newImg1;
+//             document.getElementById('img2').src = newImg2;
+//             document.getElementById('img3').src = newImg3;
+//         });
+//     });
+// });

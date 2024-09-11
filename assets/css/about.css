@@ -105,8 +105,8 @@
 .leadership {
     background: rgba(255, 165, 35, 1);
     /* padding-top: 30px; */
-    margin-bottom: 45px;
-    height: 100vh;
+    /* margin-bottom: 45px; */
+    /* height: 100vh; */
 }
 
 .icon-leader {
@@ -146,22 +146,23 @@
 /* STRATEGIC FRAMEWORK SECTION  */
 
 .strategic-framework {
+    background-color: var(--color-light-peach);
     /* background: rgba(255, 224, 193, 1); */
-    padding-bottom: 20px;
-    background-image: url(/assets/images/our-services-icon-img/Group\ 28.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: translateY(-200px);
-    padding: 30px 0;
+    /* padding-bottom: 20px; */
+    /* background-image: url(/assets/images/our-services-icon-img/Group\ 28.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* transform: translateY(-200px); */
+    /* padding: 30px 0; */
 }
 
 @media (max-width: 768px) {
-    .strategic-framework {
+    /* .strategic-framework { */
         /* transform: translateY(-400px);  */
-        padding: 30px 0;
-        padding-top: 40px;
-    }
+        /* padding: 30px 0; */
+        /* padding-top: 40px; */
+    /* } */
 }
 
 .img-fluid-stratagic {
@@ -173,9 +174,9 @@
     font-weight: bold;
 }
 
-.top-Strategic-content {
+/* .top-strategic-content {
     margin-top: 100px;
-}
+} */
 
 /* PARTNERS & GROWING RESPONSIBILITY SECTION */
 
@@ -253,13 +254,13 @@
         width: 500px;
     }
 
-    .strategic-framework {
+    /* .strategic-framework {
         transform: translateY(-358px);
-    }
+    } */
 
-    .top-Strategic-content {
+    /* .top-Strategic-content {
         padding-top: 100px !important;
-    }
+    } */
 
     /* .partner-growing-content {
         padding-top: -80px !important;

@@ -41,6 +41,7 @@
     --color-navy-blue: #17305e;
     --color-black-transparent-gradient: linear-gradient(to top, black, transparent);
     --color-light-peach: #ffe0c1;
+    --color-light-pink: #ffebef;
     --color-black: #000000;
     --color-white: white;
     --color-dark-gray: #000;
@@ -1523,6 +1524,29 @@ h6 {
     h6 {
         font-size: 0.875rem;
     }
+}
+
+/* CUSTOM SHAPE DIVIDER */
+
+.custom-shape-divider-bottom-1726045077 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1726045077 svg {
+    position: relative;
+    display: block;
+    width: calc(162% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1726045077 .shape-fill {
+    fill: var(--color-light-peach);
 }
 
 /* EXTRAS */

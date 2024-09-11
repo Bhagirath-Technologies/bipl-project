@@ -40,7 +40,6 @@
   }
 } */
 
-/* make a common button section */
 .testbutton:hover {
   color: #14396A !important;
   background: #468CCF;
@@ -315,28 +314,24 @@ body {
   animation-play-state: running;
 }
 
-/* make a card section  */
+/* CARD SECTION */
+
 .card {
   background-color: var(--color-navy-blue) !important;
 }
 
 .our-services-top-card {
-  transform: translateY(-60px);
+  transform: translateY(-40px);
   flex-direction: column;
-  /* Set flex direction to column by default */
 }
 
 .container {
   gap: 1.5rem;
-  /* Add gap on small screens */
 }
 
 @media (min-width: 992px) {
-
-  /* lg breakpoint */
   .container {
     gap: 4rem;
-    /* Increase gap on large screens */
   }
 }
 
@@ -350,54 +345,40 @@ body {
     align-items: center;
   }
 
-  .our-services-top-card {
+  /* .our-services-top-card {
     padding-left: 30px !important;
-  }
-
+  } */
 }
-
 
 @media (max-width: 768px) {
   .our-services-top-card {
-    padding-right: 35px !important;
+    /* padding-right: 35px !important; */
     flex-direction: column !important;
     align-items: center;
   }
 
-  .our-services {
+  /* .our-services {
     transform: translateY(-200px) !important;
-
-  }
+  } */
 }
 
-
-
 @media (min-width: 768px) and (max-width: 819px) {
-  /* Add this media query for 768px */
-
-
   .our-services-top-card {
     flex-direction: row;
-    /* Set flex direction to row between 768px and 819px */
   }
 
   .card {
     flex-basis: 50%;
-    /* Set flex basis to 50% for two cards per row */
   }
 }
 
 @media (min-width: 820px) {
-
-  /* Add this media query to change flex direction to row after 820px */
   .our-services-top-card {
     flex-direction: row;
-    /* Set flex direction to row after 820px */
   }
 
   .card {
     flex-basis: 33.33%;
-    /* Set flex basis to 33.33% for three cards per row */
   }
 }
 
@@ -405,7 +386,7 @@ body {
 
 .about-us {
   background-color: var(--color-light-peach);
-  padding-top: 65px;
+  /* padding-top: 65px; */
 }
 
 .about-card-content {
@@ -422,17 +403,17 @@ body {
   height: 100%;
 }
 
-.about-card-title {
+/* .about-card-title {
   margin-top: 15px;
-}
+} */
 
 .about-card-text {
   margin-top: 10px;
 }
 
-.p-content {
+/* .p-content {
   margin-top: 15px;
-}
+} */
 
 .box-a {
   display: flex;
@@ -453,14 +434,14 @@ body {
   padding: 10px;
 }
 
-@media(max-width:430px) {
+@media (max-width:430px) {
   /* .text-start { */
   /* padding-top: 270px !important; */
   /* } */
 
-  .p-content {
+  /* .p-content {
     margin-bottom: 5px !important;
-  }
+  } */
 }
 
 @media (min-width: 768px) {
@@ -476,24 +457,23 @@ body {
   }
 }
 
-/* make a product SERVICES SECTION */
+/* PRODUCTS WE SERVE */
 
-.PRODUCT-TITLE {
+.product-title {
   text-align: center;
   padding-top: 30px;
 }
 
-.PRODUCT-TITLE h2 {
+.product-title h2 {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 30px;
   line-height: 33.57px;
 }
 
-.PRODUCT-TITLE p {
+.product-title p {
   font-weight: 300;
   font-size: 14px;
-
 }
 
 .container {
@@ -610,21 +590,20 @@ body {
   height: 320px;
 }
 
-/* make our skill section  */
+/* OUR SKILLS SECTION */
 
 .our-skill {
   background-color: #17305e;
-  padding-bottom: 170px;
-
+  /* padding-bottom: 170px; */
 }
 
-.our-services-content {
+/* .our-services-content {
   padding-top: 120px;
-}
+} */
 
 .content-our-skill {
   text-align: center;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 .content-our-skill h2 {
@@ -676,11 +655,12 @@ body {
   height: 8rem;
   background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
   display: inline-block;
-  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  /* border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%; */
+  border-radius: 50%;
   padding: 1.4rem 1.8rem;
   position: relative;
   /* color: var(--heading); */
-  animation: water-wave 3s linear infinite;
+  /* animation: water-wave 3s linear infinite; */
 }
 
 .circle::after {
@@ -691,9 +671,10 @@ body {
   transform: translate(-50%, -50%);
   width: 90%;
   height: 90%;
-  border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  /* border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%; */
+  border-radius: 50%;
   background-color: transparent;
-  animation: water-wave 5s linear infinite alternate;
+  /* animation: water-wave 5s linear infinite alternate; */
 }
 
 
@@ -719,7 +700,7 @@ body {
   color: #fff;
   font-weight: 700;
   font-size: 35px;
-  text-shadow: 2px 2px 4px #000000;
+  /* text-shadow: 2px 2px 4px #000000; */
 }
 
 .skill-counting-content {
@@ -732,40 +713,38 @@ body {
 
 @media (max-width: 768px) {
   .box-our-skill {
-    margin-bottom: 20px;
-    padding-top: 50px;
-
+    /* margin-bottom: 20px; */
+    padding-top: 20px;
   }
 
   .skill-counting-content {
     font-size: 1.2em;
-    /* Adjust font size for smaller screens if needed */
   }
 
   .circle img {
-    width: 100px;
-    /* Adjust image size for smaller screens if needed */
+    /* width: 100px; */
+    width: 80px;
     height: auto;
   }
 }
 
-/* make aour services  section  --> */
+/* OUR SERVICES SECTION --> */
 
 .our-services {
-  background-image: url(/assets/images/our-services-icon-img/Group\ 28.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transform: translateY(-200px);
-  padding: 60px 0;
-  /* Adjust padding to ensure content is not cut off */
+  background-color: var(--color-light-peach);
+  /* background-image: url(/assets/images/our-services-icon-img/Group\ 28.png); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* transform: translateY(-200px); */
+  /* padding: 60px 0; */
 }
 
 @media (max-width: 768px) {
-  .our-services {
+  /* .our-services {
     transform: translateY(-50px);
     padding: 30px 0;
-  }
+  } */
 }
 
 .our-services-img-bg {
@@ -776,9 +755,8 @@ body {
 
 .our-services-content {
   text-align: center;
-  margin-bottom: 40px;
-  padding-top: 180px;
-
+  /* margin-bottom: 40px; */
+  /* padding-top: 180px; */
 }
 
 .box-services {
@@ -808,7 +786,7 @@ body {
   transform: translateY(-10px);
 }
 
-/* <!-- make a trading portfolio section  --> */
+/* TRADING PORTFOLIO */
 
 /* .our-services { */
 /* background-color: rgba(255, 224, 193, 1); */
@@ -836,14 +814,14 @@ body {
   text-align: justify;
 }
 
-/* trading section  */
 .content-trading-portfolio {
-  width: 367px;
-  height: 260px;
+  /* width: 367px; */
+  /* height: 260px; */
   text-align: justify;
   font-size: 16px;
   font-weight: 300;
-  /* font-family: 'Sansation'; */
+  /* padding-top: 50px; */
+  text-align: justify;
 }
 
 .icon-trading img {
@@ -851,49 +829,33 @@ body {
   padding-bottom: -20px;
 }
 
-.box-trading-portfolio {
+/* .box-trading-portfolio {
   height: 452px;
   width: 1240px;
-}
-
-.content-trading-portfolio {
-  font-size: 16px;
-  font-weight: 300;
-  /* font-family: 'Sansation'; */
-  padding-top: 50px;
-  text-align: justify;
-}
+} */
 
 .icon-trading-portfolio {
-
   display: flex;
   flex-direction: column;
-  gap: 45px;
-  /* Adjust the gap value as needed */
+  /* gap: 45px; */
   align-items: center;
-  /* Optional: Center align the items */
 }
 
 .icon-trading-portfolio a {
   display: flex;
   align-items: center;
-  /* Optional: Center align text with the icon */
   text-decoration: none;
   color: inherit;
-  /* Ensure the text inherits the color from the parent */
 }
 
 .icon-trading-portfolio a:hover {
   font-size: 18px;
-  /* Adjust as needed */
   transition: font-size 0.3s ease;
-  /* Smooth transition */
 }
 
-.icon-trading-portfolio {
+/* .icon-trading-portfolio {
   padding-top: 50px;
-
-}
+} */
 
 .last-img {
   position: absolute;
@@ -902,26 +864,30 @@ body {
   bottom: 0;
 }
 
-.trading-p {
+/* .trading-p {
   margin-top: -230px;
+} */
 
-}
-
-.trading {
-  background-color: var(--color-trading);
+.trading-portfolio-box {
+  background-color: var(--color-light-pink);
+  border-radius: 5px;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
-  .trading {
+  .trading-portfolio-box {
     flex-direction: column;
     align-items: center;
   }
 
-  .content-trading-portfolio p {
-    width: 600px;
+  /* .content-trading-portfolio p {
     margin-left: -190px;
     margin-bottom: -200px;
-  }
+  } */
+
+  /* .content-trading-portfolio p {
+    width: 600px;
+  } */
 
   .icon-trading-portfolio {
     padding-top: 0px;
@@ -930,38 +896,44 @@ body {
   .icon-trading-portfolio a {
     padding-bottom: 30px;
   }
-
-
 }
 
+/* NEW TRADING PORTFOLIO */
 
-@media (max-width: 820px) {
-  .trading {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .content-trading-portfolio p {
-    width: 600px;
-    margin-left: -190px;
-    margin-bottom: -200px;
-  }
-
-  .icon-trading-portfolio {
-    padding-top: 0px;
-  }
-
-  .icon-trading-portfolio a {
-    padding-bottom: 30px;
-  }
-
+.new-trading-portfolio-box {
+  background-color: #ffe6e6;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-/* make a reach out to us section  */
+.new-trading-portfolio-box-btn {
+  display: block;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.new-trading-portfolio-box-btn:hover {
+  color: #ff6666;
+}
+
+.new-trading-portfolio-box-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* REACH OUT TO US SECTION */
 
 .reach-out {
-  height: 35vh;
-  padding-top: 2rem;
+  /* height: 35vh; */
+  /* padding-top: 2rem; */
   background-image: cover;
   background-repeat: no-repeat;
   background: linear-gradient(90deg, #B4D5FF 0%, #FFC183 49.93%, #FFE0C1 100%,
@@ -974,7 +946,6 @@ body {
   background-attachment: fixed;
   position: relative;
   transition: all 0.7s linear;
-
   background-repeat: no-repeat;
   background-attachment: scroll;
   /* background-position: top center; */
@@ -986,30 +957,29 @@ body {
   font-weight: 800;
   font-size: 13px;
   text-align: justify;
-
 }
 
 .btn-reach {
   border-radius: 8px;
-  width: 172px;
-  height: 44px;
-  padding: 12px 40px;
-  background-color: rgba(253, 129, 6, 0.9);
-  color: white;
+  /* width: 172px; */
+  /* height: 44px; */
+  /* padding: 12px 40px; */
+  background-color: var(--color-orange);
+  border: none;
+  color: var(--color-white);
   text-align: center;
   display: inline-block;
   cursor: pointer;
-  font-size: 18px;
-  line-height: 15px;
-  border-color: rgba(253, 129, 6, 0.9);
+  /* font-size: 18px; */
+  /* line-height: 15px; */
+  /* border-color: var(--color-orange); */
 }
 
-/* make a footer section  */
+/* FOOTER */
 
 .footer {
   padding: 10px 0;
   background-color: var(--color-navy-blue);
-
 }
 
 .img-fluid-footer-logo {
@@ -1054,7 +1024,7 @@ body {
   margin-top: 2rem;
 }
 
-/* Responsive design */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .footer {
@@ -1076,13 +1046,13 @@ body {
   }
 }
 
-/* media query  */
+/* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-  .p-content {
+  /* .p-content {
     padding-bottom: 100px;
     margin-bottom: -114px;
-  }
+  } */
 
   .skill-counting-content {
     padding-left: 70px;
@@ -1107,8 +1077,6 @@ body {
   }
 }
 
-
-
 @media (max-width: 820px) {
   #img-height {
     height: 100vh;
@@ -1120,7 +1088,6 @@ body {
     background-color: #ffe0c1 !important;
     width: 100%;
     height: 562px;
-
   }
 
   .overflow {
@@ -1142,7 +1109,8 @@ body {
   }
 }
 
-/* Styles for mobile and tablets slider  */
+/* Styles for mobile and tablets slider */
+
 @media only screen and (max-width: 1023px) {
   .slider-wrapper .slide-button {
     display: none !important;
@@ -1164,7 +1132,8 @@ body {
   }
 }
 
-/* make a  about us card section query  */
+/* ABOUT US CARD SECTION QUERY */
+
 @media (max-width: 767px) {
   .box-a {
     margin-bottom: 1.5rem;
@@ -1178,10 +1147,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {}
-
-
-/* overflow in mobile view 375 to 430  */
+/* Overflow in mobile view 375px to 430px */
 
 @media (max-width: 490px) {
   .skill-icon {
