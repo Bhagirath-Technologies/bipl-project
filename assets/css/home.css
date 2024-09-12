@@ -907,6 +907,11 @@ body {
   padding: 20px;
 }
 
+.new-trading-portfolio-box-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
 .new-trading-portfolio-box-btn {
   display: block;
   margin-bottom: 10px;
@@ -923,10 +928,20 @@ body {
   color: #ff6666;
 }
 
+.new-trading-portfolio-box-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .new-trading-portfolio-box-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
+  /* border-radius: 5px; */
+}
+
+.new-trading-portfolio-box-btn>img {
+  padding-bottom: 4px;
 }
 
 /* REACH OUT TO US SECTION */

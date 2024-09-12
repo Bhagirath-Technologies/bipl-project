@@ -25,319 +25,326 @@
 
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR NEW -->
 
-  <div class="overflow">
-    <section>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="assets/images/navbarlogo/logo.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-4">
-                <a class="nav-link text-dark" href="index.html">Home</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link text-dark" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link text-dark" href="our-company.html">Our Company</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link text-dark" href="products.html">Products</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link text-dark" href="our-services.html">Our Services</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link text-dark" href="career.html" aria-disabled="true">Careers</a>
-              </li>
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="./index.html">
+        <img src="assets/images/navbarlogo/logo.png" alt="BIPL Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-space-around me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./our-company.html">Our Company</a>
+          </li>
 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu text-dark">
+              <li><a class="dropdown-item text-dark" href="#">Edible & Non-Edible Oils</a></li>
+              <li><a class="dropdown-item text-dark" href="#">Chemicals</a></li>
+              <li><a class="dropdown-item text-dark" href="#">Petroleum & Oil Products</a></li>
             </ul>
-            <a href="contact-us.html"> <button class="btn btn-primary text-white" href="contact-us.html"
-                type="button">Contact Us</button></a>
-          </div>
-        </div>
-      </nav>
-    </section>
+          </li>
 
-    <!-- CAROUSEL -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./our-services.html">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark active" aria-current="page" href="./career.html">Careers</a>
+          </li>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+          <a href="contact-us.html">
+            <button class="btn btn-orange" href="./contact-us.html" type="button">
+              Contact Us
+            </button>
+          </a>
+        </ul>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item carousel-item-custom-height active">
-          <img src="assets/images/career page/hero-section-img/Rectangle 29 (1).webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption text-center">
-            <h1>CHEMICALS AND CATTLE FIELD FERTILIZER</h1>
-            <p>When it comes to petroleum and biofuel, we've got you covered. Our products are shipped worldwide, and
-              you can trust that the quality is always up to standard.</p>
-          </div>
-        </div>
-        <div class="carousel-item carousel-item-custom-height">
-          <img src="assets/images/career page/hero-section-img/Rectangle 50.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption text-center">
-            <h1>COMMODITIES AND FOOD PRODUCTS</h1>
-            <p>When it comes to petroleum and biofuel, we've got you covered. Our products are shipped worldwide, and
-              you can trust that the quality is always up to standard.</p>
-          </div>
-        </div>
-        <div class="carousel-item carousel-item-custom-height">
-          <img src="assets/images/career page/hero-section-img/Rectangle 51.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption text-center">
-            <h1>PETROLEUM AND BIO FUEL</h1>
-            <p>Are you looking for top-quality agriculture commodities and food products? Look no further! We ship our
-              products all over the world, and our quality meets all the necessary requirements.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+  </nav>
 
-    <!-- SEARCH -->
+  <!-- CAROUSEL -->
 
-    <section>
-      <div class="container career-top-form search-section d-flex flex-wrap p-4">
-        <div class="row w-100">
-          <div class="col-12 col-md-4 mb-3">
-            <label for="jobTitles" class="form-label">Job Titles</label>
-            <select id="jobTitles" class="form-select bg-body-secondary">
-              <option>Enter Job Titles</option>
-              <option>Front-end Developer</option>
-              <option>Back-end Developer</option>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-item-custom-height active">
+        <img src="assets/images/career page/hero-section-img/Rectangle 29 (1).webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption text-center">
+          <h1>CHEMICALS AND CATTLE FIELD FERTILIZER</h1>
+          <p>When it comes to petroleum and biofuel, we've got you covered. Our products are shipped worldwide, and
+            you can trust that the quality is always up to standard.</p>
+        </div>
+      </div>
+      <div class="carousel-item carousel-item-custom-height">
+        <img src="assets/images/career page/hero-section-img/Rectangle 50.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption text-center">
+          <h1>COMMODITIES AND FOOD PRODUCTS</h1>
+          <p>When it comes to petroleum and biofuel, we've got you covered. Our products are shipped worldwide, and
+            you can trust that the quality is always up to standard.</p>
+        </div>
+      </div>
+      <div class="carousel-item carousel-item-custom-height">
+        <img src="assets/images/career page/hero-section-img/Rectangle 51.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption text-center">
+          <h1>PETROLEUM AND BIO FUEL</h1>
+          <p>Are you looking for top-quality agriculture commodities and food products? Look no further! We ship our
+            products all over the world, and our quality meets all the necessary requirements.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- SEARCH -->
+
+  <section>
+    <div class="container career-top-form search-section d-flex flex-wrap p-4">
+      <div class="row w-100">
+        <div class="col-12 col-md-4 mb-3">
+          <label for="jobTitles" class="form-label">Job Titles</label>
+          <select id="jobTitles" class="form-select bg-body-secondary">
+            <option>Enter Job Titles</option>
+            <option>Front-end Developer</option>
+            <option>Back-end Developer</option>
+            <option>Content Writer</option>
+            <option>Account Management</option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-4 mb-3">
+          <label for="category" class="form-label">Category</label>
+          <input type="text" id="category" class="form-control bg-body-secondary" placeholder="Enter Category">
+        </div>
+
+        <div class="col-12 col-md-3 mb-3">
+          <label for="jobLocation" class="form-label">Location</label>
+          <select id="jobLocation" class="form-select bg-body-secondary">
+            <option>Enter Job Location</option>
+            <option>Bhopal</option>
+            <option>Bangalore</option>
+            <option>Indore</option>
+            <option>Noida</option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-1 mb-3 d-flex align-items-end mt-2 mb-2">
+          <button type="button" class="btn btn-orange btn-sm">Search</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JOB OPENINGS SECTION  -->
+
+  <section class="job-openings">
+    <h2 class="text-center">Job Openings</h2>
+    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-md-4 mb-4 job-card">
+          <div class="card-career border-secondary">
+            <div class="card-header bg-transparent border-success">Node.js Developer</div>
+            <hr class="card-line">
+            <div class="card-body dark-blue-text">
+              <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
+              <p><strong>Location:</strong> Bhopal</p>
+              <p class="content-visible"><strong>Description:</strong></p>
+              <p id="content-hidden-1" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
+                et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
+                Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
+              <span class="read-more-btn" onclick="toggleContent('content-hidden-1')">Read more</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 job-card">
+          <div class="card-career border-secondary">
+            <div class="card-header bg-transparent border-success">React Developer</div>
+            <hr class="card-line">
+            <div class="card-body dark-blue-text">
+              <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
+              <p><strong>Location:</strong> Gurgaon</p>
+              <p class="content-visible"><strong>Description:</strong></p>
+              <p id="content-hidden-2" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
+                et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
+                Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
+              <span class="read-more-btn" onclick="toggleContent('content-hidden-2')">Read more</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 job-card">
+          <div class="card-career border-secondary">
+            <div class="card-header bg-transparent border-success">Content Writer</div>
+            <hr class="card-line">
+            <div class="card-body dark-blue-text">
+              <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
+              <p><strong>Location:</strong> Bhopal</p>
+              <p class="content-visible"><strong>Description:</strong></p>
+              <p id="content-hidden-3" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
+                et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
+                Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
+              <span class="read-more-btn" onclick="toggleContent('content-hidden-3')">Read more</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK APPLY SECTION -->
+
+  <div class="quick-apply">
+    <div class="container">
+      <div class="quick-top-content text-start pt-5">
+        <h2>Quick Apply</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
+      </div>
+      <form>
+        <div class="row pt-5">
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <label for="full-name" class="form-label">Full Name</label>
+            <input type="text" id="full-name" class="form-control bg-body-secondary" placeholder="Enter Full Name"
+              required>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control bg-body-secondary" placeholder="Enter Email" required>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <label for="job-title" class="form-label">Job Title</label>
+            <select id="job-title" class="form-select bg-body-secondary" required>
+              <option selected disabled>Choose Job Title</option>
+              <option>Front-End Developer</option>
+              <option>Back-End Developer</option>
               <option>Content Writer</option>
               <option>Account Management</option>
             </select>
           </div>
-
-          <div class="col-12 col-md-4 mb-3">
-            <label for="category" class="form-label">Category</label>
-            <input type="text" id="category" class="form-control bg-body-secondary" placeholder="Enter Category">
-          </div>
-
-          <div class="col-12 col-md-3 mb-3">
-            <label for="jobLocation" class="form-label">Location</label>
-            <select id="jobLocation" class="form-select bg-body-secondary">
-              <option>Enter Job Location</option>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <label for="location" class="form-label">Location</label>
+            <select id="location" class="form-select bg-body-secondary" required>
+              <option selected disabled>Choose Location</option>
               <option>Bhopal</option>
               <option>Bangalore</option>
               <option>Indore</option>
               <option>Noida</option>
             </select>
           </div>
-
-          <div class="col-12 col-md-1 mb-3 d-flex align-items-end mt-2 mb-2">
-            <button type="button" class="btn btn-orange btn-sm">Search</button>
+        </div>
+        <div class="row pt-5">
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <label for="job-category" class="form-label">Job Category</label>
+            <select id="job-category" class="form-select bg-body-secondary" required>
+              <option selected disabled>Choose Job Category</option>
+              <option>Front-End Developer</option>
+              <option>Back-End Developer</option>
+              <option>Content Writer</option>
+              <option>Account Management</option>
+            </select>
           </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <label for="cover-letter" class="form-label">Upload Cover Letter</label>
+            <input type="file" id="cover-letter" class="form-control bg-body-secondary" accept=".pdf,.doc,.docx"
+              required>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <label for="resume" class="form-label">Upload Resume</label>
+            <input type="file" id="resume" class="form-control bg-body-secondary" accept=".pdf, .doc, .docx" required>
+          </div>
+        </div>
+        <div class="row pt-5 career-btn-form">
+          <div class="col-12 col-md-12 col-lg-2 mx-auto d-flex align-items-center pb-5">
+            <button type="submit" class="btn-orange test-button quick-btn px-4 py-2 rounded">Apply</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
+  <!-- FOOTER -->
+
+  <section class="footer">
+    <div class="container">
+      <div class="row equal-spacing">
+        <!-- frame 35 -->
+        <div class="col-md-3 mb-4">
+          <img src="/assets/images/footer-section/Logo-03 1.png" alt="Company Logo" class="img-fluid-footer-logo">
+          <p class="text-light pt-3">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global trade, a
+            company that thrives on connecting the world through commerce.</p>
+        </div>
+        <!-- frame 40 -->
+        <div class="col-md-3 mb-4 text-light pt-5">
+          <h3>Useful Links</h3>
+          <div class="arrow">
+            <a href="index.html">Home <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
+            <a href="#">About Us <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
+            <a href="#">Services <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
+            <a href="#">Terms of Services <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
+            <a href="#">Privacy Policy <img src="assets/images/footer-section/Arrow 1.png" alt=""></a>
+          </div>
+        </div>
+        <!-- frame 39 -->
+        <div class="col-md-3 mb-4 text-white pt-5">
+          <h3>CONTACT US</h3>
+          <p class="pt-3">Address - Room TA07, 6th Floor Woon Lee, Commercial Building No. 7-9 Austin Avenue Tsim Sha
+            Tsui, Kowloon (HK)</p>
+        </div>
+        <!-- frame 38 -->
+        <div class="col-md-3 mb-4 text-white pt-5">
+          <h3>Get in Touch</h3>
+          <div class="frame39-icon pt-3">
+            <img src="assets/images/footer-section/Vector (10).png" alt=""> +852 39195807 <br>
+            <br>
+            <img src="assets/images/footer-section/Vector (11).png" alt=""> +852 39195837
+          </div>
+          <div class="frame-35-icon pt-3">
+            <img src="assets/images/footer-section/Vector (6).png" alt="icon">
+            <img src="assets/images/footer-section/Vector (7).png" alt="icon">
+            <img src="assets/images/footer-section/Group (3).png" alt="icon">
+            <img src="assets/images/footer-section/Vector (9).png" alt="icon">
+            <img src="assets/images/footer-section/pajamas_twitter.png" alt="icon">
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- JOB OPENINGS SECTION  -->
-     
-    <section class="job-openings">
-      <h2 class="text-center">Job Openings</h2>
-      <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
-      <div class="container pt-3">
-        <div class="row">
-          <div class="col-md-4 mb-4 job-card">
-            <div class="card-career border-secondary">
-              <div class="card-header bg-transparent border-success">Node.js Developer</div>
-              <hr class="card-line">
-              <div class="card-body dark-blue-text">
-                <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
-                <p><strong>Location:</strong> Bhopal</p>
-                <p class="content-visible"><strong>Description:</strong></p>
-                <p id="content-hidden-1" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
-                  et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
-                  Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
-                  Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
-                <span class="read-more-btn" onclick="toggleContent('content-hidden-1')">Read more</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4 job-card">
-            <div class="card-career border-secondary">
-              <div class="card-header bg-transparent border-success">React Developer</div>
-              <hr class="card-line">
-              <div class="card-body dark-blue-text">
-                <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
-                <p><strong>Location:</strong> Gurgaon</p>
-                <p class="content-visible"><strong>Description:</strong></p>
-                <p id="content-hidden-2" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
-                  et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
-                  Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
-                  Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
-                <span class="read-more-btn" onclick="toggleContent('content-hidden-2')">Read more</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4 job-card">
-            <div class="card-career border-secondary">
-              <div class="card-header bg-transparent border-success">Content Writer</div>
-              <hr class="card-line">
-              <div class="card-body dark-blue-text">
-                <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
-                <p><strong>Location:</strong> Bhopal</p>
-                <p class="content-visible"><strong>Description:</strong></p>
-                <p id="content-hidden-3" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
-                  et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
-                  Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
-                  Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
-                <span class="read-more-btn" onclick="toggleContent('content-hidden-3')">Read more</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- QUICK APPLY SECTION -->
-
-    <div class="quick-apply">
-      <div class="container">
-        <div class="quick-top-content text-start pt-5">
-          <h2>Quick Apply</h2>
-          <p>Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
-        </div>
-        <form>
-          <div class="row pt-5">
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-              <label for="full-name" class="form-label">Full Name</label>
-              <input type="text" id="full-name" class="form-control bg-body-secondary" placeholder="Enter Full Name"
-                required>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" class="form-control bg-body-secondary" placeholder="Enter Email" required>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-              <label for="job-title" class="form-label">Job Title</label>
-              <select id="job-title" class="form-select bg-body-secondary" required>
-                <option selected disabled>Choose Job Title</option>
-                <option>Front-End Developer</option>
-                <option>Back-End Developer</option>
-                <option>Content Writer</option>
-                <option>Account Management</option>
-              </select>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-              <label for="location" class="form-label">Location</label>
-              <select id="location" class="form-select bg-body-secondary" required>
-                <option selected disabled>Choose Location</option>
-                <option>Bhopal</option>
-                <option>Bangalore</option>
-                <option>Indore</option>
-                <option>Noida</option>
-              </select>
-            </div>
-          </div>
-          <div class="row pt-5">
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-              <label for="job-category" class="form-label">Job Category</label>
-              <select id="job-category" class="form-select bg-body-secondary" required>
-                <option selected disabled>Choose Job Category</option>
-                <option>Front-End Developer</option>
-                <option>Back-End Developer</option>
-                <option>Content Writer</option>
-                <option>Account Management</option>
-              </select>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-              <label for="cover-letter" class="form-label">Upload Cover Letter</label>
-              <input type="file" id="cover-letter" class="form-control bg-body-secondary" accept=".pdf,.doc,.docx"
-                required>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-              <label for="resume" class="form-label">Upload Resume</label>
-              <input type="file" id="resume" class="form-control bg-body-secondary" accept=".pdf, .doc, .docx" required>
-            </div>
-          </div>
-          <div class="row pt-5 career-btn-form">
-            <div class="col-12 col-md-12 col-lg-2 mx-auto d-flex align-items-center pb-5">
-              <button type="submit" class="btn-orange test-button quick-btn px-4 py-2 rounded">Apply</button>
-            </div>
-          </div>
-        </form>
+      <hr class="hr-line text-white">
+      <div class="footer-p-content text-white text-center">
+        <p>Copyright Bhagirath BVM Grand (HK) Limited. All Rights Reserved. Designed & maintained by Bhagirath
+          Technologies</p>
       </div>
     </div>
-
-    <!-- FOOTER -->
-
-    <section class="footer">
-      <div class="container">
-        <div class="row equal-spacing">
-          <!-- frame 35 -->
-          <div class="col-md-3 mb-4">
-            <img src="/assets/images/footer-section/Logo-03 1.png" alt="Company Logo" class="img-fluid-footer-logo">
-            <p class="text-light pt-3">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global trade, a
-              company that thrives on connecting the world through commerce.</p>
-          </div>
-          <!-- frame 40 -->
-          <div class="col-md-3 mb-4 text-light pt-5">
-            <h3>Useful Links</h3>
-            <div class="arrow">
-              <a href="index.html">Home <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-              <a href="#">About Us <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-              <a href="#">Services <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-              <a href="#">Terms of Services <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-              <a href="#">Privacy Policy <img src="assets/images/footer-section/Arrow 1.png" alt=""></a>
-            </div>
-          </div>
-          <!-- frame 39 -->
-          <div class="col-md-3 mb-4 text-white pt-5">
-            <h3>CONTACT US</h3>
-            <p class="pt-3">Address - Room TA07, 6th Floor Woon Lee, Commercial Building No. 7-9 Austin Avenue Tsim Sha
-              Tsui, Kowloon (HK)</p>
-          </div>
-          <!-- frame 38 -->
-          <div class="col-md-3 mb-4 text-white pt-5">
-            <h3>Get in Touch</h3>
-            <div class="frame39-icon pt-3">
-              <img src="assets/images/footer-section/Vector (10).png" alt=""> +852 39195807 <br>
-              <br>
-              <img src="assets/images/footer-section/Vector (11).png" alt=""> +852 39195837
-            </div>
-            <div class="frame-35-icon pt-3">
-              <img src="assets/images/footer-section/Vector (6).png" alt="icon">
-              <img src="assets/images/footer-section/Vector (7).png" alt="icon">
-              <img src="assets/images/footer-section/Group (3).png" alt="icon">
-              <img src="assets/images/footer-section/Vector (9).png" alt="icon">
-              <img src="assets/images/footer-section/pajamas_twitter.png" alt="icon">
-            </div>
-          </div>
-        </div>
-        <hr class="hr-line text-white">
-        <div class="footer-p-content text-white text-center">
-          <p>Copyright Bhagirath BVM Grand (HK) Limited. All Rights Reserved. Designed & maintained by Bhagirath
-            Technologies</p>
-        </div>
-      </div>
-    </section>
+  </section>
   </div>
 
   <script src="./assets/scripts/script.js"></script>

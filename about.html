@@ -25,503 +25,509 @@
 </head>
 
 <body>
-    <!-- make a navbar -->
-    <div class="overflow">
 
-        <section>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/images/navbarlogo/logo.png" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item mx-4">
-                                <a class="nav-link text-dark" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link text-dark" href="about.html">About Us </a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link text-dark" href="our-company.html">Our Company</a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link text-dark" href="products.html">Products</a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link text-dark" href="our-services.html">Our Services</a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link text-dark" href="career.html" aria-disabled="true">Careers</a>
-                            </li>
+    <!-- NAVBAR NEW -->
 
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="./index.html">
+                <img src="assets/images/navbarlogo/logo.png" alt="BIPL Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-space-around me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark active" aria-current="page" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./our-company.html">Our Company</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu text-dark">
+                            <li><a class="dropdown-item text-dark" href="#">Edible & Non-Edible Oils</a></li>
+                            <li><a class="dropdown-item text-dark" href="#">Chemicals</a></li>
+                            <li><a class="dropdown-item text-dark" href="#">Petroleum & Oil Products</a></li>
                         </ul>
-                        <a href="contact-us.html"> <button class="btn btn-primary text-white" href="contact-us.html"
-                                type="button">Contact Us</button></a>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        <!-- end of navbar section  -->
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./our-services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./career.html">Careers</a>
+                    </li>
 
-        <!-- CAROUSEL -->
-
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                    <a href="contact-us.html">
+                        <button class="btn btn-orange" href="./contact-us.html" type="button">
+                            Contact Us
+                        </button>
+                    </a>
+                </ul>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item carousel-item-custom-height active">
-                    <img src="assets/images/about-page/hero-section-img/Rectangle 29 (7).webp" class="d-block w-100"
-                        alt="...">
-                    <div class="carousel-caption text-center">
-                        <h1>CHEMICALS AND CATTLE FIELD FERTILIZER</h1>
-                        <p>When it comes to petroleum and biofuel, we've got you covered. Our products are shipped
-                            worldwide, and you can trust that the quality is always up to standard.</p>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-custom-height">
-                    <img src="assets/images/about-page/hero-section-img/Rectangle 36.webp" class="d-block w-100"
-                        alt="...">
-                    <div class="carousel-caption text-center">
-                        <h1>COMMODITIES AND FOOD PRODUCTS</h1>
-                        <p>When it comes to petroleum and biofuel, we've got you covered. Our products are shipped
-                            worldwide, and you can trust that the quality is always up to standard.</p>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-custom-height">
-                    <img src="assets/images/about-page/hero-section-img/Rectangle 47.webp" class="d-block w-100"
-                        alt="...">
-                    <div class="carousel-caption text-center">
-                        <h1>PETROLEUM AND BIO FUEL</h1>
-                        <p>Are you looking for top-quality agriculture commodities and food products? Look no further!
-                            We ship our products all over the world, and our quality meets all the necessary
-                            requirements.</p>
-                    </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-item-custom-height active">
+                <img src="assets/images/about-page/hero-section-img/Rectangle 29 (7).webp" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption text-center">
+                    <h1>CHEMICALS AND CATTLE FIELD FERTILIZER</h1>
+                    <p>When it comes to petroleum and biofuel, we've got you covered. Our products are shipped
+                        worldwide, and you can trust that the quality is always up to standard.</p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item carousel-item-custom-height">
+                <img src="assets/images/about-page/hero-section-img/Rectangle 36.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-center">
+                    <h1>COMMODITIES AND FOOD PRODUCTS</h1>
+                    <p>When it comes to petroleum and biofuel, we've got you covered. Our products are shipped
+                        worldwide, and you can trust that the quality is always up to standard.</p>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-custom-height">
+                <img src="assets/images/about-page/hero-section-img/Rectangle 47.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-center">
+                    <h1>PETROLEUM AND BIO FUEL</h1>
+                    <p>Are you looking for top-quality agriculture commodities and food products? Look no further!
+                        We ship our products all over the world, and our quality meets all the necessary
+                        requirements.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- CORPORATE PROFILE SECTION -->
+
+    <section class="corporate-profile about-card-content px-4">
+        <div class="container">
+            <div class="corporate-heading-content text-center pt-4">
+                <h2>Corporate Profile</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
+            </div>
         </div>
 
-        <!-- CORPORATE PROFILE SECTION -->
+        <!-- <div class="container"> -->
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <p class="text-justify">
+                    Bhagirath Industries Private Limited, founded in 2019 and headquartered in Ahmedabad Gujarat
+                    India, is emerging Agri Business of India the only fully Integrated Agro Processing, Edible
+                    Oil Refining, Bio-Diesel, Oleochemical and Bio - Polymer Producing Company with Zero Waste &
+                    Zero Discharge Unit.
+                    Bhagirath Industries is committed to provide significant contribution to the Green
+                    Environment, Circular Sustainable Growth, Sustainable Ecosystem and Green Economy, with Self
+                    Sustainability specifically into Plantation Oil Palm Trees, Agriculture (Oil Seed, Sugar &
+                    Grains Farming), Sugar Milling Refining, Crushing, Milling, Edible Oil Processing, Starch
+                    Manufacturing, Lactic Acid, Poly Lactic Acid, Bio-Polymers, Bio-Diesel and Oleochemicals &
+                    Bio-Based Products in totality.
+                    Founder Team comprises of strong “bottom-up” thinkers and “sleeves rolled up” operators,
+                    having wealth of experience and Expertise into Techno Commercial and operating sector in the
+                    field of the Energy, Power, Oil & Gas, Polymer and Food Processing & Manufacturing Sector.
+                    At the core Bhagirath‟s strategy is an integrated Agri Business Model that encompasses the
+                    entire value chain of the agricultural commodity business, from cultivation, processing,
+                    merchandising to manufacturing of a wide range of agricultural products.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/about-page/corporate-section-img/Group 62.png" alt="Corporate Image"
+                    class="img-fluid img-fluid-corporate bottom-0-right-0 banner-animation" loading="lazy">
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
 
-        <section class="corporate-profile about-card-content px-4">
-            <div class="container">
-                <div class="corporate-heading-content text-center pt-4">
-                    <h2>Corporate Profile</h2>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
+    <!-- ABOUT PAGE TAB SECTION -->
+
+    <section class="about-page-tab-section">
+        <div class="about-page-tab-section-tabs">
+            <button class="about-page-tab-section-tab active" onclick="showTabContent('vision')">Vision</button>
+            <button class="about-page-tab-section-tab" onclick="showTabContent('mission')">Mission</button>
+            <button class="about-page-tab-section-tab" onclick="showTabContent('value')">Value</button>
+            <button class="about-page-tab-section-tab" onclick="showTabContent('core-value')">Core Value</button>
+            <button class="about-page-tab-section-tab" onclick="showTabContent('value-chain')">Value Chain</button>
+        </div>
+
+        <div class="about-page-tab-section-content">
+            <!-- Vision Content -->
+            <div id="vision" class="about-page-tab-section-content-item active">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./assets/images/about-page/our-vision-img/Group 65.png" alt="Vision"
+                            class="img-fluid about-page-tab-section-image">
+                    </div>
+                    <div class="col-md-9 p-4 justified-text">
+                        <h2 class="text-start">Our Vision</h2>
+                        <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+                            obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
+                            Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
+                            at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
+                            nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
+                            sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
+                            Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
+                            nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
+                            eius cumque.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- <div class="container"> -->
-            <div class="row align-items-center">
+            <!-- Mission Content -->
+            <div id="mission" class="about-page-tab-section-content-item">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./assets/images/about-page/our-vision-img/Group 65 (1).png" alt="Vision"
+                            class="img-fluid about-page-tab-section-image">
+                    </div>
+                    <div class="col-md-9 p-4">
+                        <h2 class="text-start">Our Mission</h2>
+                        <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+                            obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
+                            Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
+                            at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
+                            nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
+                            sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
+                            Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
+                            nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
+                            eius cumque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Content -->
+            <div id="value" class="about-page-tab-section-content-item">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./assets/images/about-page/our-vision-img/Group 65 (2).png" alt="Vision"
+                            class="img-fluid about-page-tab-section-image">
+                    </div>
+                    <div class="col-md-9 p-4">
+                        <h2 class="text-start">Our Values</h2>
+                        <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+                            obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
+                            Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
+                            at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
+                            nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
+                            sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
+                            Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
+                            nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
+                            eius cumque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Value Content -->
+            <div id="core-value" class="about-page-tab-section-content-item">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./assets/images/about-page/our-vision-img/Group 65 (3).png" alt="Vision"
+                            class="img-fluid about-page-tab-section-image">
+                    </div>
+                    <div class="col-md-9 p-4">
+                        <h2 class="text-start">Our Core Value</h2>
+                        <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+                            obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
+                            Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
+                            at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
+                            nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
+                            sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
+                            Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
+                            nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
+                            eius cumque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Chain Content -->
+            <div id="value-chain" class="about-page-tab-section-content-item">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./assets/images/about-page/our-vision-img/Group 65 (4).png" alt="Vision"
+                            class="img-fluid about-page-tab-section-image">
+                    </div>
+                    <div class="col-md-9 p-4">
+                        <h2 class="text-start">Value Chain</h2>
+                        <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+                            obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
+                            Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
+                            at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
+                            nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
+                            sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
+                            Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
+                            nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
+                            eius cumque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERSHIP AND KEY MANAGEMENT TEAM -->
+
+    <section class="leadership pt-5 pb-7">
+        <div class="container">
+            <div class="leadership-content-top text-center">
+                <h2>Leadership & Key Management Team</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at. </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-2">
+                    <div class="leadership-card p-4 h-100">
+                        <div class="card-body">
+                            <div class="icon-leader d-flex align-items-center gap-3">
+                                <img src="assets/images/about-page/leadership-icon/image 14.png" alt="">
+                                <h6 class="card-title">BOARD OF DIRECTORS - <!-- <br> -->LEADERS</h6>
+                            </div>
+                            <p class="card-text-leader text-dark">Our “Leaders - The Board of Directors” oversees
+                                our strategy, capital allocation and investment decisions. It oversees every aspect
+                                of our performance, risk management, compliance, control and assurance framework,
+                                audit, people and sustainability through regular discussions with the Management
+                                Team.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="leadership-card p-4 h-100">
+                        <div class="card-body">
+                            <div class="icon-leader d-flex align-items-center gap-3">
+                                <img src="assets/images/about-page/leadership-icon/image 13.png" alt="">
+                                <h6 class="card-title">EXECUTIVE TEAM</h6>
+                            </div>
+                            <p class="card-text-leader text-dark">Our Executive Committee combines decades of
+                                experience, a deep understanding of our company and ethos, and an international
+                                perspective. It has a clear charter to focus on the results that matter: ensuring
+                                that the company is governed well, in alignment with our objective to maximize
+                                long-term value for our shareholders, and in accordance with our principles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOM SHAPE DIVIDER -->
+
+    <div style="position: relative;">
+        <div class="custom-shape-divider-bottom-1726045077">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- STRATEGIC FRAMEWORK SECTION -->
+
+    <section class="strategic-framework py-5">
+        <div class="container">
+            <div class="top-strategic-content text-center">
+                <h2>Strategic Framework</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
+            </div>
+            <div class="container">
+                <div class="row align-items-center frame-s">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="strategic-content">
+                            <h6>OUR GLOBAL AIM</h6>
+                            <p>Reinterpret Global Agriculture and Food Systems To provide food, feed and fibre
+                                that‟s
+                                better for farmers, communities and our world.</p>
+                            <br>
+                            <h6>OUR AIM FOR INDIA</h6>
+                            <p>Reinterpret & Implement Agriculture System and Make India self-sustainable and import
+                                free country for Edible & Essential Oil Needs and creating large value chain for by
+                                products.</p>
+                            <br>
+                            <h6>OUR COMPETITIVE ADVANTAGE</h6>
+                            <p>Our people are our true competitive advantage. They are the architects of our future,
+                                transforming our culture into a unifying force for our global businesses.
+                                Applied consistently across product, geography and functional boundaries, it is this
+                                culture that elevates our capabilities into strengths, enabling us to develop new
+                                products and to grow and serve in new regions.
+                                At the heart of our drive for success are our values, the tangible expression of our
+                                corporate culture and the foundation of our shared philosophy.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <img src="assets/images/about-page/Strategic Framework/Group 71.png"
+                            alt="Strategic Framework Image" class="img-fluid img-fluid-stratagic banner-animation"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERS & GROWING RESPONSIBILITY SECTION -->
+
+    <section class="partners-growing-responsibility">
+        <div class="container pt-5 pb-5">
+            <div class="row">
                 <div class="col-md-8">
-                    <p class="text-justify">
-                        Bhagirath Industries Private Limited, founded in 2019 and headquartered in Ahmedabad Gujarat
-                        India, is emerging Agri Business of India the only fully Integrated Agro Processing, Edible
-                        Oil Refining, Bio-Diesel, Oleochemical and Bio - Polymer Producing Company with Zero Waste &
-                        Zero Discharge Unit.
-                        Bhagirath Industries is committed to provide significant contribution to the Green
-                        Environment, Circular Sustainable Growth, Sustainable Ecosystem and Green Economy, with Self
-                        Sustainability specifically into Plantation Oil Palm Trees, Agriculture (Oil Seed, Sugar &
-                        Grains Farming), Sugar Milling Refining, Crushing, Milling, Edible Oil Processing, Starch
-                        Manufacturing, Lactic Acid, Poly Lactic Acid, Bio-Polymers, Bio-Diesel and Oleochemicals &
-                        Bio-Based Products in totality.
-                        Founder Team comprises of strong “bottom-up” thinkers and “sleeves rolled up” operators,
-                        having wealth of experience and Expertise into Techno Commercial and operating sector in the
-                        field of the Energy, Power, Oil & Gas, Polymer and Food Processing & Manufacturing Sector.
-                        At the core Bhagirath‟s strategy is an integrated Agri Business Model that encompasses the
-                        entire value chain of the agricultural commodity business, from cultivation, processing,
-                        merchandising to manufacturing of a wide range of agricultural products.
-                    </p>
+                    <div class="partner-growing-content pb-2">
+                        <h2>Partners & Growing Responsibility</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
+
+                        <p>The drivers of deforestation are complex global forces that are beyond the power of any
+                            one industry or company to tackle alone. Collective endeavour by businesses,
+                            governments,
+                            communities and civil society is required to effect real and lasting change on the
+                            ground.
+                            Bhagirath Industries is active in partnerships and collaborations to achieve
+                            transformation at the landscape level.
+                            Agriculture faces some of the world's biggest development, economic, and environmental
+                            challenges. To reinterpret global agriculture we need to harness technology, the vast
+                            experience of colleagues and the expertise of those outside our organisation.
+                            We encourage entrepreneurship and partner with us. We extend our experience and
+                            financial
+                            assistance as helping hand to make partners owners of their respective field and become
+                            our
+                            business partner by our extended collaboration to become supplier or vendor partner
+                            adding value to value chain for common goal.</p>
+
+                        <h6><a href="#" class="text-dark">What encourage us to establish and develop Partners?</a>
+                        </h6>
+                        <ul>
+                            <li>We dare to dream.</li>
+                            <li> Our passion for doing more</li>
+                            <li>We strive to develop positive and long-term relationships with our partners</li>
+                            <li>We stay true to what we believe, say and do</li>
+                            <li>We take responsibility as if we were founders of the business.</li>
+                        </ul>
+                        <p>Conducting our business in an ethical, socially responsible and environmentally
+                            sustainable manner is part of our core strategy. Growing Responsibly doesn't just mean
+                            protecting the environment and supporting farmers and communities associated. There are
+                            clear commercial factors, such as having a sound business model with strong risk
+                            management and governance, so that we protect our investors, shareholders, stakeholders,
+                            partners and employees, which in turn mean we have a resilient and sustainable business
+                            for our farmers, suppliers, partners and customers.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/about-page/corporate-section-img/Group 62.png" alt="Corporate Image"
-                        class="img-fluid img-fluid-corporate bottom-0-right-0 banner-animation" loading="lazy">
+                    <img src="assets/images/about-page/Partners & Growing Responsibility/Rectangle 35.png"
+                        alt="Partners & Growing Responsibility" class="img-fluid img-fluid-partner">
                 </div>
-            </div>
-            <!-- </div> -->
-        </section>
-
-        <!-- ABOUT PAGE TAB SECTION -->
-
-        <section class="about-page-tab-section">
-            <div class="about-page-tab-section-tabs">
-                <button class="about-page-tab-section-tab active" onclick="showTabContent('vision')">Vision</button>
-                <button class="about-page-tab-section-tab" onclick="showTabContent('mission')">Mission</button>
-                <button class="about-page-tab-section-tab" onclick="showTabContent('value')">Value</button>
-                <button class="about-page-tab-section-tab" onclick="showTabContent('core-value')">Core Value</button>
-                <button class="about-page-tab-section-tab" onclick="showTabContent('value-chain')">Value Chain</button>
-            </div>
-
-            <div class="about-page-tab-section-content">
-                <!-- Vision Content -->
-                <div id="vision" class="about-page-tab-section-content-item active">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="./assets/images/about-page/our-vision-img/Group 65.png" alt="Vision"
-                                class="img-fluid about-page-tab-section-image">
-                        </div>
-                        <div class="col-md-9 p-4 justified-text">
-                            <h2 class="text-start">Our Vision</h2>
-                            <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-                                obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
-                                Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
-                                at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
-                                nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
-                                sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
-                                Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
-                                nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
-                                eius cumque.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mission Content -->
-                <div id="mission" class="about-page-tab-section-content-item">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="./assets/images/about-page/our-vision-img/Group 65 (1).png" alt="Vision"
-                                class="img-fluid about-page-tab-section-image">
-                        </div>
-                        <div class="col-md-9 p-4">
-                            <h2 class="text-start">Our Mission</h2>
-                            <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-                                obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
-                                Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
-                                at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
-                                nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
-                                sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
-                                Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
-                                nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
-                                eius cumque.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Value Content -->
-                <div id="value" class="about-page-tab-section-content-item">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="./assets/images/about-page/our-vision-img/Group 65 (2).png" alt="Vision"
-                                class="img-fluid about-page-tab-section-image">
-                        </div>
-                        <div class="col-md-9 p-4">
-                            <h2 class="text-start">Our Values</h2>
-                            <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-                                obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
-                                Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
-                                at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
-                                nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
-                                sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
-                                Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
-                                nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
-                                eius cumque.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Core Value Content -->
-                <div id="core-value" class="about-page-tab-section-content-item">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="./assets/images/about-page/our-vision-img/Group 65 (3).png" alt="Vision"
-                                class="img-fluid about-page-tab-section-image">
-                        </div>
-                        <div class="col-md-9 p-4">
-                            <h2 class="text-start">Our Core Value</h2>
-                            <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-                                obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
-                                Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
-                                at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
-                                nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
-                                sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
-                                Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
-                                nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
-                                eius cumque.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Value Chain Content -->
-                <div id="value-chain" class="about-page-tab-section-content-item">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="./assets/images/about-page/our-vision-img/Group 65 (4).png" alt="Vision"
-                                class="img-fluid about-page-tab-section-image">
-                        </div>
-                        <div class="col-md-9 p-4">
-                            <h2 class="text-start">Value Chain</h2>
-                            <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-                                obcaecati numquam beatae rerum, exercitationem architecto sequi dignissimos ullam!
-                                Laboriosam maxime cum eum reprehenderit vero! Reiciendis repellat saepe labore! Labore,
-                                at minima illo consequuntur accusamus placeat officia vero quas nostrum nobis. Officiis
-                                nobis velit magnam. Nulla voluptatibus voluptates quam quo facilis! Lorem, ipsum dolor
-                                sit amet consectetur adipisicing elit. Et voluptatibus ea praesentium ipsum excepturi.
-                                Veritatis voluptate architecto blanditiis dolor fugit dolores atque officia dignissimos
-                                nobis? Illum sit excepturi nihil? Porro esse atque sunt id facilis, assumenda unde omnis
-                                eius cumque.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- LEADERSHIP AND KEY MANAGEMENT TEAM -->
-
-        <section class="leadership pt-5 pb-7">
-            <div class="container">
-                <div class="leadership-content-top text-center">
-                    <h2>Leadership & Key Management Team</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at. </p>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-6 mb-2">
-                        <div class="leadership-card p-4 h-100">
-                            <div class="card-body">
-                                <div class="icon-leader d-flex align-items-center gap-3">
-                                    <img src="assets/images/about-page/leadership-icon/image 14.png" alt="">
-                                    <h6 class="card-title">BOARD OF DIRECTORS - <!-- <br> -->LEADERS</h6>
-                                </div>
-                                <p class="card-text-leader text-dark">Our “Leaders - The Board of Directors” oversees
-                                    our strategy, capital allocation and investment decisions. It oversees every aspect
-                                    of our performance, risk management, compliance, control and assurance framework,
-                                    audit, people and sustainability through regular discussions with the Management
-                                    Team.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <div class="leadership-card p-4 h-100">
-                            <div class="card-body">
-                                <div class="icon-leader d-flex align-items-center gap-3">
-                                    <img src="assets/images/about-page/leadership-icon/image 13.png" alt="">
-                                    <h6 class="card-title">EXECUTIVE TEAM</h6>
-                                </div>
-                                <p class="card-text-leader text-dark">Our Executive Committee combines decades of
-                                    experience, a deep understanding of our company and ethos, and an international
-                                    perspective. It has a clear charter to focus on the results that matter: ensuring
-                                    that the company is governed well, in alignment with our objective to maximize
-                                    long-term value for our shareholders, and in accordance with our principles.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CUSTOM SHAPE DIVIDER -->
-
-        <div style="position: relative;">
-            <div class="custom-shape-divider-bottom-1726045077">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                        class="shape-fill"></path>
-                </svg>
             </div>
         </div>
+    </section>
 
-        <!-- STRATEGIC FRAMEWORK SECTION -->
+    <!-- CORPORATE ORGANOGRAM -->
 
-        <section class="strategic-framework py-5">
-            <div class="container">
-                <div class="top-strategic-content text-center">
-                    <h2>Strategic Framework</h2>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
+    <section class="corporate-organogram py-4">
+        <div class="container text-light">
+            <h2>Corporate Organogram</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Donec quis vitae condimentum fringilla eleifend eu cras et
+                amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique. Eget
+                luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.
+                Nullam nam odio gravida nulla turpis tempor sit tristique. Eget luctus neque sapien accumsan dui ac
+                mauris lobortis elit.Lorem ipsum dolor sit amet consectetur. </p>
+            <div class="d-flex justify-content-start">
+                <button class="BIPL py-2 px-3">
+                    <span class="material-symbols-outlined black-icon">
+                        picture_as_pdf
+                    </span>
+                    BIPL Organogram Functional R0.pdf
+                    <span class="material-symbols-outlined black-icon">
+                        download
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- make a footer section  -->
+
+    <section class="footer">
+        <div class="container">
+            <div class="row equal-spacing">
+                <!-- frame 35 -->
+                <div class="col-md-3 mb-4">
+                    <img src="/assets/images/footer-section/Logo-03 1.png" alt="Company Logo"
+                        class="img-fluid-footer-logo">
+                    <p class="text-light pt-3">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global
+                        trade, a company that thrives on connecting the world through commerce.</p>
                 </div>
-                <div class="container">
-                    <div class="row align-items-center frame-s">
-                        <div class="col-lg-8 col-md-12">
-                            <div class="strategic-content">
-                                <h6>OUR GLOBAL AIM</h6>
-                                <p>Reinterpret Global Agriculture and Food Systems To provide food, feed and fibre
-                                    that‟s
-                                    better for farmers, communities and our world.</p>
-                                <br>
-                                <h6>OUR AIM FOR INDIA</h6>
-                                <p>Reinterpret & Implement Agriculture System and Make India self-sustainable and import
-                                    free country for Edible & Essential Oil Needs and creating large value chain for by
-                                    products.</p>
-                                <br>
-                                <h6>OUR COMPETITIVE ADVANTAGE</h6>
-                                <p>Our people are our true competitive advantage. They are the architects of our future,
-                                    transforming our culture into a unifying force for our global businesses.
-                                    Applied consistently across product, geography and functional boundaries, it is this
-                                    culture that elevates our capabilities into strengths, enabling us to develop new
-                                    products and to grow and serve in new regions.
-                                    At the heart of our drive for success are our values, the tangible expression of our
-                                    corporate culture and the foundation of our shared philosophy.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 text-center">
-                            <img src="assets/images/about-page/Strategic Framework/Group 71.png"
-                                alt="Strategic Framework Image" class="img-fluid img-fluid-stratagic banner-animation"
-                                loading="lazy">
-                        </div>
+                <!-- frame 40 -->
+                <div class="col-md-3 mb-4 text-light pt-5">
+                    <h3>Useful Links</h3>
+                    <div class="arrow">
+                        <a href="index.html">Home <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
+                        <a href="#">About Us <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
+                        <a href="#">Services <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
+                        <a href="#">Terms of Services <img src="assets/images/footer-section/Arrow 1.png"
+                                alt=""></a><br>
+                        <a href="#">Privacy Policy <img src="assets/images/footer-section/Arrow 1.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- frame 39 -->
+                <div class="col-md-3 mb-4 text-white pt-5">
+                    <h3>CONTACT US</h3>
+                    <p class="pt-3">Address - Room TA07, 6th Floor Woon Lee, Commercial Building No. 7-9 Austin
+                        Avenue
+                        Tsim Sha Tsui, Kowloon (HK)</p>
+                </div>
+                <!-- frame 38 -->
+                <div class="col-md-3 mb-4 text-white pt-5">
+                    <h3>Get in Touch</h3>
+                    <div class="frame39-icon pt-3">
+                        <img src="assets/images/footer-section/Vector (10).png" alt=""> +852 39195807 <br>
+                        <br>
+                        <img src="assets/images/footer-section/Vector (11).png" alt=""> +852 39195837
+                    </div>
+                    <div class="frame-35-icon pt-3">
+                        <img src="assets/images/footer-section/Vector (6).png" alt="icon">
+                        <img src="assets/images/footer-section/Vector (7).png" alt="icon">
+                        <img src="assets/images/footer-section/Group (3).png" alt="icon">
+                        <img src="assets/images/footer-section/Vector (9).png" alt="icon">
+                        <img src="assets/images/footer-section/pajamas_twitter.png" alt="icon">
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- PARTNERS & GROWING RESPONSIBILITY SECTION -->
-
-        <section class="partners-growing-responsibility">
-            <div class="container pt-5 pb-5">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="partner-growing-content pb-2">
-                            <h2>Partners & Growing Responsibility</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
-
-                            <p>The drivers of deforestation are complex global forces that are beyond the power of any
-                                one industry or company to tackle alone. Collective endeavour by businesses,
-                                governments,
-                                communities and civil society is required to effect real and lasting change on the
-                                ground.
-                                Bhagirath Industries is active in partnerships and collaborations to achieve
-                                transformation at the landscape level.
-                                Agriculture faces some of the world's biggest development, economic, and environmental
-                                challenges. To reinterpret global agriculture we need to harness technology, the vast
-                                experience of colleagues and the expertise of those outside our organisation.
-                                We encourage entrepreneurship and partner with us. We extend our experience and
-                                financial
-                                assistance as helping hand to make partners owners of their respective field and become
-                                our
-                                business partner by our extended collaboration to become supplier or vendor partner
-                                adding value to value chain for common goal.</p>
-
-                            <h6><a href="#" class="text-dark">What encourage us to establish and develop Partners?</a>
-                            </h6>
-                            <ul>
-                                <li>We dare to dream.</li>
-                                <li> Our passion for doing more</li>
-                                <li>We strive to develop positive and long-term relationships with our partners</li>
-                                <li>We stay true to what we believe, say and do</li>
-                                <li>We take responsibility as if we were founders of the business.</li>
-                            </ul>
-                            <p>Conducting our business in an ethical, socially responsible and environmentally
-                                sustainable manner is part of our core strategy. Growing Responsibly doesn't just mean
-                                protecting the environment and supporting farmers and communities associated. There are
-                                clear commercial factors, such as having a sound business model with strong risk
-                                management and governance, so that we protect our investors, shareholders, stakeholders,
-                                partners and employees, which in turn mean we have a resilient and sustainable business
-                                for our farmers, suppliers, partners and customers.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/images/about-page/Partners & Growing Responsibility/Rectangle 35.png"
-                            alt="Partners & Growing Responsibility" class="img-fluid img-fluid-partner">
-                    </div>
-                </div>
+            <hr class="hr-line text-white">
+            <div class="footer-p-content text-white text-center">
+                <p>Copyright Bhagirath BVM Grand (HK) Limited. All Rights Reserved. Designed & maintained by
+                    Bhagirath
+                    Technologies</p>
             </div>
-        </section>
-
-        <!-- CORPORATE ORGANOGRAM -->
-
-        <section class="corporate-organogram py-4">
-            <div class="container text-light">
-                <h2>Corporate Organogram</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Donec quis vitae condimentum fringilla eleifend eu cras et
-                    amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique. Eget
-                    luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
-                    Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.
-                    Nullam nam odio gravida nulla turpis tempor sit tristique. Eget luctus neque sapien accumsan dui ac
-                    mauris lobortis elit.Lorem ipsum dolor sit amet consectetur. </p>
-                <div class="d-flex justify-content-start">
-                    <button class="BIPL py-2 px-3">
-                        <span class="material-symbols-outlined black-icon">
-                            picture_as_pdf
-                        </span>
-                        BIPL Organogram Functional R0.pdf
-                        <span class="material-symbols-outlined black-icon">
-                            download
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- make a footer section  -->
-
-        <section class="footer">
-            <div class="container">
-                <div class="row equal-spacing">
-                    <!-- frame 35 -->
-                    <div class="col-md-3 mb-4">
-                        <img src="/assets/images/footer-section/Logo-03 1.png" alt="Company Logo"
-                            class="img-fluid-footer-logo">
-                        <p class="text-light pt-3">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global
-                            trade, a company that thrives on connecting the world through commerce.</p>
-                    </div>
-                    <!-- frame 40 -->
-                    <div class="col-md-3 mb-4 text-light pt-5">
-                        <h3>Useful Links</h3>
-                        <div class="arrow">
-                            <a href="index.html">Home <img src="assets/images/footer-section/Arrow 1.png"
-                                    alt=""></a><br>
-                            <a href="#">About Us <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-                            <a href="#">Services <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-                            <a href="#">Terms of Services <img src="assets/images/footer-section/Arrow 1.png"
-                                    alt=""></a><br>
-                            <a href="#">Privacy Policy <img src="assets/images/footer-section/Arrow 1.png" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- frame 39 -->
-                    <div class="col-md-3 mb-4 text-white pt-5">
-                        <h3>CONTACT US</h3>
-                        <p class="pt-3">Address - Room TA07, 6th Floor Woon Lee, Commercial Building No. 7-9 Austin
-                            Avenue
-                            Tsim Sha Tsui, Kowloon (HK)</p>
-                    </div>
-                    <!-- frame 38 -->
-                    <div class="col-md-3 mb-4 text-white pt-5">
-                        <h3>Get in Touch</h3>
-                        <div class="frame39-icon pt-3">
-                            <img src="assets/images/footer-section/Vector (10).png" alt=""> +852 39195807 <br>
-                            <br>
-                            <img src="assets/images/footer-section/Vector (11).png" alt=""> +852 39195837
-                        </div>
-                        <div class="frame-35-icon pt-3">
-                            <img src="assets/images/footer-section/Vector (6).png" alt="icon">
-                            <img src="assets/images/footer-section/Vector (7).png" alt="icon">
-                            <img src="assets/images/footer-section/Group (3).png" alt="icon">
-                            <img src="assets/images/footer-section/Vector (9).png" alt="icon">
-                            <img src="assets/images/footer-section/pajamas_twitter.png" alt="icon">
-                        </div>
-                    </div>
-                </div>
-                <hr class="hr-line text-white">
-                <div class="footer-p-content text-white text-center">
-                    <p>Copyright Bhagirath BVM Grand (HK) Limited. All Rights Reserved. Designed & maintained by
-                        Bhagirath
-                        Technologies</p>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
 
 

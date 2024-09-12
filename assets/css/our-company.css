@@ -61,9 +61,10 @@ ul {
     padding: 0;
 }
 
-ul li {
+/* ENABLE THIS IF ANY ISSUES ARISE */
+/* ul li {
     margin-bottom: 0.5rem;
-}
+} */
 
 /* Media Queries */
 @media (max-width: 768px) {

@@ -23,45 +23,58 @@
 </head>
 
 <body>
-  <!-- make a navbar -->
-  <section>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/navbarlogo/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item mx-4">
-              <a class="nav-link text-dark" href="index.html">Home</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link text-dark" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link text-dark" href="our-company.html">Our Company</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link text-dark" href="products.html">Products</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link text-dark" href="our-services.html">Our Services</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link text-dark" href="career.html" aria-disabled="true">Careers</a>
-            </li>
-          </ul>
-          <a href="contact-us.html"> <button class="btn btn-primary text-white" href="contact-us.html"
-              type="button">Contact Us</button></a>
-        </div>
-      </div>
-    </nav>
-  </section>
 
+  <!-- NAVBAR NEW -->
+
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="./index.html">
+        <img src="assets/images/navbarlogo/logo.png" alt="BIPL Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-space-around me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark active" aria-current="page" href="./our-company.html">Our Company</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu text-dark">
+              <li><a class="dropdown-item text-dark" href="#">Edible & Non-Edible Oils</a></li>
+              <li><a class="dropdown-item text-dark" href="#">Chemicals</a></li>
+              <li><a class="dropdown-item text-dark" href="#">Petroleum & Oil Products</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./our-services.html">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./career.html">Careers</a>
+          </li>
+
+          <a href="contact-us.html">
+            <button class="btn btn-orange" href="./contact-us.html" type="button">
+              Contact Us
+            </button>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- CAROUSEL -->
 
@@ -80,7 +93,8 @@
         <!-- <div class="carousel-caption d-none d-md-block text-start"> -->
         <div class="carousel-caption text-center">
           <h1>CHEMICALS AND CATTLE FIELD FERTILIZER</h1>
-          <p class="text-center">When it comes to petroleum and biofuel, we've got you covered. Our products are shipped worldwide, and you
+          <p class="text-center">When it comes to petroleum and biofuel, we've got you covered. Our products are shipped
+            worldwide, and you
             can trust that the quality is always up to standard.</p>
         </div>
       </div>
@@ -88,7 +102,8 @@
         <img src="assets/images/our-company-page/hero-section/Rectangle 48.webp" class="d-block w-100" alt="...">
         <div class="carousel-caption text-center">
           <h1>COMMODITIES AND FOOD PRODUCTS</h1>
-          <p class="text-center">When it comes to petroleum and biofuel, we've got you covered. Our products are shipped worldwide, and you
+          <p class="text-center">When it comes to petroleum and biofuel, we've got you covered. Our products are shipped
+            worldwide, and you
             can trust that the quality is always up to standard.</p>
         </div>
       </div>
@@ -96,7 +111,8 @@
         <img src="assets/images/our-company-page/hero-section/Rectangle 49.webp" class="d-block w-100" alt="...">
         <div class="carousel-caption text-center">
           <h1>PETROLEUM AND BIO FUEL</h1>
-          <p class="text-center">Are you looking for top-quality agriculture commodities and food products? Look no further! We ship our
+          <p class="text-center">Are you looking for top-quality agriculture commodities and food products? Look no
+            further! We ship our
             products all over the world, and our quality meets all the necessary requirements.</p>
         </div>
       </div>
