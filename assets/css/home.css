@@ -132,6 +132,13 @@ body {
   z-index: 99;
 }
 
+a.dropdown-item.active,
+a.dropdown-item:active,
+a.dropdown-item:focus {
+  background-color: var(--color-orange);
+  outline: none;
+}
+
 .custom-navbar {
   /* overflow: hidden; */
   color: rgba(255, 255, 255, 0.7);

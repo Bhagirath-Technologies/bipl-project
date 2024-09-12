@@ -1,13 +1,31 @@
 .card-body {
-  border: 1px solid rgba(186, 136, 0, 1) !important;
+  border: 1.5px solid var(--color-orange) !important;
   text-align: justify;
-  padding: 20px 20px !important;
+  padding: 20px !important;
   border-top: none !important;
+  /* CSS from a different place */
+  min-height: 180px;
+  /* margin-bottom: 20px !important; */
 }
 
+/* .img-fluid {
+  max-width: 100%;
+  height: auto;
+} */
+
 .card-product {
-  max-width: 100px;
+  /* max-width: 100px; */
   padding-bottom: 20px;
+  color: var(--color-navy-blue);
+}
+
+.card-img-top {
+  height: 200px;
+  /* object-fit: cover; */
+  /* border-radius: 8px !important; */
+  transition: 0.35s ease;
+  /* Added later */
+  /* transform: scale(1.02); */
 }
 
 .card-img-top:hover {
@@ -20,31 +38,12 @@
   overflow-y: auto;
 }
 
-.card-img-top {
-  height: 200px;
-  /* object-fit: cover; */
-  border-radius: 8px !important;
-  transition: 0.35s ease;
-}
+/* MEDIA QUERIES */
 
-/* media queries for responsive design */
-.card-body {
-  min-height: 180px;
-  margin-bottom: 20px !important;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-/* .card-serve-icon {} */
-
-/* media queries for responsive design */
 @media (max-width: 768px) {
-  .card-product {
+  /* .card-product {
     flex-basis: 50%;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
