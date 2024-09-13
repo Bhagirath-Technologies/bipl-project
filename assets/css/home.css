@@ -923,7 +923,7 @@ a.dropdown-item:focus {
   display: block;
   margin-bottom: 10px;
   background: none;
-  border: none;
+  border: none !important;
   font-size: 16px;
   text-align: left;
   padding: 10px;
@@ -949,6 +949,11 @@ a.dropdown-item:focus {
 
 .new-trading-portfolio-box-btn>img {
   padding-bottom: 4px;
+}
+
+.trading-portfolio-active-btn {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
 }
 
 /* REACH OUT TO US SECTION */
