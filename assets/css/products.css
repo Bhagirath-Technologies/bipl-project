@@ -20,9 +20,9 @@
 }
 
 .card-img-top {
-  height: 200px;
-  /* object-fit: cover; */
-  /* border-radius: 8px !important; */
+  height: 200px !important;
+  object-fit: cover;
+  /* border-radius: 8px 8px 0px 0px !important; */
   transition: 0.35s ease;
   /* Added later */
   /* transform: scale(1.02); */

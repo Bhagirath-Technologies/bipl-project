@@ -963,7 +963,7 @@ a.dropdown-item:focus {
       rgba(255, 193, 131, 1) 49.93%,
       rgba(255, 224, 193, 1) 100%),
     /* url(/assets/images/home-page-images/reach-out-to-us/image%2012.png); */
-    url(../images/home-page-images/reach-out-to-us/image\ 12.png);
+    url(../images/home-page-images/reach-out-to-us/reach-out-to-us-img.webp);
   background-size: cover;
   background-blend-mode: overlay;
   background-attachment: fixed;
@@ -1001,7 +1001,7 @@ a.dropdown-item:focus {
 /* FOOTER */
 
 .footer {
-  padding: 10px 0;
+  /* padding: 10px 0; */
   background-color: var(--color-navy-blue);
 }
 
@@ -1015,12 +1015,12 @@ a.dropdown-item:focus {
 }
 
 .arrow a {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
 }
 
 .arrow a:hover {
-  color: #ccc;
+  color: var(--color-white);
 }
 
 .frame39-icon {
@@ -1040,7 +1040,7 @@ a.dropdown-item:focus {
 }
 
 .hr-line {
-  border-top: 3px solid white;
+  border-top: 1px solid var(--color-white);
 }
 
 .footer-p-content {
@@ -1050,9 +1050,9 @@ a.dropdown-item:focus {
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-  .footer {
+  /* .footer {
     padding: 2rem 0;
-  }
+  } */
 
   .col-md-3 {
     flex-basis: 50%;
@@ -1060,9 +1060,9 @@ a.dropdown-item:focus {
 }
 
 @media (max-width: 480px) {
-  .footer {
+  /* .footer {
     padding: 1rem 0;
-  }
+  } */
 
   .col-md-3 {
     flex-basis: 100%;

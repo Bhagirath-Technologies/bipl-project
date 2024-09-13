@@ -217,8 +217,7 @@
 /* CORPORATE ORGANOGRAM SECTION */
 
 .corporate-organogram {
-    /* background: url(/assets/images/about-page/Corporate-Organogram/Rectangle\ 36.png); */
-    background: url(../images/about-page/Corporate-Organogram/Rectangle\ 36.png);
+    background: url(../images/about-page/corporate-organogram/corporate-organogram-bg.webp);
     /* height: 45vh; */
     /* padding-top: 2rem; */
     background-image: cover;
