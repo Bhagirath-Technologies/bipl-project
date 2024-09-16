@@ -1587,7 +1587,8 @@ h6 {
 .btn-orange {
     background-color: var(--color-orange) !important;
     color: var(--color-white) !important;
-    border: none;
+    border: none !important;
+    cursor: pointer;
 }
 
 .dark-blue-text {

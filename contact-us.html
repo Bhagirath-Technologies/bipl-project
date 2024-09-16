@@ -147,8 +147,7 @@
     </div>
   </section>
 
-
-  <!-- CONTACT US FORM -->
+  <!-- INFORMATION OF CONTACT -->
 
   <section>
     <div class="container">
@@ -185,9 +184,9 @@
   </section>
 
 
-  <!-- QUERY SECTION -->
+  <!-- QUERY SECTION (OLD) -->
 
-  <section class="query">
+  <!-- <section class="query">
     <div class="container">
       <div class="query-top-content pt-5">
         <h2>
@@ -195,39 +194,82 @@
         </h2>
         <p>Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at. </p>
       </div>
-
       <div class="row pt-3 col-12">
         <div class="col-6 col-md-6 col-lg-3 pb-3 w-50">
           <label for="full-name" class="form-label">Full Name</label>
           <input type="text" id="full-name" class="form-control bg-body-secondary" placeholder="Enter Full Name"
             required>
         </div>
-
         <div class="col-6 col-md-6 col-lg-3 pb-3 w-50">
           <label for="email" class="form-label">Email</label>
           <input type="email" id="email" class="form-control bg-body-secondary" placeholder="Enter Email" required>
         </div>
       </div>
-
       <div class="row pt-3 col-12">
         <div class="col-6 col-md-6 col-lg-3 pb-3 w-100">
           <label for="your-query" class="form-label">Your Query</label>
           <input type="text" id="your-query" class="form-control bg-body-secondary w-100" placeholder="Enter Query"
             required>
         </div>
-
         <div class="pt-3 mb-3">
           <label for="description" class="form-label">Description</label>
           <textarea class="form-control w-100" id="description" rows="3" placeholder="Enter description"></textarea>
         </div>
-
         <div class="pt-3 d-flex justify-content-center pb-5">
           <button class="btn-quick btn-orange" type="submit">Submit</button>
         </div>
-
       </div>
-  </section>
+  </section> -->
 
+  <!-- QUERY SECTION (NEW) -->
+
+  <section class="query">
+    <div class="container">
+      <div class="query-top-content pt-5">
+        <h2>
+          Submit a Query
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at. </p>
+      </div>
+
+      <form id="contactForm">
+
+        <div class="row pt-3">
+
+          <div class="col-md-6 pb-3">
+            <label for="full-name" class="form-label">Full Name</label>
+            <input name="name" type="text" id="full-name" class="form-control bg-body-secondary"
+              placeholder="Enter Full Name" required>
+          </div>
+
+          <div class="col-md-6 pb-3">
+            <label for="email" class="form-label">Email</label>
+            <input name="email" type="email" id="email" class="form-control bg-body-secondary" placeholder="Enter Email"
+              required>
+          </div>
+
+          <div class="col-md-12 pb-3">
+            <label for="your-query" class="form-label">Your Query</label>
+            <input name="yourQuery" type="text" id="your-query" class="form-control bg-body-secondary w-100"
+              placeholder="Enter Query" required>
+          </div>
+
+          <div class="col-md-12 pb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" class="form-control w-100" id="description" rows="3"
+              placeholder="Enter description"></textarea>
+          </div>
+
+          <div class="pt-3 d-flex justify-content-center pb-5">
+            <!-- <button class="btn-quick btn-orange" type="submit">Submit</button> -->
+            <input type="submit" id="submitButtonContactUs" class="btn btn-orange">
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+  </section>
 
   <!-- FOOTER -->
 

@@ -612,7 +612,7 @@ a.dropdown-item:focus {
 /* OUR SKILLS SECTION */
 
 .our-skill {
-  background-color: #17305e;
+  background-color: var(--color-navy-blue);
   /* padding-bottom: 170px; */
 }
 
@@ -629,20 +629,18 @@ a.dropdown-item:focus {
   font-weight: 700;
   font-size: 30px;
   /* font-family: var(--font-family); */
-  color: #fff;
+  color: var(--color-white);
 }
 
 .content-our-skill p {
   font-weight: 300;
   font-size: 14px;
   /* font-family: 'Sansation Light', sans-serif; */
-
-  color: #fff;
+  color: var(--color-white)
 }
 
 .skill-box {
   gap: 20px;
-
 }
 
 .box-our-skill {
@@ -716,16 +714,19 @@ a.dropdown-item:focus {
   position: relative;
   top: 50px;
   padding-left: 10px;
-  color: #fff;
-  font-weight: 700;
-  font-size: 35px;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 30px;
+  /* font-weight: 700; */
+  /* font-size: 35px; */
   /* text-shadow: 2px 2px 4px #000000; */
 }
 
 .skill-counting-content {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 24px;
   font-weight: 300;
-  color: #fff;
+  color: var(--color-white);
   /* font-family: var(--font-family); */
   padding-top: 20px;
 }

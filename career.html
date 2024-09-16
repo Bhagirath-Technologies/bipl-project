@@ -244,20 +244,21 @@
         <h2>Quick Apply</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
       </div>
-      <form>
+      <form id="jobApplicationForm" enctype="multipart/form-data">
         <div class="row pt-5">
           <div class="col-12 col-md-6 col-lg-3 mb-3">
             <label for="full-name" class="form-label">Full Name</label>
-            <input type="text" id="full-name" class="form-control bg-body-secondary" placeholder="Enter Full Name"
-              required>
+            <input name="name" type="text" id="full-name" class="form-control bg-body-secondary"
+              placeholder="Enter Full Name" required>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" class="form-control bg-body-secondary" placeholder="Enter Email" required>
+            <input name="email" type="email" id="email" class="form-control bg-body-secondary" placeholder="Enter Email"
+              required>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-3">
             <label for="job-title" class="form-label">Job Title</label>
-            <select id="job-title" class="form-select bg-body-secondary" required>
+            <select name="jobTitle" id="job-title" class="form-select bg-body-secondary" required>
               <option selected disabled>Choose Job Title</option>
               <option>Front-End Developer</option>
               <option>Back-End Developer</option>
@@ -267,19 +268,17 @@
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-3">
             <label for="location" class="form-label">Location</label>
-            <select id="location" class="form-select bg-body-secondary" required>
+            <select name="jobLocation" id="location" class="form-select bg-body-secondary" required>
               <option selected disabled>Choose Location</option>
               <option>Bhopal</option>
-              <option>Bangalore</option>
-              <option>Indore</option>
               <option>Noida</option>
             </select>
           </div>
         </div>
-        <div class="row pt-5">
+        <div class="row pt-lg-5">
           <div class="col-12 col-md-6 col-lg-3 mb-3">
             <label for="job-category" class="form-label">Job Category</label>
-            <select id="job-category" class="form-select bg-body-secondary" required>
+            <select name="jobCategory" id="job-category" class="form-select bg-body-secondary" required>
               <option selected disabled>Choose Job Category</option>
               <option>Front-End Developer</option>
               <option>Back-End Developer</option>
@@ -289,17 +288,19 @@
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-3">
             <label for="cover-letter" class="form-label">Upload Cover Letter</label>
-            <input type="file" id="cover-letter" class="form-control bg-body-secondary" accept=".pdf,.doc,.docx"
-              required>
+            <input type="file" name="coverLetter" id="cover-letter" class="form-control bg-body-secondary"
+              accept=".pdf,.doc,.docx" required>
           </div>
           <div class="col-12 col-md-6 col-lg-3 mb-3">
             <label for="resume" class="form-label">Upload Resume</label>
-            <input type="file" id="resume" class="form-control bg-body-secondary" accept=".pdf, .doc, .docx" required>
+            <input type="file" name="resume" id="resume" class="form-control bg-body-secondary"
+              accept=".pdf, .doc, .docx" required>
           </div>
         </div>
         <div class="row pt-5 career-btn-form">
           <div class="col-12 col-md-12 col-lg-2 mx-auto d-flex align-items-center pb-5">
-            <button type="submit" class="btn-orange test-button quick-btn px-4 py-2 rounded">Apply</button>
+            <!-- <button type="submit" class="btn-orange test-button quick-btn px-4 py-2 rounded">Apply</button> -->
+            <input type="submit" id="submitButtonJobApplicationForm" class="btn btn-orange">
           </div>
         </div>
       </form>
