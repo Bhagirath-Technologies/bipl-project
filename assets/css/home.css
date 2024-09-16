@@ -271,7 +271,7 @@ a.dropdown-item:focus {
   }
 } */
 
-@keyframes custom-animation {
+/* @keyframes custom-animation {
   0% {
     opacity: 0;
     transform: translateY(100%) scale(0.8) rotate(-10deg);
@@ -286,6 +286,18 @@ a.dropdown-item:focus {
     opacity: 1;
     transform: translateY(0) scale(1) rotate(0deg);
   }
+} */
+
+@keyframes custom-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .carousel-caption {
@@ -297,7 +309,8 @@ a.dropdown-item:focus {
   padding: 1rem;
   border-radius: 10px;
   /* transform: translateY(-100%); */
-  animation: custom-animation 1s forwards;
+  /* animation: custom-animation 1s forwards; */
+  animation: custom-animation 1s ease-out forwards;
   max-width: 100vw;
   /* background-color: rgba(0, 0, 0, 0.5); */
   height: 40vh;
@@ -306,15 +319,14 @@ a.dropdown-item:focus {
 .carousel-caption h2 {
   font-size: 28px;
   /* padding-right: 180px; */
-  font-family: "sansation";
+  /* font-family: "sansation"; */
   /* text-align: center; */
 }
 
 .carousel-caption p {
   font-size: 16px;
   /* padding-right: 180px; */
-  font-weight: 400;
-
+  font-weight: 600;
 }
 
 .carousel-item.active .carousel-caption {

@@ -602,7 +602,10 @@
                         ultrices ligula. Lorem ipsum dolor sit amet consectetur. Magna blandit proin ut bibendum
                         pharetra vulputate.
                     </p>
-                    <button class="btn-reach py-2 px-4">Contact us</button>
+                    <!-- <button class="btn-reach py-2 px-4">Contact Us</button> -->
+                    <a href="./contact-us.html">
+                        <button class="btn-reach py-2 px-4">Contact Us</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -687,17 +690,16 @@
         </div>
     </section>
 
+    <!-- Back to Top -->
+    <button id="backToTopBtn" title="Go to top">
+        <span class="material-symbols-outlined">
+            keyboard_arrow_up
+        </span>
+    </button>
 
     <script src="./assets/scripts/script.js"></script>
 
     <script>
-        // Trading Portfolio Box Script (OLD)
-        // document.querySelectorAll('.new-trading-portfolio-box-btn').forEach(button => {
-        //     button.addEventListener('click', function () {
-        //         const newImage = this.getAttribute('data-img');
-        //         document.getElementById('portfolio-img').src = newImage;
-        //     });
-        // });
         // Trading Portfolio Box Script (NEW)
         document.querySelectorAll('.new-trading-portfolio-box-btn').forEach(button => {
             button.addEventListener('click', function () {
@@ -722,6 +724,21 @@
             });
         });
         document.querySelector('.new-trading-portfolio-box').style.backgroundColor = '#FFA9C33D';
+
+        //Back to Top Script
+        let backToTopBtn = document.getElementById("backToTopBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+        backToTopBtn.onclick = function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        };
 
     </script>
 

@@ -1,4 +1,6 @@
-// SLIDER SCRIPT 
+//===========================================
+//---------------SLIDER SCRIPT---------------
+//===========================================
 
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
@@ -69,7 +71,9 @@ const initSlider = () => {
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
-// COUNTER SECTION SCRIPT
+//====================================================
+//---------------COUNTER SECTION SCRIPT---------------
+//====================================================
 
 const counterNum = document.querySelectorAll(".counter-numbers");
 
@@ -93,7 +97,9 @@ counterNum.forEach((curElem) => {
     updateNumber();
 });
 
-// CAROUSEL ANIMATION SCRIPT 
+//=======================================================
+//---------------CAROUSEL ANIMATION SCRIPT---------------
+//=======================================================
 
 const carousel = document.querySelector('#carouselExampleFade');
 
@@ -105,8 +111,9 @@ carousel.addEventListener('slid.bs.carousel', (event) => {
     // Custom actions or animations after the slide transition
 });
 
-
-// CAREER PAGE CARD SCRIPT
+//=====================================================
+//---------------CAREER PAGE CARD SCRIPT---------------
+//=====================================================
 
 function toggleContent(id) {
     const content = document.getElementById(id);
@@ -114,22 +121,23 @@ function toggleContent(id) {
     content.classList.toggle('content-visible');
 }
 
-// TRADING PORTFOLIO SECTION - HOME PAGE 
+//=====================================================
+//---------------------BACK TO TOP---------------------
+//=====================================================
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     document.querySelectorAll('.icon-trading-portfolio a').forEach(item => {
-//         item.addEventListener('click', function (e) {
-//             e.preventDefault(); // Prevent default link behavior
+// let backToTopBtn = document.getElementById("backToTopBtn");
 
-//             // Get the new image URLs from the data attributes
-//             const newImg1 = this.getAttribute('data-img1');
-//             const newImg2 = this.getAttribute('data-img2');
-//             const newImg3 = this.getAttribute('data-img3');
+// window.onscroll = function () { scrollFunction() };
 
-//             // Update the image sources
-//             document.getElementById('img1').src = newImg1;
-//             document.getElementById('img2').src = newImg2;
-//             document.getElementById('img3').src = newImg3;
-//         });
-//     });
-// });
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         backToTopBtn.style.display = "block";
+//     } else {
+//         backToTopBtn.style.display = "none";
+//     }
+// };
+
+// backToTopBtn.onclick = function () {
+//     document.body.scrollTop = 0; // For Safari
+//     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+// };

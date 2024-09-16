@@ -112,7 +112,8 @@
                 </div>
             </div>
             <div class="carousel-item carousel-item-custom-height">
-                <img src="assets/images/about-page/hero-section-img/about-hero-img-2.webp" class="d-block w-100" alt="...">
+                <img src="assets/images/about-page/hero-section-img/about-hero-img-2.webp" class="d-block w-100"
+                    alt="...">
                 <div class="carousel-caption text-center">
                     <h1>COMMODITIES AND FOOD PRODUCTS</h1>
                     <p>When it comes to petroleum and biofuel, we've got you covered. Our products are shipped
@@ -120,7 +121,8 @@
                 </div>
             </div>
             <div class="carousel-item carousel-item-custom-height">
-                <img src="assets/images/about-page/hero-section-img/about-hero-img-3.webp" class="d-block w-100" alt="...">
+                <img src="assets/images/about-page/hero-section-img/about-hero-img-3.webp" class="d-block w-100"
+                    alt="...">
                 <div class="carousel-caption text-center">
                     <h1>PETROLEUM AND BIO FUEL</h1>
                     <p>Are you looking for top-quality agriculture commodities and food products? Look no further!
@@ -174,8 +176,9 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <img src="assets/images/about-page/corporate-section-img/corporate-section-img.webp" alt="Corporate Image"
-                    class="img-fluid img-fluid-corporate bottom-0-right-0 banner-animation" loading="lazy">
+                <img src="assets/images/about-page/corporate-section-img/corporate-section-img.webp"
+                    alt="Corporate Image" class="img-fluid img-fluid-corporate bottom-0-right-0 banner-animation"
+                    loading="lazy">
             </div>
         </div>
         <!-- </div> -->
@@ -561,8 +564,32 @@
 
     </div>
 
+    <!-- Back to Top -->
+    <button id="backToTopBtn" title="Go to top">
+        <span class="material-symbols-outlined">
+            keyboard_arrow_up
+        </span>
+    </button>
+
     <script src="./assets/scripts/script.js"></script>
     <script src="./assets/scripts/about-page-tabination.js"></script>
+
+    <script>
+        //Back to Top Script
+        let backToTopBtn = document.getElementById("backToTopBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+        backToTopBtn.onclick = function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        };
+    </script>
 
 </body>
 
