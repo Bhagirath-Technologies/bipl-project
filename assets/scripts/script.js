@@ -146,42 +146,42 @@ function toggleContent(id) {
 //-----------FORM SUBMIT (Google Apps Script)-----------
 //======================================================
 
-let formContactUs = document.getElementById("contactForm");
-formContactUs.addEventListener('submit', (e) => {
-    e.preventDefault();
-    document.querySelector("#submitButtonContactUs").value = "Submitting...";
-    let data = new FormData(formContactUs);
-    // data.append('formType', 'Contact Us'); // Add formType to identify the form
-    fetch('', {
-        method: "POST",
-        body: data,
-    })
-        .then(res => res.text())
-        .then(data => {
-            document.querySelector("#submitButtonContactUs").value = "Your form has been submitted";
-            document.querySelector("#submitButtonContactUs").disabled = true;
-            // document.querySelector(".form-check-input").disabled = true;
-        })
-})
+// let formContactUs = document.getElementById("contactForm");
+// formContactUs.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     document.querySelector("#submitButtonContactUs").value = "Submitting...";
+//     let data = new FormData(formContactUs);
+//     // data.append('formType', 'Contact Us'); // Add formType to identify the form
+//     fetch('https://script.google.com/macros/s/AKfycbxxNdVWEo2QVaAymGzN6RuIio7HEOOqaa7BKBd5Q4pwi49YAPKZpaC4na0d-wZoNqSK/exec', {
+//         method: "POST",
+//         body: data,
+//     })
+//         .then(res => res.text())
+//         .then(data => {
+//             document.querySelector("#submitButtonContactUs").value = "Your form has been submitted";
+//             document.querySelector("#submitButtonContactUs").disabled = true;
+//             // document.querySelector(".form-check-input").disabled = true;
+//         })
+// })
 
 //==========================================
 //-----------JOB APPLICATION FORM-----------
 //==========================================
 
-let jobApplicationForm = document.getElementById("jobApplicationForm");
-jobApplicationForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    document.querySelector("#submitButtonJobApplicationForm").value = "Submitting...";
-    let data = new FormData(jobApplicationForm);
-    // data.append('formType', 'Job Application'); // Add formType to identify the form
-    fetch('CHANGE_THIS_WITH_WEB_APP_URL', {
-        method: "POST",
-        body: data,
-    })
-        .then(res => res.text())
-        .then(data => {
-            document.querySelector("#submitButtonJobApplicationForm").value = "Your application has been submitted";
-            document.querySelector("#submitButtonJobApplicationForm").disabled = true;
-            // document.querySelector(".form-check-input").disabled = true;
-        })
-})
+// let jobApplicationForm = document.getElementById("jobApplicationForm");
+// jobApplicationForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     document.querySelector("#submitButtonJobApplicationForm").value = "Submitting...";
+//     let data = new FormData(jobApplicationForm);
+//     // data.append('formType', 'Job Application'); // Add formType to identify the form
+//     fetch('CHANGE_THIS_WITH_WEB_APP_URL', {
+//         method: "POST",
+//         body: data,
+//     })
+//         .then(res => res.text())
+//         .then(data => {
+//             document.querySelector("#submitButtonJobApplicationForm").value = "Your application has been submitted";
+//             document.querySelector("#submitButtonJobApplicationForm").disabled = true;
+//             // document.querySelector(".form-check-input").disabled = true;
+//         })
+// })

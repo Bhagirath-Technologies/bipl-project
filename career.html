@@ -390,7 +390,8 @@
   <script src="./assets/scripts/script.js"></script>
 
   <script>
-    //Back to Top Script
+    // BACK TO TOP SCRIPT
+
     let backToTopBtn = document.getElementById("backToTopBtn");
     window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
@@ -404,6 +405,31 @@
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     };
+
+    // JOB APPLICATION FORM SCRIPT
+
+    let jobApplicationForm = document.getElementById("jobApplicationForm");
+    jobApplicationForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.querySelector("#submitButtonJobApplicationForm").value = "Submitting...";
+      let data = new FormData(jobApplicationForm);
+      // data.append('formType', 'Job Application'); // Add formType to identify the form
+      fetch('https://script.google.com/macros/s/AKfycbzgEr7ARLj3ZNNYs4T-xTDq3hx6uJR6OPUHQlsXR92l4pUMQ0eCBaf28CxLjja2PW7NJA/exec', {
+        method: "POST",
+        body: data,
+        // headers: { // REMOVE THIS IF ANY ISSUE ARISES
+        //   'Accept': 'application/json'
+        // }
+        // mode: 'no-cors', // REMOVE THIS IF ANY ISSUE ARISES
+      })
+        .then(res => res.text())
+        .then(data => {
+          document.querySelector("#submitButtonJobApplicationForm").value = "Your application has been submitted";
+          document.querySelector("#submitButtonJobApplicationForm").disabled = true;
+          // document.querySelector(".form-check-input").disabled = true;
+        })
+    })
+
   </script>
 
 </body>

@@ -351,7 +351,8 @@
   <script src="./assets/scripts/script.js"></script>
 
   <script>
-    //Back to Top Script
+    // BACK TO TOP SCRIPT
+
     let backToTopBtn = document.getElementById("backToTopBtn");
     window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
@@ -365,6 +366,26 @@
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     };
+
+    // CONTACT FORM SCRIPT
+
+    let formContactUs = document.getElementById("contactForm");
+    formContactUs.addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.querySelector("#submitButtonContactUs").value = "Submitting...";
+      let data = new FormData(formContactUs);
+      // data.append('formType', 'Contact Us'); // Add formType to identify the form
+      fetch('https://script.google.com/macros/s/AKfycbxxNdVWEo2QVaAymGzN6RuIio7HEOOqaa7BKBd5Q4pwi49YAPKZpaC4na0d-wZoNqSK/exec', {
+        method: "POST",
+        body: data,
+      })
+        .then(res => res.text())
+        .then(data => {
+          document.querySelector("#submitButtonContactUs").value = "Your form has been submitted";
+          document.querySelector("#submitButtonContactUs").disabled = true;
+          // document.querySelector(".form-check-input").disabled = true;
+        })
+    })
   </script>
 
 </body>
