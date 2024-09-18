@@ -373,6 +373,7 @@
     formContactUs.addEventListener('submit', (e) => {
       e.preventDefault();
       document.querySelector("#submitButtonContactUs").value = "Submitting...";
+      document.querySelector("#submitButtonContactUs").disabled = true;
       let data = new FormData(formContactUs);
       // data.append('formType', 'Contact Us'); // Add formType to identify the form
       fetch('https://script.google.com/macros/s/AKfycbxxNdVWEo2QVaAymGzN6RuIio7HEOOqaa7BKBd5Q4pwi49YAPKZpaC4na0d-wZoNqSK/exec', {
@@ -382,7 +383,7 @@
         .then(res => res.text())
         .then(data => {
           document.querySelector("#submitButtonContactUs").value = "Your form has been submitted";
-          document.querySelector("#submitButtonContactUs").disabled = true;
+          // document.querySelector("#submitButtonContactUs").disabled = true;
           // document.querySelector(".form-check-input").disabled = true;
         })
     })

@@ -163,14 +163,14 @@
           <select id="jobLocation" class="form-select bg-body-secondary">
             <option>Enter Job Location</option>
             <option>Bhopal</option>
-            <option>Bangalore</option>
-            <option>Indore</option>
+            <!-- <option>Bangalore</option> -->
+            <!-- <option>Indore</option> -->
             <option>Noida</option>
           </select>
         </div>
 
         <div class="col-12 col-md-1 mb-3 d-flex align-items-end mt-2 mb-2">
-          <button type="button" class="btn btn-orange btn-sm">Search</button>
+          <button type="button" class="btn btn-orange btn-sm job-search-btn">Search</button>
         </div>
 
       </div>
@@ -179,12 +179,14 @@
 
   <!-- JOB OPENINGS SECTION  -->
 
-  <section class="job-openings">
+  <section class="job-openings px-2 pb-5">
     <h2 class="text-center">Job Openings</h2>
     <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
-    <div class="container pt-3">
+    <div class="container pt-4">
       <div class="row">
-        <div class="col-md-4 mb-4 job-card">
+        <!-- <div class="col-md-4 mb-4 job-card"> -->
+        <div class="col-md-4 mb-4 job-card" data-title="Back-end Developer" data-location="Bhopal"
+          data-category="Developer">
           <div class="card-career border-secondary">
             <div class="card-header bg-transparent border-success">Node.js Developer</div>
             <hr class="card-line">
@@ -200,7 +202,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4 job-card">
+        <!-- <div class="col-md-4 mb-4 job-card"> -->
+        <div class="col-md-4 mb-4 job-card" data-title="Front-end Developer" data-location="Noida"
+          data-category="Developer">
           <div class="card-career border-secondary">
             <div class="card-header bg-transparent border-success">React Developer</div>
             <hr class="card-line">
@@ -216,7 +220,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4 job-card">
+        <!-- <div class="col-md-4 mb-4 job-card"> -->
+        <div class="col-md-4 mb-4 job-card" data-title="Content Writer" data-location="Bhopal" data-category="Writer">
           <div class="card-career border-secondary">
             <div class="card-header bg-transparent border-success">Content Writer</div>
             <hr class="card-line">
@@ -232,9 +237,161 @@
             </div>
           </div>
         </div>
+        <!-- <div class="col-md-4 mb-4 job-card" data-title="Front-end Developer" data-location="Bhopal"
+          data-category="Developer">
+          <div class="card-career border-secondary">
+            <div class="card-header bg-transparent border-success">Front-end Developer Lead</div>
+            <hr class="card-line">
+            <div class="card-body dark-blue-text">
+              <p><strong>Requirement Experience:</strong> 4 to 5 years</p>
+              <p><strong>Location:</strong> Gurgaon</p>
+              <p class="content-visible"><strong>Description:</strong></p>
+              <p id="content-hidden-2" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
+                et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
+                Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
+              <span class="read-more-btn" onclick="toggleContent('content-hidden-2')">Read more</span>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-md-4 mb-4 job-card" data-title="Content Writer" data-location="Noida" data-category="Writer">
+          <div class="card-career border-secondary">
+            <div class="card-header bg-transparent border-success">Junior Content Writer</div>
+            <hr class="card-line">
+            <div class="card-body dark-blue-text">
+              <p><strong>Requirement Experience:</strong> 0 to 1 year</p>
+              <p><strong>Location:</strong> Bhopal</p>
+              <p class="content-visible"><strong>Description:</strong></p>
+              <p id="content-hidden-3" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
+                et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
+                Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
+              <span class="read-more-btn" onclick="toggleContent('content-hidden-3')">Read more</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 job-card" data-title="Back-end Developer" data-location="Noida"
+          data-category="Developer">
+          <div class="card-career border-secondary">
+            <div class="card-header bg-transparent border-success">Java Developer</div>
+            <hr class="card-line">
+            <div class="card-body dark-blue-text">
+              <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
+              <p><strong>Location:</strong> Bhopal</p>
+              <p class="content-visible"><strong>Description:</strong></p>
+              <p id="content-hidden-1" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
+                et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
+                Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
+              <span class="read-more-btn" onclick="toggleContent('content-hidden-1')">Read more</span>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- "No jobs found" message -->
+      <p id="no-jobs-message" class="text-center" style="display: none;">Sorry, no jobs found matching your criteria.
+      </p>
     </div>
   </section>
+
+  <!-- SEARCH (OLD) -->
+
+  <!-- <section>
+      <div class="container career-top-form search-section d-flex flex-wrap p-4">
+        <div class="row w-100">
+          <div class="col-12 col-md-4 mb-3">
+            <label for="jobTitles" class="form-label">Job Titles</label>
+            <select id="jobTitles" class="form-select bg-body-secondary">
+              <option>Enter Job Titles</option>
+              <option>Front-end Developer</option>
+              <option>Back-end Developer</option>
+              <option>Content Writer</option>
+              <option>Account Management</option>
+            </select>
+          </div>
+  
+          <div class="col-12 col-md-4 mb-3">
+            <label for="category" class="form-label">Category</label>
+            <input type="text" id="category" class="form-control bg-body-secondary" placeholder="Enter Category">
+          </div>
+  
+          <div class="col-12 col-md-3 mb-3">
+            <label for="jobLocation" class="form-label">Location</label>
+            <select id="jobLocation" class="form-select bg-body-secondary">
+              <option>Enter Job Location</option>
+              <option>Bhopal</option>
+              <option>Bangalore</option>
+              <option>Indore</option>
+              <option>Noida</option>
+            </select>
+          </div>
+  
+          <div class="col-12 col-md-1 mb-3 d-flex align-items-end mt-2 mb-2">
+            <button type="button" class="btn btn-orange btn-sm">Search</button>
+          </div>
+  
+        </div>
+      </div>
+    </section> -->
+
+  <!-- JOB OPENINGS SECTION (OLD) -->
+
+  <!-- <section class="job-openings px-2 pb-5">
+      <h2 class="text-center">Job Openings</h2>
+      <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-md-4 mb-4 job-card">
+            <div class="card-career border-secondary">
+              <div class="card-header bg-transparent border-success">Node.js Developer</div>
+              <hr class="card-line">
+              <div class="card-body dark-blue-text">
+                <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
+                <p><strong>Location:</strong> Bhopal</p>
+                <p class="content-visible"><strong>Description:</strong></p>
+                <p id="content-hidden-1" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
+                  et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
+                  Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                  Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
+                <span class="read-more-btn" onclick="toggleContent('content-hidden-1')">Read more</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 job-card">
+            <div class="card-career border-secondary">
+              <div class="card-header bg-transparent border-success">React Developer</div>
+              <hr class="card-line">
+              <div class="card-body dark-blue-text">
+                <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
+                <p><strong>Location:</strong> Gurgaon</p>
+                <p class="content-visible"><strong>Description:</strong></p>
+                <p id="content-hidden-2" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
+                  et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
+                  Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                  Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
+                <span class="read-more-btn" onclick="toggleContent('content-hidden-2')">Read more</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 job-card">
+            <div class="card-career border-secondary">
+              <div class="card-header bg-transparent border-success">Content Writer</div>
+              <hr class="card-line">
+              <div class="card-body dark-blue-text">
+                <p><strong>Requirement Experience:</strong> 1 to 3 years</p>
+                <p><strong>Location:</strong> Bhopal</p>
+                <p class="content-visible"><strong>Description:</strong></p>
+                <p id="content-hidden-3" class="content-hidden">Donec quis vitae condimentum fringilla eleifend eu cras
+                  et amet. Eu non mi accumsan lacus enim. Nullam nam odio gravida nulla turpis tempor sit tristique.
+                  Eget luctus neque sapien accumsan dui ac mauris lobortis elit. Lorem ipsum dolor sit amet consectetur.
+                  Donec quis vitae condimentum fringilla eleifend eu cras et amet. Eu non mi accumsan lacus enim.</p>
+                <span class="read-more-btn" onclick="toggleContent('content-hidden-3')">Read more</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
   <!-- QUICK APPLY SECTION -->
 
@@ -406,29 +563,138 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     };
 
+    // JOB SEARCH SCRIPT
+
+    document.querySelector('.job-search-btn').addEventListener('click', function () {
+      // Get the selected values
+      const selectedTitle = document.getElementById('jobTitles').value.toLowerCase();
+      const selectedCategory = document.getElementById('category').value.toLowerCase();
+      const selectedLocation = document.getElementById('jobLocation').value.toLowerCase();
+
+      // Get all job cards
+      const jobCards = document.querySelectorAll('.job-card');
+      let jobFound = false;
+
+      jobCards.forEach(card => {
+        const jobTitle = card.getAttribute('data-title').toLowerCase();
+        const jobCategory = card.getAttribute('data-category').toLowerCase();
+        const jobLocation = card.getAttribute('data-location').toLowerCase();
+
+        // Check if card matches the selected filters
+        const matchesTitle = selectedTitle === "enter job titles" || jobTitle.includes(selectedTitle);
+        const matchesCategory = selectedCategory === "" || jobCategory.includes(selectedCategory);
+        const matchesLocation = selectedLocation === "enter job location" || jobLocation.includes(selectedLocation);
+
+        // Show or hide the card based on the filter
+        if (matchesTitle && matchesLocation) {
+          card.style.display = 'block';  // Show the card
+          jobFound = true;  // At least one job was found
+        } else {
+          card.style.display = 'none';  // Hide the card
+        }
+      });
+
+      // If no jobs were found, display the "no jobs found" message
+      const noJobsMessage = document.getElementById('no-jobs-message');
+      if (jobFound) {
+        noJobsMessage.style.display = 'none';  // Hide the message
+      } else {
+        noJobsMessage.style.display = 'block';  // Show the message
+      }
+    });
+
     // JOB APPLICATION FORM SCRIPT
 
     let jobApplicationForm = document.getElementById("jobApplicationForm");
-    jobApplicationForm.addEventListener('submit', (e) => {
+
+    jobApplicationForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       document.querySelector("#submitButtonJobApplicationForm").value = "Submitting...";
-      let data = new FormData(jobApplicationForm);
-      // data.append('formType', 'Job Application'); // Add formType to identify the form
+      document.querySelector("#submitButtonJobApplicationForm").disabled = true;
+
+      // Prepare form data
+      let formData = new FormData(jobApplicationForm);
+      let resumeFile = document.getElementById('resume').files[0];
+      let coverLetterFile = document.getElementById('cover-letter').files[0];
+
+      // Read files and convert them to base64
+      const resumeBase64 = await toBase64(resumeFile);
+      const coverLetterBase64 = await toBase64(coverLetterFile);
+
+      // Create an object with form data, including base64-encoded files
+      let data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        jobTitle: formData.get('jobTitle'),
+        jobLocation: formData.get('jobLocation'),
+        jobCategory: formData.get('jobCategory'),
+        resume: resumeBase64,
+        coverLetter: coverLetterBase64
+      };
+
+      // Send the form data as a POST request
       fetch('https://script.google.com/macros/s/AKfycbzgEr7ARLj3ZNNYs4T-xTDq3hx6uJR6OPUHQlsXR92l4pUMQ0eCBaf28CxLjja2PW7NJA/exec', {
         method: "POST",
-        body: data,
-        // headers: { // REMOVE THIS IF ANY ISSUE ARISES
-        //   'Accept': 'application/json'
-        // }
-        // mode: 'no-cors', // REMOVE THIS IF ANY ISSUE ARISES
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        // mode: 'cors'
       })
-        .then(res => res.text())
+        .then(response => response.text())
         .then(data => {
           document.querySelector("#submitButtonJobApplicationForm").value = "Your application has been submitted";
-          document.querySelector("#submitButtonJobApplicationForm").disabled = true;
-          // document.querySelector(".form-check-input").disabled = true;
+          console.log('Success:', data);
         })
-    })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('There was an error submitting your application. Please try again.');
+          document.querySelector("#submitButtonJobApplicationForm").value = "Submit Application";
+          document.querySelector("#submitButtonJobApplicationForm").disabled = false;
+        });
+    });
+
+    // Helper function to convert file to base64
+    function toBase64(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result.split(',')[1]);  // Get only base64 part
+        reader.onerror = error => reject(error);
+      });
+    }
+
+    // JOB APPLICATION FORM SCRIPT (backup 18 Sept 2024 2:30 PM)
+
+    // let jobApplicationForm = document.getElementById("jobApplicationForm");
+    // jobApplicationForm.addEventListener('submit', (e) => {
+    //   e.preventDefault();
+    //   document.querySelector("#submitButtonJobApplicationForm").value = "Submitting...";
+    //   document.querySelector("#submitButtonJobApplicationForm").disabled = true;
+
+    //   let data = new FormData(jobApplicationForm);
+
+    //   fetch('https://script.google.com/macros/s/AKfycbzgEr7ARLj3ZNNYs4T-xTDq3hx6uJR6OPUHQlsXR92l4pUMQ0eCBaf28CxLjja2PW7NJA/exec', {
+    //     method: "POST",
+    //     body: data,
+    //     mode: "no-cors",
+    //   })
+    //     .then(res => {
+    //       if (!res.ok) {
+    //         throw new Error('Network response was not ok: ' + res.statusText);
+    //       }
+    //       return res.text();
+    //     })
+    //     .then(data => {
+    //       document.querySelector("#submitButtonJobApplicationForm").value = "Your application has been submitted";
+    //     })
+    //     .catch(error => {
+    //       console.error('There was an error with your submission:', error);
+    //       alert('There was an error submitting your application. Please try again.');
+    //       document.querySelector("#submitButtonJobApplicationForm").value = "Submit Application";
+    //       document.querySelector("#submitButtonJobApplicationForm").disabled = false;
+    //     });
+    // });
 
   </script>
 
