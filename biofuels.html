@@ -247,7 +247,7 @@
             <div class="row equal-spacing">
                 <!-- frame 35 -->
                 <div class="col-md-3 mb-4">
-                    <img src="./assets/images/footer-section/footer-logo.png" alt="Company Logo"
+                    <img src="./assets/images/footer-section/footer-logo-2.webp" alt="Company Logo"
                         class="img-fluid-footer-logo">
                     <p class="text-light pt-3">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global
                         trade, a company that thrives on connecting the world through commerce.</p>
@@ -332,6 +332,24 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
         };
+
+        //This is the script that makes the navbar vanish when scrolling down on small screens
+        document.addEventListener('DOMContentLoaded', function () {
+            let lastScrollTop = 0;
+            const navbar = document.querySelector('.custom-navbar');
+            const isMobileView = window.matchMedia("(max-width: 767px)");
+            window.addEventListener('scroll', function () {
+                if (isMobileView.matches) { // Apply only on mobile screens
+                    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    if (currentScrollTop > lastScrollTop) {
+                        navbar.classList.add('navbar-hidden');
+                    } else {
+                        navbar.classList.remove('navbar-hidden');
+                    }
+                    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
+                }
+            });
+        });
     </script>
 
 </body>

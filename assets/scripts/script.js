@@ -9,6 +9,39 @@ const initSlider = () => {
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
+    // // Variables for dragging on desktop
+    // let isDragging = false;
+    // let startX;
+    // let scrollLeft;
+
+    // // Handle mouse down event for dragging
+    // imageList.addEventListener("mousedown", (e) => {
+    //     isDragging = true;
+    //     startX = e.pageX - imageList.offsetLeft;
+    //     scrollLeft = imageList.scrollLeft;
+    //     imageList.style.cursor = "grabbing";
+    // });
+
+    // // Handle mouse up and leave events to stop dragging
+    // imageList.addEventListener("mouseup", () => {
+    //     isDragging = false;
+    //     imageList.style.cursor = "grab";
+    // });
+
+    // imageList.addEventListener("mouseleave", () => {
+    //     isDragging = false;
+    //     imageList.style.cursor = "grab";
+    // });
+
+    // // Handle mouse move event to drag the images
+    // imageList.addEventListener("mousemove", (e) => {
+    //     if (!isDragging) return;
+    //     e.preventDefault();
+    //     const x = e.pageX - imageList.offsetLeft;
+    //     const walk = (x - startX) * 2; // Adjust scroll speed
+    //     imageList.scrollLeft = scrollLeft - walk;
+    // });
+
     // Handle scrollbar thumb drag
     scrollbarThumb.addEventListener("mousedown", (e) => {
         const startX = e.clientX;
@@ -104,11 +137,9 @@ counterNum.forEach((curElem) => {
 const carousel = document.querySelector('#carouselExampleFade');
 
 carousel.addEventListener('slide.bs.carousel', (event) => {
-    // Custom actions or animations before the slide transition
 });
 
 carousel.addEventListener('slid.bs.carousel', (event) => {
-    // Custom actions or animations after the slide transition
 });
 
 //=====================================================
@@ -122,66 +153,31 @@ function toggleContent(id) {
 }
 
 //=====================================================
-//---------------------BACK TO TOP---------------------
+//---------------NAVBAR SCROLLING SCRIPT---------------
 //=====================================================
 
-// let backToTopBtn = document.getElementById("backToTopBtn");
+// This is the script that makes the navbar vanish when a user scrolls down
 
-// window.onscroll = function () { scrollFunction() };
+// document.addEventListener('DOMContentLoaded', function () {
+//     let lastScrollTop = 0;
+//     const navbar = document.querySelector('.custom-navbar');
 
-// function scrollFunction() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//         backToTopBtn.style.display = "block";
-//     } else {
-//         backToTopBtn.style.display = "none";
-//     }
-// };
+//     // Detect if screen width is below 768px
+//     const isMobileView = window.matchMedia("(max-width: 767px)");
 
-// backToTopBtn.onclick = function () {
-//     document.body.scrollTop = 0; // For Safari
-//     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-// };
+//     window.addEventListener('scroll', function () {
+//         if (isMobileView.matches) { // Apply only on mobile screens
+//             let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-//======================================================
-//-----------FORM SUBMIT (Google Apps Script)-----------
-//======================================================
+//             if (currentScrollTop > lastScrollTop) {
+//                 // User is scrolling down, hide the navbar
+//                 navbar.classList.add('navbar-hidden');
+//             } else {
+//                 // User is scrolling up, show the navbar
+//                 navbar.classList.remove('navbar-hidden');
+//             }
 
-// let formContactUs = document.getElementById("contactForm");
-// formContactUs.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     document.querySelector("#submitButtonContactUs").value = "Submitting...";
-//     let data = new FormData(formContactUs);
-//     // data.append('formType', 'Contact Us'); // Add formType to identify the form
-//     fetch('https://script.google.com/macros/s/AKfycbxxNdVWEo2QVaAymGzN6RuIio7HEOOqaa7BKBd5Q4pwi49YAPKZpaC4na0d-wZoNqSK/exec', {
-//         method: "POST",
-//         body: data,
-//     })
-//         .then(res => res.text())
-//         .then(data => {
-//             document.querySelector("#submitButtonContactUs").value = "Your form has been submitted";
-//             document.querySelector("#submitButtonContactUs").disabled = true;
-//             // document.querySelector(".form-check-input").disabled = true;
-//         })
-// })
-
-//==========================================
-//-----------JOB APPLICATION FORM-----------
-//==========================================
-
-// let jobApplicationForm = document.getElementById("jobApplicationForm");
-// jobApplicationForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     document.querySelector("#submitButtonJobApplicationForm").value = "Submitting...";
-//     let data = new FormData(jobApplicationForm);
-//     // data.append('formType', 'Job Application'); // Add formType to identify the form
-//     fetch('CHANGE_THIS_WITH_WEB_APP_URL', {
-//         method: "POST",
-//         body: data,
-//     })
-//         .then(res => res.text())
-//         .then(data => {
-//             document.querySelector("#submitButtonJobApplicationForm").value = "Your application has been submitted";
-//             document.querySelector("#submitButtonJobApplicationForm").disabled = true;
-//             // document.querySelector(".form-check-input").disabled = true;
-//         })
-// })
+//             lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
+//         }
+//     });
+// });

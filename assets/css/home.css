@@ -132,23 +132,68 @@ body {
   z-index: 99;
 }
 
-a.dropdown-item.active,
+.navbar-toggler {
+  border: none !important;
+}
+
+.custom-toggler:focus,
+.custom-toggler.focus,
+.custom-toggler:active,
+.custom-toggler.active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* a.dropdown-item.active,
 a.dropdown-item:active,
 a.dropdown-item:focus {
   background-color: var(--color-orange);
   outline: none;
+} */
+
+a.dropdown-item {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+a.dropdown-item:hover {
+  color: var(--color-white) !important;
+  background-color: var(--color-orange);
 }
 
 .custom-navbar {
   /* overflow: hidden; */
-  color: rgba(255, 255, 255, 0.7);
+  /* color: rgba(255, 255, 255, 0.7); */
   background-color: var(--color-white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(4px);
-  /* border-radius: 50px 200px 50px 200px;  */
-  /* border-radius: 200px 50px; */
-  border-radius: 0px 50px 0px 50px;
-  margin: 20px 15px 0px 15px;
+  /* border-radius: 0px 50px 0px 50px; */
+  border-radius: 20px 100px 20px 100px;
+  /* margin: 20px 15px 0px 15px; */
+  margin: 20px 6px 0px 6px;
+
+  /* REMOVE IF NOT NEEDED */
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-hidden {
+  transform: translateY(-120%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-contact-us-button {
+  font-weight: 500 !important;
+  color: var(--color-white) !important;
+  background-color: var(--color-orange) !important;
+  border-color: transparent !important;
+  border-width: 1.4px !important;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar-contact-us-button:hover {
+  color: var(--color-orange) !important;
+  background-color: var(--color-white) !important;
+  border-color: var(--color-orange) !important;
 }
 
 .nav-item a {
@@ -161,6 +206,16 @@ a.dropdown-item:focus {
 
 .nav-link {
   position: relative;
+  transition: transform 0.2s ease, color 0.2s ease !important;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  color: var(--color-light-blue) !important;
+}
+
+.nav-item>.active {
+  color: var(--color-light-blue) !important;
 }
 
 /* .nav-link::after {
@@ -187,15 +242,23 @@ a.dropdown-item:focus {
     padding-right: 100px;
   } */
 
-  .navbar-collapse {
+  /* .navbar-collapse {
     text-align: center;
-  }
+  } */
 }
 
 @media (max-width:992px) {
   .custom-navbar {
-    border-radius: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    /* border-radius: 0px 0px 0px 0px; */
+    margin: 14px 0px 0px 0px;
+  }
+
+  .nav-link:hover {
+    transform: scale(1);
+  }
+
+  .navbar-contact-us-button {
+    margin-top: 8px;
   }
 }
 
@@ -316,6 +379,11 @@ a.dropdown-item:focus {
   height: 40vh;
 }
 
+.carousel-caption>h1 {
+  font-size: 2.6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
 .carousel-caption h2 {
   font-size: 28px;
   /* padding-right: 180px; */
@@ -323,10 +391,12 @@ a.dropdown-item:focus {
   /* text-align: center; */
 }
 
-.carousel-caption p {
-  font-size: 16px;
+.carousel-caption>p {
+  /* font-size: 16px; */
   /* padding-right: 180px; */
+  font-size: 1.2rem;
   font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .carousel-item.active .carousel-caption {
@@ -670,7 +740,9 @@ a.dropdown-item:focus {
   border: 2px solid var(--color-white-transparent);
   width: 8rem;
   height: 8rem;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+  /* background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%); */
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+
   display: inline-block;
   /* border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%; */
   border-radius: 50%;
@@ -788,8 +860,11 @@ a.dropdown-item:focus {
 }
 
 .box-services img {
-  width: 80px;
+  width: 40px;
   margin-bottom: 20px;
+
+  /* height: 38px; */
+  /* width: 38px; */
 }
 
 .box-services h2 {
@@ -820,11 +895,6 @@ a.dropdown-item:focus {
 /* .box-services {
   background-color: rgba(255, 224, 193, 1) !important;
 } */
-
-.box-services img {
-  height: 38px;
-  width: 38px;
-}
 
 .box-services h2 {
   text-align: justify;
@@ -972,26 +1042,31 @@ a.dropdown-item:focus {
 /* REACH OUT TO US SECTION */
 
 .reach-out {
-  /* height: 35vh; */
-  /* padding-top: 2rem; */
   background-image: cover;
   background-repeat: no-repeat;
-  background: linear-gradient(90deg, #B4D5FF 0%, #FFC183 49.93%, #FFE0C1 100%,
+
+  /* background: linear-gradient(90deg, #B4D5FF 0%, #FFC183 49.93%, #FFE0C1 100%,
+  rgba(180, 213, 255, 1) 0%,
+  rgba(255, 193, 131, 1) 49.93%,
+  rgba(255, 224, 193, 1) 100%), */
+
+  background: linear-gradient(90deg, #96c1f9 0%, #feb974 49.93%, #ffd3a6 100%,
       rgba(180, 213, 255, 1) 0%,
       rgba(255, 193, 131, 1) 49.93%,
       rgba(255, 224, 193, 1) 100%),
-    /* url(/assets/images/home-page-images/reach-out-to-us/image%2012.png); */
     url(../images/home-page-images/reach-out-to-us/reach-out-to-us-img.webp);
-  background-size: cover;
-  background-blend-mode: overlay;
-  background-attachment: fixed;
+
+  /* background: linear-gradient(90deg, rgba(151, 196, 255, 0.6) 0%, rgba(255, 193, 131, 0.6) 49.93%, rgba(255, 224, 193, 0.6) 100%), url(../images/home-page-images/reach-out-to-us/reach-out-to-us-img.webp); */
+
+  /* background-blend-mode: overlay; */
+  background-blend-mode: screen;
+
+  /* background-attachment: fixed; */
   position: relative;
   transition: all 0.7s linear;
-  background-repeat: no-repeat;
   background-attachment: scroll;
   /* background-position: top center; */
   background-size: cover;
-  /* height: 108%; */
 }
 
 .reach-out p {
@@ -1063,6 +1138,10 @@ a.dropdown-item:focus {
 
 .footer-p-content {
   margin-top: 2rem;
+}
+
+.copyright-text {
+  font-size: 0.9rem;
 }
 
 /* RESPONSIVE */
@@ -1238,8 +1317,9 @@ a.dropdown-item:focus {
   }
 
   .card-img-top {
-    width: 100vh;
-    height: 80vh;
+    /* width: 100vh; */
+    width: 100% !important;
+    height: 80vh !important;
   }
 
   .carousel-caption {
