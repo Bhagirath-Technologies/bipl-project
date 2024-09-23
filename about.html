@@ -24,6 +24,8 @@
     <!-- Google Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -368,9 +370,9 @@
         </div>
     </div>
 
-    <!-- STRATEGIC FRAMEWORK SECTION -->
+    <!-- STRATEGIC FRAMEWORK SECTION (OLD) -->
 
-    <section class="strategic-framework py-5">
+    <!-- <section class="strategic-framework py-5">
         <div class="container">
             <div class="top-strategic-content text-center">
                 <h2>Strategic Framework</h2>
@@ -407,6 +409,56 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section> -->
+
+    <!-- STRATEGIC FRAMEWORK SECTION (NEW) -->
+
+    <section class="strategic-framework py-5">
+        <div class="container">
+            <div class="top-strategic-content text-center">
+                <h2>Strategic Framework</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
+            </div>
+            <div class="container row pt-3">
+                <div class="col-md-4 order-md-2 align-items-center text-center">
+                    <img src="assets/images/about-page/strategic-framework/strategic-framework-img.webp"
+                        alt="Strategic Framework Image" class="img-fluid img-fluid-stratagic banner-animation"
+                        loading="lazy">
+                </div>
+                <div class="col-md-7 order-md-1">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper pb-3">
+                            <div class="swiper-slide">
+                                <h6>OUR GLOBAL AIM</h6>
+                                <p>Reinterpret global agriculture and food systems to provide food, feed, and fiber
+                                    that's better for farmers, communities, and the environment. We aim to create
+                                    sustainable systems that support healthier ecosystems and communities while
+                                    improving global agricultural practices overall.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h6>OUR AIM FOR INDIA</h6>
+                                <p>Reinterpret and implement agriculture systems that make India self-sufficient,
+                                    minimizing reliance on edible and essential oil imports while promoting economic
+                                    sustainability. Our focus is on building a strong value chain for byproducts,
+                                    supporting industries, and enhancing overall food and agricultural resilience.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h6>OUR COMPETITIVE ADVANTAGE</h6>
+                                <p>Our people are our greatest competitive advantage. They shape our future by
+                                    transforming our culture into a powerful force driving business growth globally.
+                                    Across products, regions, and functions, this shared philosophy strengthens our
+                                    capabilities, empowering us to create innovative solutions everywhere we serve.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
         </div>
     </section>
 
@@ -575,6 +627,9 @@
         </span>
     </button>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./assets/scripts/script.js"></script>
     <script src="./assets/scripts/about-page-tabination.js"></script>
 
@@ -610,6 +665,27 @@
                     lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
                 }
             });
+        });
+
+        //Swiper script
+        var swiper = new Swiper(".mySwiper", {
+            // autoHeight: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // breakpoints: {
+            //     768: {
+            //         slidesPerView: 2,
+            //         spaceBetween: 20,
+            //     },
+            // },
         });
     </script>
 

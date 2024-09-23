@@ -23,6 +23,8 @@
     <!-- Google Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -159,8 +161,8 @@
                             <img src="assets/images/icons/icon1.png" alt="">
                         </div>
                         <div class="col-8">
-                            <h4 class="card-title text-light">INTERNATIONAL TRADE</h4>
-                            <p class="card-text text-light">When it comes to international trade, Our experience in
+                            <h4 class="card-title text-light">International Trade</h4>
+                            <p class="text-light">When it comes to international trade, Our experience in
                                 connecting businesses worldwide ensures smooth and efficient transactions. Whether
                                 you're
                                 importing or exporting, we make it simple.</p>
@@ -174,7 +176,7 @@
                         </div>
                         <div class="col-8">
                             <h4 class="card-title text-light">100% Certified</h4>
-                            <p class="card-text text-light">Quality and authenticity are our priorities. Rest easy
+                            <p class="text-light">Quality and authenticity are our priorities. Rest easy
                                 knowing
                                 that our products are 100% certified, meeting the highest standards and regulations.
                                 Your
@@ -189,7 +191,7 @@
                         </div>
                         <div class="col-8">
                             <h4 class="card-title text-light">International Transport and Logistics</h4>
-                            <p class="card-text text-light">We specialize in seamless international transport and
+                            <p class="text-light">We specialize in seamless international transport and
                                 logistics,
                                 ensuring your cargo reaches its destination effortlessly. Your goods, our commitment..
                             </p>
@@ -201,7 +203,7 @@
 
         <!-- CARDS END HERE -->
 
-        <div class="container pt-3">
+        <div class="container pt-3 pb-4">
             <div class="row about-card-content">
                 <div class="col-12 p-content-container mb-3">
                     <div class="box-about">
@@ -302,9 +304,9 @@
                     partnership, ensuring your peace of mind.</p>
             </div>
 
-            <!-- COUNTER -->
+            <!-- COUNTER (OLD) -->
 
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row text-center justify-content-around">
                     <div class="col-lg-3 col-md-6 col-sm-6 box-our-skill">
                         <div class="skill-icon">
@@ -346,7 +348,54 @@
                         <h2 class="skill-counting-content">Communication</h2>
                     </div>
                 </div>
+            </div> -->
+
+            <!-- COUNTER (NEW) -->
+
+            <div class="container">
+                <div class="row text-center justify-content-around">
+                    <div class="col-md-3 box-our-skill">
+                        <div class="skill-icon">
+                            <div class="circle">
+                                <img src="assets/images/home-page-images/our-skills-icon/image%205.png" alt="">
+                            </div>
+                            <h2 data-number="100%" class="counter-numbers">0+</h2>
+                        </div>
+                        <h2 class="skill-counting-content">On Time Delivery</h2>
+                    </div>
+
+                    <div class="col-md-3 box-our-skill">
+                        <div class="skill-icon">
+                            <div class="circle">
+                                <img src="assets/images/home-page-images/our-skills-icon/image%206.png" alt="">
+                            </div>
+                            <h2 data-number="98%" class="counter-numbers">0+</h2>
+                        </div>
+                        <h2 class="skill-counting-content">Success Rate</h2>
+                    </div>
+
+                    <div class="col-md-3 box-our-skill">
+                        <div class="skill-icon">
+                            <div class="circle">
+                                <img src="assets/images/home-page-images/our-skills-icon/image%207.png" alt="">
+                            </div>
+                            <h2 data-number="87%" class="counter-numbers">0+</h2>
+                        </div>
+                        <h2 class="skill-counting-content">Availability of Good</h2>
+                    </div>
+
+                    <div class="col-md-3 box-our-skill">
+                        <div class="skill-icon">
+                            <div class="circle">
+                                <img src="assets/images/home-page-images/our-skills-icon/image%208.png" alt="">
+                            </div>
+                            <h2 data-number="89%" class="counter-numbers">0+</h2>
+                        </div>
+                        <h2 class="skill-counting-content">Communication</h2>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -365,7 +414,7 @@
 
     <!-- OUR SERVICES SECTION -->
 
-    <section class="our-services pt-5">
+    <!-- <section class="our-services pt-5">
         <div class="container">
             <div class="our-services-content text-center">
                 <h2>OUR SERVICES</h2>
@@ -437,6 +486,93 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <!-- OUR SERVICES SECTION (SWIPER) -->
+
+    <section class="our-services pt-5">
+        <div class="container">
+            <div class="our-services-content text-center">
+                <h2>OUR SERVICES</h2>
+                <p>At Bhagirath BVM Grand, we're here to cater to your every need. Our range of services is designed to
+                    make your life easier and more efficient. Here's what we offer</p>
+            </div>
+
+            <div class="swiper mySwiper pb-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="box-services h-100">
+                            <div class="box-services-img text-start">
+                                <img src="assets/images/our-services-icon-img/Vector.png" alt="Global Sourcing">
+                            </div>
+                            <h2>Global Sourcing</h2>
+                            <p>We're your reliable source for a wide range of products sourced from around the world.
+                                Count
+                                on us to find the finest products that meet your specifications.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-services h-100">
+                            <div class="box-services-img text-start">
+                                <img src="assets/images/our-services-icon-img/Vector (1).png"
+                                    alt="Logistics and Shipping">
+                            </div>
+                            <h2>Logistics and Shipping</h2>
+                            <p>From cargo handling to global shipping solutions, we streamline the logistics process.
+                                Your
+                                products will reach their destination safely and on time.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-services h-100">
+                            <div class="box-services-img text-start">
+                                <img src="assets/images/our-services-icon-img/Vector (2).png" alt="Quality Assurance">
+                            </div>
+                            <h2>Quality Assurance</h2>
+                            <p>Quality is our hallmark. We rigorously inspect and verify products to ensure they meet
+                                the
+                                highest standards, so you can have complete confidence in what you receive.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-services h-100">
+                            <div class="box-services-img text-start">
+                                <img src="assets/images/our-services-icon-img/Vector (3).png"
+                                    alt="Customized Solutions">
+                            </div>
+                            <h2>Customized Solutions</h2>
+                            <p>We understand that one size doesn't fit all. Our team tailors solutions to meet your
+                                specific
+                                needs, ensuring a seamless and efficient experience.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-services h-100">
+                            <div class="box-services-img text-start">
+                                <img src="assets/images/our-services-icon-img/Vector (4).png"
+                                    alt="Global Market Access">
+                            </div>
+                            <h2>Global Market Access</h2>
+                            <p>Whether you're a manufacturer looking to export or a business aiming to import, we open
+                                doors
+                                to global markets, expanding your reach and opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box-services h-100">
+                            <div class="box-services-img text-start">
+                                <img src="assets/images/our-services-icon-img/Vector (5).png" alt="Customer Support">
+                            </div>
+                            <h2>Customer Support</h2>
+                            <p>Our commitment doesn't end with a transaction. We provide exceptional customer support,
+                                ensuring your satisfaction and addressing your queries and concerns promptly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
     </section>
 
     <!-- TRADING PORTFOLIO SECTION (NEW) -->
@@ -494,30 +630,44 @@
 
     <!-- REACH OUT TO US -->
 
-    <section class="reach-out">
+    <!-- <section class="reach-out">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8 text-justify">
                     <h2 class="">Reach out to us</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. Magna blandit proin ut bibendum pharetra vulputate.
+                    <p>Lorem ipsum dolor sit amet consectetur. Magna blandit proin ut bibendum pharetra vulputate.
                         Ipsum fringilla scelerisque nec eu. Odio euismod ultricies nibh amet eu dignissim morbi magnis.
                         Pellentesque lacus odio ullamcorper at mauris facilisi orci libero quam. Tellus a mauris
                         ultrices ligula. Lorem ipsum dolor sit amet consectetur. Magna blandit proin ut bibendum
                         pharetra vulputate.
                     </p>
-                    <!-- <button class="btn-reach py-2 px-4">Contact Us</button> -->
                     <a href="./contact-us.html">
                         <button class="btn-reach py-2 px-4">Contact Us</button>
                     </a>
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="reach-out py-5 px-5">
+        <div class="container justify-content-center text-justify">
+            <h2>Reach out to us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Magna blandit proin ut bibendum pharetra vulputate.
+                Ipsum fringilla scelerisque nec eu. Odio euismod ultricies nibh amet eu dignissim morbi magnis.
+                Pellentesque lacus odio ullamcorper at mauris facilisi orci libero quam. Tellus a mauris
+                ultrices ligula. Lorem ipsum dolor sit amet consectetur. Magna blandit proin ut bibendum
+                pharetra vulputate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sunt 
+                maiores ullam et autem architecto consequatur commodi consectetur sit. Beatae.
+            </p>
+            <a href="./contact-us.html">
+                <button class="btn-reach py-2 px-3">Contact Us</button>
+            </a>
+        </div>
     </section>
 
     <!-- FOOTER -->
 
-    <section class="footer py-3">
+    <section class="footer pt-3 pb-1">
         <div class="container">
             <div class="row equal-spacing">
                 <!-- frame 35 -->
@@ -530,23 +680,29 @@
                         trade, a company that thrives on connecting the world through commerce.</p>
                 </div>
                 <!-- frame 40 -->
-                <div class="col-md-3 mb-4 text-light pt-3 pt-md-5">
+                <div class="col-md-3 mb-4 text-light pt-3 pt-md-5 ps-lg-5">
                     <h3>Useful Links</h3>
-                    <div class="arrow ps-lg-3">
-                        <a class="text-light" href="./index.html">Home<img
-                                src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-                        <a class="text-light" href="./about.html">About Us<img
-                                src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-                        <a class="text-light" href="./our-services.html">Our Services<img
-                                src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
+                    <!-- <div class="arrow ps-lg-3"> -->
+                    <div class="arrow">
+                        <a class="text-light" href="./index.html">Home <img
+                                src="assets/images/footer-section/Arrow 1.png" alt="Arrow"
+                                class="float-md-end pt-md-2 pe-lg-4"></a><br>
+                        <a class="text-light" href="./about.html">About Us <img
+                                src="assets/images/footer-section/Arrow 1.png" alt="Arrow"
+                                class="float-md-end pt-md-2 pe-lg-4"></a><br>
+                        <a class="text-light" href="./our-services.html">Our Services <img
+                                src="assets/images/footer-section/Arrow 1.png" alt="Arrow"
+                                class="float-md-end pt-md-2 pe-lg-4"></a><br>
                         <a class="text-light" href="#">Terms of Services <img
-                                src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
+                                src="assets/images/footer-section/Arrow 1.png" alt="Arrow"
+                                class="float-md-end pt-md-2 pe-lg-4"></a><br>
                         <a class="text-light" href="#">Privacy Policy <img
-                                src="assets/images/footer-section/Arrow 1.png" alt=""></a>
+                                src="assets/images/footer-section/Arrow 1.png" alt="Arrow"
+                                class="float-md-end pt-md-2 pe-lg-4"></a>
                     </div>
                 </div>
                 <!-- frame 39 -->
-                <div class="col-md-3 mb-4 text-light pt-3 pt-md-5">
+                <div class="col-md-3 mb-4 text-light pt-3 pt-md-5 pe-lg-5">
                     <h3>Contact Us</h3>
                     <p class="pt-3">Address - Room TA07, 6th Floor Woon Lee, Commercial Building No. 7-9 Austin Avenue
                         Tsim Sha Tsui, Kowloon (HK)</p>
@@ -559,13 +715,6 @@
                         <br>
                         <img src="assets/images/footer-section/Vector (11).png" alt=""> +852 39195837
                     </div>
-                    <!-- <div class="frame-35-icon pt-3">
-                        <img src="assets/images/footer-section/Vector (6).png" alt="icon">
-                        <img src="assets/images/footer-section/Vector (7).png" alt="icon">
-                        <img src="assets/images/footer-section/Group (3).png" alt="icon">
-                        <img src="assets/images/footer-section/Vector (9).png" alt="icon">
-                        <img src="assets/images/footer-section/pajamas_twitter.png" alt="icon">
-                    </div> -->
                     <div class="footer-icon-container">
                         <a class="social-icon" href="https://www.facebook.com/" target="_blank"
                             rel="noopener noreferrer">
@@ -588,9 +737,8 @@
             </div>
             <hr class="hr-line text-white">
             <div class="footer-p-content text-white">
-                <p class="text-md-center copyright-text">Copyright Bhagirath BVM Grand (HK) Limited. All Rights
-                    Reserved. Designed & maintained by Bhagirath
-                    Technologies</p>
+                <p class="text-md-center copyright-text">© Copyright Bhagirath BVM Grand (HK) Limited. All Rights
+                    Reserved.</p>
             </div>
         </div>
     </section>
@@ -604,8 +752,13 @@
 
     <script src="./assets/scripts/script.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-        // Trading Portfolio Box Script (NEW)
+
+        // TRADING PORTFOLIO BOX SCRIPT (NEW)
+
         document.querySelectorAll('.new-trading-portfolio-box-btn').forEach(button => {
             button.addEventListener('click', function () {
                 const newImage = this.getAttribute('data-img');
@@ -630,7 +783,8 @@
         });
         document.querySelector('.new-trading-portfolio-box').style.backgroundColor = '#FFA9C33D';
 
-        //Back to Top Script
+        //BACK TO TOP SCRIPT
+
         let backToTopBtn = document.getElementById("backToTopBtn");
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
@@ -645,7 +799,8 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
         };
 
-        //This is the script that makes the navbar vanish when scrolling down on small screens
+        //THIS IS THE SCRIPT THAT MAKES THE NAVBAR VANISH WHEN SCROLLING DOWN ON SMALL SCREENS
+
         document.addEventListener('DOMContentLoaded', function () {
             let lastScrollTop = 0;
             const navbar = document.querySelector('.custom-navbar');
@@ -663,28 +818,33 @@
             });
         });
 
-    </script>
+        //SWIPER SCRIPT
 
-    <!-- <script>
-        const dropdownToggle = document.querySelectorAll('.dropdown-toggle');
-        const dropdownMenu = document.querySelectorAll('.dropdown-menu');
-      
-        dropdownToggle.forEach((toggle) => {
-          toggle.addEventListener('click', (e) => {
-            e.preventDefault();
-            const dropdown = toggle.nextElementSibling;
-            dropdown.classList.toggle('show');
-          });
+        var swiper = new Swiper(".mySwiper", {
+            // autoHeight: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
         });
-        document.addEventListener('click', (e) => {
-          const target = e.target;
-          if (!target.classList.contains('dropdown-toggle') && !target.classList.contains('dropdown-menu')) {
-            dropdownMenu.forEach((menu) => {
-              menu.classList.remove('show');
-            });
-          }
-        });
-    </script>  -->
+
+    </script>
 
 </body>
 

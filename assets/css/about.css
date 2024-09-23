@@ -146,6 +146,21 @@
 
 /* STRATEGIC FRAMEWORK SECTION  */
 
+@keyframes waveAnim {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(15px, 0px);
+  }
+}
+
+.banner-animation {
+  /* width: 34vw; */
+  animation: waveAnim 2s linear infinite alternate;
+}
+
 .strategic-framework {
     background-color: var(--color-light-peach);
     /* background: rgba(255, 224, 193, 1); */
@@ -166,10 +181,10 @@
     }
 } */
 
-.img-fluid-stratagic {
+/* .img-fluid-stratagic {
     max-width: 100%;
     height: auto;
-}
+} */
 
 .strategic-content h6 {
     font-weight: bold;
@@ -250,10 +265,10 @@
         padding-right: 30px;
     } */
 
-    .img-fluid-stratagic {
+    /* .img-fluid-stratagic {
         height: 500px;
         width: 500px;
-    }
+    } */
 
     /* .strategic-framework {
         transform: translateY(-358px);
