@@ -16,9 +16,9 @@
 }
 
 .corporate-profile p {
-    font-size: 14px;
-    font-weight: 300;
-    padding-top: 20px;
+    /* font-size: 14px; */
+    /* font-weight: 300; */
+    /* padding-top: 20px; */
     text-align: justify;
 }
 
@@ -140,10 +140,6 @@
     /* margin-bottom: 0.5rem; */
 }
 
-.card-text-leader {
-    font-size: 1rem;
-}
-
 /* STRATEGIC FRAMEWORK SECTION  */
 
 @keyframes waveAnim {
@@ -152,14 +148,65 @@
     }
 
     100% {
-        transform: translate(15px, 0px);
+        transform: translate(20px, 0px);
     }
 }
 
 .banner-animation {
     /* width: 34vw; */
-    animation: waveAnim 2s linear infinite alternate;
+    /* animation: waveAnim 2s linear infinite alternate; */
+    width: 100%;
+
+    /* ADDED LATER */
+    position: relative;
+    display: block;
 }
+
+.tractor {
+    position: absolute;
+    width: 30%;
+    /* Adjust width based on your image size */
+}
+
+.tractor-1 {
+    /* bottom: 65px; */
+    /* right: 75px; */
+    bottom: 30%;
+    right: 25%;
+    animation: waveAnim 2.5s linear infinite alternate;
+}
+
+.tractor-2 {
+    /* top: 50px; */
+    /* left: 45px; */
+    top: 22%;
+    left: 15%;
+    animation: waveAnim 3.5s linear infinite alternate;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .tractor-1 {
+        bottom: 60%;
+        right: 25%;
+    }
+
+    .tractor-2 {
+        top: 12%;
+        left: 15%;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .tractor-1 {
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .tractor-2 {
+        top: 5px;
+        left: 5px;
+    }
+} */
 
 .strategic-framework {
     background-color: var(--color-light-peach);
@@ -290,7 +337,7 @@
 
 .BIPL {
     /* padding: 12px 24px 12px 24px; */
-    background-color: var(--color-orange);
+    background-color: var(--color-yellow);
     box-shadow: 2px 2px 2px #00000030;
     border-radius: 12px;
     border: none;

@@ -49,6 +49,8 @@
     --color-gray: #3D3D3D;
     --color-blue-about-our: rgba(8, 52, 108, 1);
     --color-orange: rgba(255, 165, 35, 1);
+    --color-yellow: #FFD154;
+    ;
     --color-white-carerbackground: rgba(255, 255, 255, 1);
 
     --color-light-gray: #ccc;
@@ -1555,7 +1557,17 @@ h6 {
         font-size: 1.75rem;
     }
 
-    p {
+    /* p {
+        font-size: 1.2rem !important;
+    } */
+}
+
+.regular-font {
+    font-size: 1rem !important;
+}
+
+@media (min-width: 1400px) {
+    .regular-font {
         font-size: 1.2rem !important;
     }
 }

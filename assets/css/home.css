@@ -145,6 +145,11 @@ a.dropdown-item:hover {
   background-color: var(--color-orange);
 }
 
+a.dropdown-item.active {
+  color: var(--color-white) !important;
+  background-color: var(--color-orange)
+}
+
 .custom-navbar {
   /* overflow: hidden; */
   /* color: rgba(255, 255, 255, 0.7); */
@@ -1034,31 +1039,19 @@ a.dropdown-item:hover {
 /* REACH OUT TO US SECTION */
 
 .reach-out {
-  background-image: cover;
   background-repeat: no-repeat;
+  position: relative;
+  /* transition: all 0.7s linear; */
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/home-page-images/reach-out-to-us/reach-out-to-us-img-1.webp); /* Use background-image property */
 
-  /* background: linear-gradient(90deg, #B4D5FF 0%, #FFC183 49.93%, #FFE0C1 100%,
-  rgba(180, 213, 255, 1) 0%,
-  rgba(255, 193, 131, 1) 49.93%,
-  rgba(255, 224, 193, 1) 100%), */
-
-  background: linear-gradient(90deg, #96c1f9 0%, #feb974 49.93%, #ffd3a6 100%,
+  /* background: linear-gradient(90deg, #96c1f9 0%, #feb974 49.93%, #ffd3a6 100%,
       rgba(180, 213, 255, 1) 0%,
       rgba(255, 193, 131, 1) 49.93%,
       rgba(255, 224, 193, 1) 100%),
-    url(../images/home-page-images/reach-out-to-us/reach-out-to-us-img.webp);
-
-  /* background: linear-gradient(90deg, rgba(151, 196, 255, 0.6) 0%, rgba(255, 193, 131, 0.6) 49.93%, rgba(255, 224, 193, 0.6) 100%), url(../images/home-page-images/reach-out-to-us/reach-out-to-us-img.webp); */
-
-  /* background-blend-mode: overlay; */
-  background-blend-mode: screen;
-
-  /* background-attachment: fixed; */
-  position: relative;
-  transition: all 0.7s linear;
-  background-attachment: scroll;
-  /* background-position: top center; */
-  background-size: cover;
+    url(../images/home-page-images/reach-out-to-us/reach-out-to-us-img.webp); */
 }
 
 .reach-out p {
