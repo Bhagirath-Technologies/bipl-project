@@ -46,6 +46,7 @@
     --color-black: #000000;
     --color-white: white;
     --color-dark-gray: #000;
+    --color-gray: #3D3D3D;
     --color-blue-about-our: rgba(8, 52, 108, 1);
     --color-orange: rgba(255, 165, 35, 1);
     --color-white-carerbackground: rgba(255, 255, 255, 1);
@@ -54,6 +55,7 @@
     --color-white-radial-gradient: radial-gradient(circle, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
     --color-trading: rgba(0, 0, 0, 0.2);
     --color-aboutback-corporate: rgba(180, 213, 255, 1);
+    --color-faq-background: #D5DEF54D;
 
     --h1-font-size: 2.5rem;
     --h1-font-weight: 700;
@@ -1650,6 +1652,10 @@ h6 {
 
 .dark-blue-text {
     color: var(--color-blue-about-our) !important;
+}
+
+.gray-text {
+    color: var(--color-gray);
 }
 
 .red-bg {

@@ -147,18 +147,18 @@
 /* STRATEGIC FRAMEWORK SECTION  */
 
 @keyframes waveAnim {
-  0% {
-    transform: translate(0, 0);
-  }
+    0% {
+        transform: translate(0, 0);
+    }
 
-  100% {
-    transform: translate(15px, 0px);
-  }
+    100% {
+        transform: translate(15px, 0px);
+    }
 }
 
 .banner-animation {
-  /* width: 34vw; */
-  animation: waveAnim 2s linear infinite alternate;
+    /* width: 34vw; */
+    animation: waveAnim 2s linear infinite alternate;
 }
 
 .strategic-framework {
@@ -295,6 +295,44 @@
     border-radius: 12px;
     border: none;
     /* padding-bottom: 20px; */
+}
+
+/* FAQ SECTION */
+
+@media (max-width: 768px) {
+    .faq-con-img {
+        flex-direction: column;
+    }
+
+    .faq-img {
+        text-align: center;
+    }
+}
+
+.faq-container {
+    background-color: var(--color-faq-background);
+}
+
+.faq-tab {
+    background-color: transparent !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1.4px solid var(--color-black) !important;
+    border-radius: 0px !important;
+}
+
+.accordion-button {
+    background-color: transparent !important;
+}
+
+.accordion-button:focus,
+.accordion-button.focus,
+.accordion-button:active,
+.accordion-button.active {
+    outline: none !important;
+    box-shadow: none !important;
+    color: var(--color-black) !important;
 }
 
 /* EXTRAS */
