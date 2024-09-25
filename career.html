@@ -203,7 +203,8 @@
           </div>
         </div>
         <!-- <div class="col-md-4 mb-4 job-card"> -->
-        <div class="col-md-4 mb-4 job-card regular-font" data-title="Content Writer" data-location="Bhopal" data-category="Writer">
+        <div class="col-md-4 mb-4 job-card regular-font" data-title="Content Writer" data-location="Bhopal"
+          data-category="Writer">
           <div class="card-career border-secondary">
             <div class="card-header bg-transparent border-success">Content Writer</div>
             <hr class="card-line">
@@ -219,7 +220,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4 job-card regular-font" data-title="Content Writer" data-location="Noida" data-category="Writer">
+        <div class="col-md-4 mb-4 job-card regular-font" data-title="Content Writer" data-location="Noida"
+          data-category="Writer">
           <div class="card-career border-secondary">
             <div class="card-header bg-transparent border-success">Junior Content Writer</div>
             <hr class="card-line">
@@ -324,40 +326,45 @@
     </div>
   </div>
 
-
   <!-- FOOTER -->
 
-  <section class="footer">
+  <section class="footer pt-3 pb-1">
     <div class="container">
       <div class="row equal-spacing">
         <!-- frame 35 -->
         <div class="col-md-3 mb-4">
           <!-- <img src="/assets/images/footer-section/Logo-03 1.png" alt="Company Logo"
-                      class="img-fluid-footer-logo"> -->
-          <img src="./assets/images/footer-section/footer-logo-2.webp" alt="Company Logo" class="img-fluid-footer-logo">
-          <p class="text-light pt-3">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global
+                  class="img-fluid-footer-logo"> -->
+          <img src="./assets/images/footer-section/footer-logo-2.webp" alt="Company Logo"
+            class="img-fluid img-fluid-footer-logo">
+          <p class="text-light pt-2">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global
             trade, a company that thrives on connecting the world through commerce.</p>
         </div>
         <!-- frame 40 -->
-        <div class="col-md-3 mb-4 text-light pt-5">
+        <div class="col-md-3 mb-4 text-light pt-3 pt-md-5 ps-lg-5">
           <h3>Useful Links</h3>
+          <!-- <div class="arrow ps-lg-3"> -->
           <div class="arrow">
-            <a href="./index.html">Home<img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-            <a href="./about.html">About Us<img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-            <a href="./our-services.html">Our Services<img src="assets/images/footer-section/Arrow 1.png"
-                alt=""></a><br>
-            <a href="#">Terms of Services <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-            <a href="#">Privacy Policy <img src="assets/images/footer-section/Arrow 1.png" alt=""></a>
+            <a class="text-light" href="./index.html">Home <img src="assets/images/footer-section/Arrow 1.png"
+                alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a><br>
+            <a class="text-light" href="./about.html">About Us <img src="assets/images/footer-section/Arrow 1.png"
+                alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a><br>
+            <a class="text-light" href="./our-services.html">Our Services <img
+                src="assets/images/footer-section/Arrow 1.png" alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a><br>
+            <a class="text-light" href="#">Terms of Services <img src="assets/images/footer-section/Arrow 1.png"
+                alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a><br>
+            <a class="text-light" href="#">Privacy Policy <img src="assets/images/footer-section/Arrow 1.png"
+                alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a>
           </div>
         </div>
         <!-- frame 39 -->
-        <div class="col-md-3 mb-4 text-white pt-5">
+        <div class="col-md-3 mb-4 text-light pt-3 pt-md-5 pe-lg-5">
           <h3>Contact Us</h3>
           <p class="pt-3">Address - Room TA07, 6th Floor Woon Lee, Commercial Building No. 7-9 Austin Avenue
             Tsim Sha Tsui, Kowloon (HK)</p>
         </div>
         <!-- frame 38 -->
-        <div class="col-md-3 mb-4 text-white pt-5">
+        <div class="col-md-3 mb-4 text-light pt-3 pt-md-5">
           <h3>Get in Touch</h3>
           <div class="frame39-icon pt-3">
             <img src="assets/images/footer-section/Vector (10).png" alt=""> +852 39195807 <br>
@@ -381,9 +388,9 @@
         </div>
       </div>
       <hr class="hr-line text-white">
-      <div class="footer-p-content text-white text-center">
-        <p>Copyright Bhagirath BVM Grand (HK) Limited. All Rights Reserved. Designed & maintained by Bhagirath
-          Technologies</p>
+      <div class="footer-p-content text-white">
+        <p class="text-md-center copyright-text">© Copyright Bhagirath BVM Grand (HK) Limited. All Rights
+          Reserved.</p>
       </div>
     </div>
   </section>
@@ -485,6 +492,13 @@
             navbar.classList.remove('navbar-hidden');
           }
           lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
+        }
+      });
+
+      //Screen resize handling
+      window.addEventListener('resize', function () {
+        if (!isMobileView.matches) {
+          navbar.classList.remove('navbar-hidden'); // Ensure navbar is visible
         }
       });
     });

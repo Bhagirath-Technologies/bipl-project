@@ -30,6 +30,12 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .our-services-top-card {
+    transform: translateY(-30%);
+  }
+}
+
 .container {
   gap: 1.2rem;
 }
@@ -182,7 +188,70 @@
 /* CLIENT-SUCCESS-STORIES */
 
 .client-success-stories {
-  background: linear-gradient(90deg, #B4D5FF 0%, #FFC183 49.93%, #FFE0C1 100%);
+  background: linear-gradient(90deg, #b4c1ff 0%, #FFC183 49.93%, #FFE0C1 100%);
+}
+
+.client-success-stories-text {
+  position: relative;
+  padding: 10px;
+  z-index: 1;
+  /* border-radius: 8px; */
+}
+
+.client-success-stories-text::before,
+.client-success-stories-text::after {
+  content: '';
+  background: url('../images/our-services-icon-img/quote-icon.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.client-success-stories-text::before {
+  top: -10%;
+  left: -20%;
+}
+
+.client-success-stories-text::after {
+  bottom: -40%;
+  right: 0;
+}
+
+@media (min-width: 1400px) {
+  .client-success-stories-text::before {
+    top: -10%;
+    left: -15%;
+  }
+  
+  .client-success-stories-text::after {
+    bottom: -40%;
+    right: 0;
+  } 
+}
+
+@media (max-width: 992px) {
+  .client-success-stories-text::before {
+    top: 0%;
+    left: -30%;
+  }
+  
+  .client-success-stories-text::after {
+    bottom: -25%;
+    right: 0;
+  } 
+}
+
+@media (max-width: 768px) {
+  .client-success-stories-text::before {
+    top: -25%;
+    left: 0;
+  }
+  
+  .client-success-stories-text::after {
+    bottom: -30%;
+    right: 0;
+  } 
 }
 
 .client-top-text {
@@ -202,16 +271,9 @@
   border-radius: 8px;
 }
 
-.client-success-stories-text {
-  padding: 10px;
-  position: relative;
-  z-index: 1;
-  border-radius: 8px;
-}
-
 /* CLIENT-SUCCESS-STORIES - CUSTOM CAROUSEL */
 
-.custom-client-success-stories {
+/* .custom-client-success-stories {
   background: linear-gradient(90deg, #B4D5FF 0%, #FFC183 49.93%, #FFE0C1 100%);
 }
 
@@ -245,13 +307,13 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
+} */
 
 /* .custom-carousel-item:not(.active) {
   display: none;
 } */
 
-.custom-carousel-item.active {
+/* .custom-carousel-item.active {
   opacity: 1;
   visibility: visible;
 }
@@ -306,7 +368,7 @@
 
 .custom-indicator.active {
   background-color: #fff;
-}
+} */
 
 /* FAQ SECTION */
 

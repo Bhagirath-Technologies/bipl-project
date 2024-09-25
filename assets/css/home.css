@@ -240,7 +240,7 @@ a.dropdown-item.active {
 @media (max-width:992px) {
   .custom-navbar {
     /* border-radius: 0px 0px 0px 0px; */
-    margin: 14px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
 
   .nav-link:hover {
@@ -424,9 +424,11 @@ a.dropdown-item.active {
     align-items: center;
   }
 
-  /* .our-services-top-card {
-    padding-left: 30px !important;
-  } */
+  .our-services-top-card {
+    /* padding-left: 30px !important; */
+    transform: translateY(0px);
+    padding-top: 14px;
+  }
 }
 
 @media (max-width: 768px) {

@@ -25,6 +25,8 @@
   <!-- Google Icons -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Swiper Js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -213,8 +215,9 @@
         <h2>Our Team</h2>
         <p class="text-center regular-font">Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at. </p>
       </div>
+
       <!-- SLIDER -->
-      <div class="slider-wrapper">
+      <!-- <div class="slider-wrapper">
         <ul class="image-list">
           <img class="image-item" src="assets/images/our-company-page/our team/Frame 90.webp" alt="img-1" />
           <img class="image-item" src="assets/images/our-company-page/our team/Frame 91.webp" alt="img-2" />
@@ -225,6 +228,228 @@
       <div class="slider-scrollbar">
         <div class="scrollbar-track">
           <div class="scrollbar-thumb"></div>
+        </div>
+      </div> -->
+
+      <!-- SWIPER -->
+      <div class="swiper mySwiper pb-5">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="our-team-card">
+              <img src="./assets/images/our-company-page/our team/our-team-img-1.png" alt="Employee Image"
+                class="our-team-image">
+              <div class="our-team-overlay">
+                <div class="our-team-info">
+                  <h3 class="our-team-name">John Doe</h3>
+                  <p class="our-team-designation"><strong>Chief Executive Officer</strong></p>
+                  <div class="our-team-social-icons">
+                    <!-- <a href="#" class="our-team-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="our-team-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="our-team-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="our-team-icon"><i class="fab fa-instagram"></i></a> -->
+                    <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="our-team-card">
+              <img src="./assets/images/our-company-page/our team/our-team-img-3.png" alt="Employee Image"
+                class="our-team-image">
+              <div class="our-team-overlay">
+                <div class="our-team-info">
+                  <h3 class="our-team-name">Emily Carter</h3>
+                  <p class="our-team-designation"><strong>Senior Marketing Manager</strong></p>
+                  <div class="our-team-social-icons">
+                    <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="our-team-card">
+              <img src="./assets/images/our-company-page/our team/our-team-img-2.png" alt="Employee Image"
+                class="our-team-image">
+              <div class="our-team-overlay">
+                <div class="our-team-info">
+                  <h3 class="our-team-name">James Roberts</h3>
+                  <p class="our-team-designation"><strong>Lead Software Engineer</strong></p>
+                  <div class="our-team-social-icons">
+                    <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="our-team-card">
+              <img src="./assets/images/our-company-page/our team/our-team-img-4.png" alt="Employee Image"
+                class="our-team-image">
+              <div class="our-team-overlay">
+                <div class="our-team-info">
+                  <h3 class="our-team-name">Sophia Martinez</h3>
+                  <p class="our-team-designation"><strong>Product Design Engineer</strong></p>
+                  <div class="our-team-social-icons">
+                    <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="our-team-card">
+              <img src="./assets/images/our-company-page/our team/our-team-img-2.png" alt="Employee Image"
+                class="our-team-image">
+              <div class="our-team-overlay">
+                <div class="our-team-info">
+                  <h3 class="our-team-name">Liam Johnson</h3>
+                  <p class="our-team-designation"><strong>Chief Financial Officer</strong></p>
+                  <div class="our-team-social-icons">
+                    <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="our-team-card">
+              <img src="./assets/images/our-company-page/our team/our-team-img-3.png" alt="Employee Image"
+                class="our-team-image">
+              <div class="our-team-overlay">
+                <div class="our-team-info">
+                  <h3 class="our-team-name">Olivia Brown</h3>
+                  <p class="our-team-designation"><strong>Operations Coordinator</strong></p>
+                  <div class="our-team-social-icons">
+                    <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-scrollbar"></div>
+        <!-- <div class="swiper-button-next"></div> -->
+        <!-- <div class="swiper-button-prev"></div> -->
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLIENT'S SUCCESS STORIES - BOOTSTRAP -->
+
+  <section class="client-success-stories">
+    <div class="container">
+      <div class="client-top-text">
+        <h2>CLIENT'S SUCCESS STORIES</h2>
+        <p class="regular-font">Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt at.</p>
+      </div>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
+        data-bs-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 gap-lg-5">
+                  <div class="client-img">
+                    <img src="assets/images/our-services-icon-img/CLIENT-SUCCESS-STORIES/Rectangle 57.webp"
+                      class="img-fluid pb-2 pb-md-5" alt="client image">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="client-success-stories-text">
+                    <h2>Simran Kaur</h2>
+                    <p class="c-s-p-text">HR & manager</p>
+                    <p class="regular-font">Bhagirath BVM Grand (HK) exceeds expectations in trading goods. Their
+                      professionalism and
+                      dedication
+                      ensure seamless transactions and superior product quality.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 gap-lg-5">
+                  <div class="client-img">
+                    <img src="assets/images/our-services-icon-img/CLIENT-SUCCESS-STORIES/Rectangle 57.webp"
+                      class="img-fluid pb-2 pb-md-5" alt="client image">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="client-success-stories-text">
+                    <h2>Simran Kaur</h2>
+                    <p class="c-s-p-text">HR & manager</p>
+                    <p class="regular-font">Bhagirath BVM Grand (HK) exceeds expectations in trading goods. Their
+                      professionalism and
+                      dedication
+                      ensure seamless transactions and superior product quality.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 gap-lg-5">
+                  <div class="client-img">
+                    <img src="assets/images/our-services-icon-img/CLIENT-SUCCESS-STORIES/Rectangle 57.webp"
+                      class="img-fluid pb-2 pb-md-5" alt="client image">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="client-success-stories-text">
+                    <h2>Simran Kaur</h2>
+                    <p class="c-s-p-text">HR & manager</p>
+                    <p class="regular-font">Bhagirath BVM Grand (HK) exceeds expectations in trading goods. Their
+                      professionalism and
+                      dedication
+                      ensure seamless transactions and superior product quality.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
       </div>
     </div>
@@ -330,50 +555,49 @@
 
   <!-- FOOTER -->
 
-  <section class="footer">
+  <section class="footer pt-3 pb-1">
     <div class="container">
       <div class="row equal-spacing">
         <!-- frame 35 -->
         <div class="col-md-3 mb-4">
           <!-- <img src="/assets/images/footer-section/Logo-03 1.png" alt="Company Logo"
-                      class="img-fluid-footer-logo"> -->
-          <img src="./assets/images/footer-section/footer-logo-2.webp" alt="Company Logo" class="img-fluid-footer-logo">
-          <p class="text-light pt-3">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global
+                  class="img-fluid-footer-logo"> -->
+          <img src="./assets/images/footer-section/footer-logo-2.webp" alt="Company Logo"
+            class="img-fluid img-fluid-footer-logo">
+          <p class="text-light pt-2">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global
             trade, a company that thrives on connecting the world through commerce.</p>
         </div>
         <!-- frame 40 -->
-        <div class="col-md-3 mb-4 text-light pt-5">
+        <div class="col-md-3 mb-4 text-light pt-3 pt-md-5 ps-lg-5">
           <h3>Useful Links</h3>
+          <!-- <div class="arrow ps-lg-3"> -->
           <div class="arrow">
-            <a href="./index.html">Home<img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-            <a href="./about.html">About Us<img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-            <a href="./our-services.html">Our Services<img src="assets/images/footer-section/Arrow 1.png"
-                alt=""></a><br>
-            <a href="#">Terms of Services <img src="assets/images/footer-section/Arrow 1.png" alt=""></a><br>
-            <a href="#">Privacy Policy <img src="assets/images/footer-section/Arrow 1.png" alt=""></a>
+            <a class="text-light" href="./index.html">Home <img src="assets/images/footer-section/Arrow 1.png"
+                alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a><br>
+            <a class="text-light" href="./about.html">About Us <img src="assets/images/footer-section/Arrow 1.png"
+                alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a><br>
+            <a class="text-light" href="./our-services.html">Our Services <img
+                src="assets/images/footer-section/Arrow 1.png" alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a><br>
+            <a class="text-light" href="#">Terms of Services <img src="assets/images/footer-section/Arrow 1.png"
+                alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a><br>
+            <a class="text-light" href="#">Privacy Policy <img src="assets/images/footer-section/Arrow 1.png"
+                alt="Arrow" class="float-md-end pt-md-2 pe-lg-4"></a>
           </div>
         </div>
         <!-- frame 39 -->
-        <div class="col-md-3 mb-4 text-white pt-5">
+        <div class="col-md-3 mb-4 text-light pt-3 pt-md-5 pe-lg-5">
           <h3>Contact Us</h3>
           <p class="pt-3">Address - Room TA07, 6th Floor Woon Lee, Commercial Building No. 7-9 Austin Avenue
             Tsim Sha Tsui, Kowloon (HK)</p>
         </div>
         <!-- frame 38 -->
-        <div class="col-md-3 mb-4 text-white pt-5">
+        <div class="col-md-3 mb-4 text-light pt-3 pt-md-5">
           <h3>Get in Touch</h3>
           <div class="frame39-icon pt-3">
             <img src="assets/images/footer-section/Vector (10).png" alt=""> +852 39195807 <br>
             <br>
             <img src="assets/images/footer-section/Vector (11).png" alt=""> +852 39195837
           </div>
-          <!-- <div class="frame-35-icon pt-3">
-                      <img src="assets/images/footer-section/Vector (6).png" alt="icon">
-                      <img src="assets/images/footer-section/Vector (7).png" alt="icon">
-                      <img src="assets/images/footer-section/Group (3).png" alt="icon">
-                      <img src="assets/images/footer-section/Vector (9).png" alt="icon">
-                      <img src="assets/images/footer-section/pajamas_twitter.png" alt="icon">
-                  </div> -->
           <div class="footer-icon-container">
             <a class="social-icon" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-facebook"></i>
@@ -391,9 +615,9 @@
         </div>
       </div>
       <hr class="hr-line text-white">
-      <div class="footer-p-content text-white text-center">
-        <p>Copyright Bhagirath BVM Grand (HK) Limited. All Rights Reserved. Designed & maintained by Bhagirath
-          Technologies</p>
+      <div class="footer-p-content text-white">
+        <p class="text-md-center copyright-text">© Copyright Bhagirath BVM Grand (HK) Limited. All Rights
+          Reserved.</p>
       </div>
     </div>
   </section>
@@ -406,6 +630,9 @@
   </button>
 
   <script src="./assets/scripts/script.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script>
     //Back to Top Script
@@ -439,6 +666,47 @@
           lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
         }
       });
+
+      //Screen resize handling
+      window.addEventListener('resize', function () {
+        if (!isMobileView.matches) {
+          navbar.classList.remove('navbar-hidden'); // Ensure navbar is visible
+        }
+      });
+    });
+
+    //SWIPER SCRIPT
+
+    var swiper = new Swiper(".mySwiper", {
+      // autoHeight: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: false,
+      },
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
     });
   </script>
 

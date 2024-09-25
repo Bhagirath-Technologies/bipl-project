@@ -52,9 +52,9 @@
 }
 
 @media (max-width: 768px) {
-    .about-page-tab-section-tab {
+    /* .about-page-tab-section-tab {
         font-size: 0.8rem;
-    }
+    } */
 }
 
 .about-page-tab-section-tab.active {
