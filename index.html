@@ -29,9 +29,9 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR (OLD - BOOTSTRAP) -->
 
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <!-- <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
         <div class="container-fluid py-lg-3 px-5">
             <a class="navbar-brand" href="./index.html">
                 <img src="assets/images/navbarlogo/logo.png" alt="BIPL Logo">
@@ -52,7 +52,6 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="./our-company.html">Our Company</a>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -73,14 +72,12 @@
                                     and Fertilizers</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="./our-services.html">Our Services</a>
                     </li>
                     <li class="nav-item pe-lg-5">
                         <a class="nav-link text-dark" href="./career.html">Careers</a>
                     </li>
-
                     <a href="contact-us.html">
                         <button class="btn navbar-contact-us-button" href="./contact-us.html" type="button">
                             Contact Us
@@ -89,7 +86,67 @@
                 </ul>
             </div>
         </div>
+    </nav> -->
+
+    <!-- NEW NAVBAR -->
+
+    <nav class="new-navbar-container">
+        <!-- Top part of navbar -->
+        <div class="new-navbar-top">
+            <div class="new-navbar-logo">
+                <img src="assets/images/navbarlogo/logo.png" alt="BIPL Logo">
+            </div>
+            <ul class="new-navbar-links pt-lg-3">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#" class="new-navbar-contact-us-btn">Contact Us</a></li>
+            </ul>
+            <div class="new-navbar-social-icons-2 pe-2">
+                <a href="#" class="our-team-icon"><i class="bi bi-google"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <div class="new-navbar-toggler" id="navbarToggler">
+                <i class="bi bi-list"></i>
+            </div>
+            <!-- <i class="bi bi-x-lg"></i> -->
+        </div>
+
+        <!-- Bottom part of navbar -->
+        <div class="new-navbar-bottom">
+            <div class="new-navbar-contact">
+                <i class="bi bi-globe pe-1"></i>
+                <span>info@bhagirathindustries.com | +91 0987654321 / +91 0987654321</span>
+            </div>
+            <div class="new-navbar-social-icons pe-lg-3">
+                <!-- <i class="fab fa-facebook-f"></i> -->
+                <a href="#" class="our-team-icon"><i class="bi bi-google"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
     </nav>
+
+    <!-- Dropdown -->
+    <div class="new-navbar-dropdown">
+        <ul class="new-navbar-dropdown-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
 
     <!-- CAROUSEL -->
 
@@ -707,6 +764,56 @@
                     spaceBetween: 30,
                 },
             },
+        });
+
+        // NEW NAVBAR TOGGLER 
+
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const toggler = document.getElementById('navbarToggler');
+        //     const dropdown = document.querySelector('.new-navbar-dropdown');
+
+        //     toggler.addEventListener('click', function () {
+        //         // Toggle display property
+        //         if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+        //             dropdown.style.display = 'block';
+        //         } else {
+        //             dropdown.style.display = 'none';
+        //         }
+        //     });
+        // });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggler = document.getElementById('navbarToggler');
+            const dropdown = document.querySelector('.new-navbar-dropdown');
+            const icon = toggler.querySelector('i');
+
+            toggler.addEventListener('click', function () {
+                // Toggle display property
+                if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                    dropdown.style.display = 'block';
+                } else {
+                    dropdown.style.display = 'none';
+                }
+                // Toggle dropdown visibility
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                    icon.className = 'bi bi-list'; // Change icon back
+                } else {
+                    dropdown.classList.add('show');
+                    icon.className = 'bi bi-x-lg'; // Change icon to close
+                }
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!toggler.contains(event.target) && !dropdown.contains(event.target)) {
+                    dropdown.classList.remove('show');
+                    icon.className = 'bi bi-list'; // Reset icon if dropdown is closed
+                    if (dropdown.style.display = "block") {
+                        dropdown.style.display = 'none';
+                    }
+                }
+            });
         });
 
     </script>
