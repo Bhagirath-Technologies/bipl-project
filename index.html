@@ -29,81 +29,40 @@
 
 <body>
 
-    <!-- NAVBAR (OLD - BOOTSTRAP) -->
-
-    <!-- <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
-        <div class="container-fluid py-lg-3 px-5">
-            <a class="navbar-brand" href="./index.html">
-                <img src="assets/images/navbarlogo/logo.png" alt="BIPL Logo">
-            </a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav justify-space-around me-auto mb-2 mb-lg-0">
-                    <li class="nav-item ps-lg-5">
-                        <a class="nav-link text-dark active" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./our-company.html">Our Company</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu text-dark">
-                            <li><a class="dropdown-item text-dark" href="./edible-and-non-edible-oils.html">Edible &
-                                    Non-Edible Oils</a></li>
-                            <li><a class="dropdown-item text-dark" href="./chemicals.html">Chemicals</a></li>
-                            <li><a class="dropdown-item text-dark" href="./petroleum-and-oil-products.html">Petroleum &
-                                    Oil Products</a></li>
-                            <li><a class="dropdown-item text-dark" href="./agro-commodities.html">Agro Commodities</a>
-                            </li>
-                            <li><a class="dropdown-item text-dark" href="./biofuels.html">Biofuels</a></li>
-                            <li><a class="dropdown-item text-dark" href="./minerals-and-ores.html">Minerals and Ores</a>
-                            </li>
-                            <li><a class="dropdown-item text-dark" href="./cattlefeed-and-fertilizers.html">Cattlefeed
-                                    and Fertilizers</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./our-services.html">Our Services</a>
-                    </li>
-                    <li class="nav-item pe-lg-5">
-                        <a class="nav-link text-dark" href="./career.html">Careers</a>
-                    </li>
-                    <a href="contact-us.html">
-                        <button class="btn navbar-contact-us-button" href="./contact-us.html" type="button">
-                            Contact Us
-                        </button>
-                    </a>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-
     <!-- NEW NAVBAR -->
 
     <nav class="new-navbar-container">
         <!-- Top part of navbar -->
         <div class="new-navbar-top">
             <div class="new-navbar-logo">
-                <img src="assets/images/navbarlogo/logo.png" alt="BIPL Logo">
+                <img src="assets/images/navbarlogo/logo-alt.webp" alt="BIPL Logo">
             </div>
             <ul class="new-navbar-links pt-lg-3">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Company</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#" class="new-navbar-contact-us-btn">Contact Us</a></li>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <!-- <li><a href="./our-company.html">Our Company</a></li> -->
+                <!-- <li><a href="#">Products</a></li> -->
+                <div class="dropdown">
+                    <button class="products-dropdown-button dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Products
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./edible-and-non-edible-oils.html">Edible & Non-Edible
+                                Oils</a></li>
+                        <li><a class="dropdown-item" href="./chemicals.html">Chemicals</a></li>
+                        <li><a class="dropdown-item" href="./petroleum-and-oil-products.html">Petroleum & Oil
+                                Products</a></li>
+                        <li><a class="dropdown-item" href="./agro-commodities.html">Agro Commodities</a></li>
+                        <li><a class="dropdown-item" href="./biofuels.html">Biofuels</a></li>
+                        <li><a class="dropdown-item" href="./minerals-and-ores.html">Minerals & Ores</a></li>
+                        <li><a class="dropdown-item" href="./cattlefeed-and-fertilizers.html">Cattlefeed &
+                                Fertilizers</a></li>
+                    </ul>
+                </div>
+                <li><a href="./our-services.html">Our Services</a></li>
+                <li><a href="./career.html">Career</a></li>
+                <li><a href="./contact-us.html" class="new-navbar-contact-us-btn">Contact Us</a></li>
             </ul>
             <div class="new-navbar-social-icons-2 pe-2">
                 <a href="#" class="our-team-icon"><i class="bi bi-google"></i></a>
@@ -115,7 +74,6 @@
             <div class="new-navbar-toggler" id="navbarToggler">
                 <i class="bi bi-list"></i>
             </div>
-            <!-- <i class="bi bi-x-lg"></i> -->
         </div>
 
         <!-- Bottom part of navbar -->
@@ -125,7 +83,6 @@
                 <span>info@bhagirathindustries.com | +91 0987654321 / +91 0987654321</span>
             </div>
             <div class="new-navbar-social-icons pe-lg-3">
-                <!-- <i class="fab fa-facebook-f"></i> -->
                 <a href="#" class="our-team-icon"><i class="bi bi-google"></i></a>
                 <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
@@ -138,13 +95,31 @@
     <!-- Dropdown -->
     <div class="new-navbar-dropdown">
         <ul class="new-navbar-dropdown-links">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Company</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <!-- <li><a href="./our-company.html">Our Company</a></li> -->
+            <!-- <li><a href="#">Products</a></li> -->
+            <li class="dropdown">
+                <button class="products-dropdown-button dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Products
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./edible-and-non-edible-oils.html">Edible & Non-Edible Oils</a>
+                    </li>
+                    <li><a class="dropdown-item" href="./chemicals.html">Chemicals</a></li>
+                    <li><a class="dropdown-item" href="./petroleum-and-oil-products.html">Petroleum & Oil Products</a>
+                    </li>
+                    <li><a class="dropdown-item" href="./agro-commodities.html">Agro Commodities</a></li>
+                    <li><a class="dropdown-item" href="./biofuels.html">Biofuels</a></li>
+                    <li><a class="dropdown-item" href="./minerals-and-ores.html">Minerals & Ores</a></li>
+                    <li><a class="dropdown-item" href="./cattlefeed-and-fertilizers.html">Cattlefeed & Fertilizers</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./our-services.html">Our Services</a></li>
+            <li><a href="./career.html">Career</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
         </ul>
     </div>
 
@@ -310,7 +285,6 @@
                 <p class="text-center regular-font">Lorem ipsum dolor sit amet consectetur. Placerat ac eu at tincidunt
                     at.</p>
             </div>
-            <!-- SLIDER -->
             <div class="slider-wrapper">
 
                 <ul class="image-list">
@@ -698,7 +672,7 @@
         });
         document.querySelector('.new-trading-portfolio-box').style.backgroundColor = '#FFA9C33D';
 
-        //BACK TO TOP SCRIPT
+        // BACK TO TOP SCRIPT
 
         let backToTopBtn = document.getElementById("backToTopBtn");
         window.onscroll = function () { scrollFunction() };
@@ -714,31 +688,32 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
         };
 
-        //THIS IS THE SCRIPT THAT MAKES THE NAVBAR VANISH WHEN SCROLLING DOWN ON SMALL SCREENS
+        // THIS IS THE SCRIPT THAT MAKES THE NAVBAR VANISH WHEN SCROLLING DOWN ON SMALL SCREENS
 
-        document.addEventListener('DOMContentLoaded', function () {
-            let lastScrollTop = 0;
-            const navbar = document.querySelector('.custom-navbar');
-            const isMobileView = window.matchMedia("(max-width: 767px)");
-            window.addEventListener('scroll', function () {
-                if (isMobileView.matches) { // Apply only on mobile screens
-                    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                    if (currentScrollTop > lastScrollTop) {
-                        navbar.classList.add('navbar-hidden');
-                    } else {
-                        navbar.classList.remove('navbar-hidden');
-                    }
-                    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
-                }
-            });
-
-            //Screen resize handling
-            window.addEventListener('resize', function () {
-                if (!isMobileView.matches) {
-                    navbar.classList.remove('navbar-hidden'); // Ensure navbar is visible
-                }
-            });
-        });
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     let lastScrollTop = 0;
+        //     const navbar = document.querySelector('.new-navbar-container');
+        //     const isMobileView = window.matchMedia("(max-width: 767px)");
+        //     // const dropdownSelector = document.querySelector('.new-navbar-dropdown');
+        //     window.addEventListener('scroll', function () {
+        //         if (isMobileView.matches) { // Apply only on mobile screens
+        //             let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        //             if (currentScrollTop > lastScrollTop) {
+        //                 navbar.classList.add('navbar-hidden');
+        //                 // dropdownSelector.classList.remove('show'); // Added later
+        //             } else {
+        //                 navbar.classList.remove('navbar-hidden');
+        //             }
+        //             lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
+        //         }
+        //     });
+        //     //Screen resize handling
+        //     window.addEventListener('resize', function () {
+        //         if (!isMobileView.matches) {
+        //             navbar.classList.remove('navbar-hidden'); // Ensure navbar is visible
+        //         }
+        //     });
+        // });
 
         //SWIPER SCRIPT
 
@@ -768,20 +743,6 @@
 
         // NEW NAVBAR TOGGLER 
 
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     const toggler = document.getElementById('navbarToggler');
-        //     const dropdown = document.querySelector('.new-navbar-dropdown');
-
-        //     toggler.addEventListener('click', function () {
-        //         // Toggle display property
-        //         if (dropdown.style.display === 'none' || dropdown.style.display === '') {
-        //             dropdown.style.display = 'block';
-        //         } else {
-        //             dropdown.style.display = 'none';
-        //         }
-        //     });
-        // });
-
         document.addEventListener('DOMContentLoaded', function () {
             const toggler = document.getElementById('navbarToggler');
             const dropdown = document.querySelector('.new-navbar-dropdown');
@@ -800,10 +761,9 @@
                     icon.className = 'bi bi-list'; // Change icon back
                 } else {
                     dropdown.classList.add('show');
-                    icon.className = 'bi bi-x-lg'; // Change icon to close
+                    icon.className = 'bi bi-x'; // Change icon to close
                 }
             });
-
             // Close dropdown when clicking outside
             document.addEventListener('click', function (event) {
                 if (!toggler.contains(event.target) && !dropdown.contains(event.target)) {

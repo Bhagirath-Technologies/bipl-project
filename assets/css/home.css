@@ -122,7 +122,7 @@ body {
 }
 
 a.dropdown-item {
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 a.dropdown-item:hover {
@@ -212,9 +212,11 @@ a.dropdown-item.active {
   left: 0;
   width: calc(100% - 12px);
   margin: 20px 6px 0px 6px;
-  border-radius: 60px 0px 60px 0px;
+  /* border-radius: 60px 0px 60px 0px; */
   z-index: 1000;
-  overflow: hidden;
+  /* overflow: hidden; */
+
+  transition: transform 0.3s ease;
 }
 
 .new-navbar-top,
@@ -225,6 +227,16 @@ a.dropdown-item.active {
   padding: 10px 20px;
 }
 
+/* Border radius added */
+
+.new-navbar-top {
+  border-radius: 60px 0px 0px 0px;
+}
+
+.new-navbar-bottom {
+  border-radius: 0px 0px 60px 0px;
+}
+
 /* Top Part */
 .new-navbar-top {
   background-color: var(--color-white);
@@ -233,11 +245,12 @@ a.dropdown-item.active {
   justify-content: space-between;
 }
 
-/* .new-navbar-logo {
-  font-size: 24px;
+.new-navbar-logo>img {
+  width: 120px;
+  /* font-size: 24px;
   font-weight: bold;
-  color: black;
-} */
+  color: black; */
+}
 
 .new-navbar-links {
   list-style: none;
@@ -256,10 +269,35 @@ a.dropdown-item.active {
   color: var(--color-navy-blue);
   font-size: 1rem;
   font-weight: 500;
+  transition: color 0.25s ease;
 }
 
 .new-navbar-links a.active {
   color: var(--color-light-blue);
+}
+
+.new-navbar-links a:hover {
+  color: var(--color-light-blue);
+}
+
+.products-dropdown-button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: var(--color-navy-blue);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.products-dropdown-button:hover {
+  color: var(--color-light-blue);
+}
+
+@media (max-width: 992px) {
+  .products-dropdown-button:hover {
+    color: var(--color-navy-blue);
+  } 
 }
 
 /* Bottom Part */
@@ -271,6 +309,7 @@ a.dropdown-item.active {
 
 .new-navbar-contact {
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .new-navbar-social-icons {
@@ -282,7 +321,7 @@ a.dropdown-item.active {
 .new-navbar-social-icons i {
   font-size: 1.2rem;
   color: white;
-  transition: color 0.3s ease;
+  transition: color 0.25s ease;
 }
 
 .new-navbar-social-icons i:hover {
@@ -301,8 +340,7 @@ a.dropdown-item.active {
   font-size: 1rem;
   color: var(--color-navy-blue);
 
-  /* border: 1px solid rgb(215, 215, 215); */
-  border: 1px solid rgba(0, 162, 212, 0.5);
+  /* border: 1px solid rgba(0, 162, 212, 0.25); */
   border-radius: 50%;
   padding: 4px 7px 4px 7px;
   /* margin: 10px; */
@@ -315,6 +353,12 @@ a.dropdown-item.active {
   border: 1px solid var(--color-orange);
   border-radius: 5px;
   padding: 6px 12px 6px 12px;
+  transition: color 0.25s ease, background-color 0.25s ease !important;
+}
+
+.new-navbar-contact-us-btn:hover {
+  color: var(--color-white) !important;
+  background-color: var(--color-orange);
 }
 
 .new-navbar-toggler {
@@ -365,14 +409,26 @@ a.dropdown-item.active {
 .new-navbar-dropdown-links li a {
   text-decoration: none;
   color: var(--color-navy-blue);
+  font-size: 1rem;
+  font-weight: 500;
   display: block;
   padding: 8px;
   /* border-radius: 10px 10px 0px 0px; */
 }
 
+.new-navbar-dropdown-links li button {
+  text-decoration: none;
+  color: var(--color-navy-blue);
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  padding: 8px;
+}
+
 .new-navbar-dropdown-links li a.active {
-  background-color: var(--color-light-blue);
-  color: var(--color-white);
+  /* background-color: var(--color-light-blue); */
+  /* color: var(--color-white); */
+  color: var(--color-light-blue);
 }
 
 /* Responsive Styles for smaller screens */
@@ -389,6 +445,7 @@ a.dropdown-item.active {
 
   .new-navbar-top {
     background-color: white;
+    border-radius: 60px 0px 60px 0px;
   }
 
   .new-navbar-links {
@@ -429,6 +486,9 @@ a.dropdown-item.active {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  /* REMOVE IF ANY ISSUES ARISE */
+  transition: transform 1s ease !important;
 }
 
 .carousel-item-custom-height {
@@ -644,6 +704,8 @@ a.dropdown-item.active {
 
 .slider-wrapper {
   position: relative;
+  user-select: none;
+  cursor: grab;
 }
 
 .slider-wrapper .slide-button {
@@ -656,7 +718,8 @@ a.dropdown-item.active {
   z-index: 5;
   color: #fff;
   display: flex;
-  cursor: pointer;
+  /* cursor: pointer; */
+  /* cursor: grab; */
   font-size: 2.2rem;
   background: #000;
   align-items: center;

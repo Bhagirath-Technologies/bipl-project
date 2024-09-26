@@ -9,39 +9,6 @@ const initSlider = () => {
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
-    // // Variables for dragging on desktop
-    // let isDragging = false;
-    // let startX;
-    // let scrollLeft;
-
-    // // Handle mouse down event for dragging
-    // imageList.addEventListener("mousedown", (e) => {
-    //     isDragging = true;
-    //     startX = e.pageX - imageList.offsetLeft;
-    //     scrollLeft = imageList.scrollLeft;
-    //     imageList.style.cursor = "grabbing";
-    // });
-
-    // // Handle mouse up and leave events to stop dragging
-    // imageList.addEventListener("mouseup", () => {
-    //     isDragging = false;
-    //     imageList.style.cursor = "grab";
-    // });
-
-    // imageList.addEventListener("mouseleave", () => {
-    //     isDragging = false;
-    //     imageList.style.cursor = "grab";
-    // });
-
-    // // Handle mouse move event to drag the images
-    // imageList.addEventListener("mousemove", (e) => {
-    //     if (!isDragging) return;
-    //     e.preventDefault();
-    //     const x = e.pageX - imageList.offsetLeft;
-    //     const walk = (x - startX) * 2; // Adjust scroll speed
-    //     imageList.scrollLeft = scrollLeft - walk;
-    // });
-
     // Handle scrollbar thumb drag
     scrollbarThumb.addEventListener("mousedown", (e) => {
         const startX = e.clientX;
@@ -80,6 +47,41 @@ const initSlider = () => {
             imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
         });
     });
+
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+    let isDragging = false;
+    let startX, scrollLeft;
+
+    const handleMouseDown = (e) => {
+        isDragging = true;
+        startX = e.pageX - imageList.offsetLeft;
+        scrollLeft = imageList.scrollLeft;
+    };
+
+    const handleMouseMove = (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - imageList.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust drag sensitivity
+        imageList.scrollLeft = scrollLeft - walk;
+    };
+
+    const handleMouseUpOrLeave = () => {
+        isDragging = false;
+    };
+
+    imageList.addEventListener("mousedown", handleMouseDown);
+    imageList.addEventListener("mousemove", handleMouseMove);
+    imageList.addEventListener("mouseup", handleMouseUpOrLeave);
+    imageList.addEventListener("mouseleave", handleMouseUpOrLeave);
+
+    // Prevent default drag behavior on images
+    imageList.addEventListener("dragstart", (e) => {
+        e.preventDefault();
+    });
+
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     // Show or hide slide buttons based on scroll position
     const handleSlideButtons = () => {
