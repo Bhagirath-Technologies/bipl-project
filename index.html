@@ -34,9 +34,12 @@
     <nav class="new-navbar-container">
         <!-- Top part of navbar -->
         <div class="new-navbar-top">
-            <div class="new-navbar-logo">
+            <!-- <div class="new-navbar-logo">
                 <img src="assets/images/navbarlogo/logo-alt.webp" alt="BIPL Logo">
-            </div>
+            </div> -->
+            <a href="./index.html" class="new-navbar-logo">
+                <img src="assets/images/navbarlogo/logo-alt.webp" alt="BIPL Logo">
+            </a>
             <ul class="new-navbar-links pt-lg-3">
                 <li><a href="./index.html" class="active">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
@@ -482,6 +485,9 @@
 
     <!-- TRADING PORTFOLIO SECTION (NEW) -->
 
+    <!-- NOTE - THIS SECTION BELOW HAS "display: none" SET IN home.css -->
+    <!-- THIS IS WHY IT IS NOT VISIBLE -->
+
     <section class="trading-portfolio py-5 pt-5">
         <div class="container trading-p">
             <h2 class="text-center">TRADING PORTFOLIO</h2>
@@ -493,7 +499,6 @@
 
             <div class="new-trading-portfolio-box container mt-4">
                 <div class="row">
-                    <!-- First Section: Text -->
                     <div class="new-trading-portfolio-box-text col-md-4 order-md-1">
                         <p class="regular-font">Bhagirath Industries Trading Portfolio. We serve as the
                             catalysts of global
@@ -502,15 +507,11 @@
                             global trade, providing a reliable gateway to a world of possibilities. Let's shape a future
                             of global trade that makes things deliver at your doorstep.</p>
                     </div>
-
-                    <!-- Third Section: Image -->
                     <div class="new-trading-portfolio-box-image col-md-5 order-md-3">
                         <img id="portfolio-img"
                             src="assets/images/trading-portfolio-img/trading-portfolio-crude-oil-master-image.webp"
                             class="img-fluid" alt="Portfolio Image">
                     </div>
-
-                    <!-- Second Section: Buttons -->
                     <div class="new-trading-portfolio-box-buttons col-md-3 order-md-2">
                         <button class="btn new-trading-portfolio-box-btn text-start"
                             data-img="assets/images/trading-portfolio-img/trading-portfolio-crude-oil-master-image.webp">
@@ -529,9 +530,77 @@
                             <img src="assets/images/trading-portfolio-img/icon/Vector.svg" alt="Arrow image">
                             Middle Distillates</button>
                     </div>
-
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- UPDATED TRADING PORTFOLIO BOX -->
+
+    <section class="updated-trading-portfolio-section py-5">
+        <div class="container">
+            <h2 class="text-center">Trading Portfolio</h2>
+            <p class="text-center regular-font">Bhagirath Industries Trading Portfolio. We serve as the catalysts of
+                global trade, connecting the world through commerce. Our passion for trade transcends borders, and we're
+                your trusted partner for all things products.</p>
+
+
+            <div class="updated-trading-portfolio-container p-4">
+
+                <div class="row pb-4">
+                    <div class="col-md-3 mb-2 mb-md-0">
+                        <button class="w-100 h-100 updated-trading-portfolio-button px-4 py-2 active"
+                            data-target="crude-oil">
+                            <!-- <img class="pe-2 updated-trading-portfolio-button-arrow" src="assets/images/trading-portfolio-img/icon/Vector.svg" alt="Arrow image"> -->
+                            <i class="pe-2 bi bi-arrow-up-right"></i>
+                            Crude Oil
+                        </button>
+                    </div>
+                    <div class="col-md-3 mb-2 mb-md-0">
+                        <button class="w-100 h-100 updated-trading-portfolio-button px-4 py-2"
+                            data-target="partnering-procedure">
+                            <!-- <img class="pe-2 updated-trading-portfolio-button-arrow" src="assets/images/trading-portfolio-img/icon/Vector.svg" alt="Arrow image"> -->
+                            <i class="pe-2 bi bi-arrow-up-right"></i>
+                            Partnering Procedure
+                        </button>
+                    </div>
+                    <div class="col-md-3 mb-2 mb-md-0">
+                        <button class="w-100 h-100 updated-trading-portfolio-button px-4 py-2"
+                            data-target="working-refiners">
+                            <!-- <img class="pe-2 updated-trading-portfolio-button-arrow" src="assets/images/trading-portfolio-img/icon/Vector.svg" alt="Arrow image"> -->
+                            <i class="pe-2 bi bi-arrow-up-right"></i>
+                            Working with Refiners
+                        </button>
+                    </div>
+                    <div class="col-md-3 mb-2 mb-md-0">
+                        <button class="w-100 h-100 updated-trading-portfolio-button px-4 py-2"
+                            data-target="middle-distillates">
+                            <!-- <img class="pe-2 updated-trading-portfolio-button-arrow" src="assets/images/trading-portfolio-img/icon/Vector.svg" alt="Arrow image"> -->
+                            <i class="pe-2 bi bi-arrow-up-right"></i>
+                            Middle Distillates
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row pb-4 updated-trading-portfolio-images">
+                    <div class="col-md-4 align-self-center">
+                        <img src="./assets/images/trading-portfolio-img/crude-oil-img-1.webp" alt="crude-oil-1"
+                            class="img-fluid w-100">
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                        <img src="./assets/images/trading-portfolio-img/crude-oil-img-2.webp" alt="crude-oil-2"
+                            class="img-fluid w-100">
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                        <img src="./assets/images/trading-portfolio-img/crude-oil-img-3.webp" alt="crude-oil-3"
+                            class="img-fluid w-100">
+                    </div>
+                </div>
+
+
+            </div>
+
+
         </div>
     </section>
 
@@ -593,7 +662,8 @@
                 <!-- frame 39 -->
                 <div class="col-md-3 mb-4 text-light pt-3 pt-md-5 pe-lg-5">
                     <h3>Contact Us</h3>
-                    <p class="pt-3">Address - Bhagirath Industries Private Limited - 309, Luxuria Business Hub, Near VR Mall, Udhana Magdalla Road, Surat - Dumas Road, Surat Gujarat - 395007</p>
+                    <p class="pt-3">Address - Bhagirath Industries Private Limited - 309, Luxuria Business Hub, Near VR
+                        Mall, Udhana Magdalla Road, Surat - Dumas Road, Surat Gujarat - 395007</p>
                 </div>
                 <!-- frame 38 -->
                 <div class="col-md-3 mb-4 text-light pt-3 pt-md-5">
@@ -645,31 +715,79 @@
 
     <script>
 
-        // TRADING PORTFOLIO BOX SCRIPT (NEW)
+        // UPDATED TRADING PORTFOLIO BOX SCRIPT
 
-        document.querySelectorAll('.new-trading-portfolio-box-btn').forEach(button => {
-            button.addEventListener('click', function () {
-                const newImage = this.getAttribute('data-img');
-                document.getElementById('portfolio-img').src = newImage;
-                const portfolioBox = document.querySelector('.new-trading-portfolio-box');
-                if (newImage.includes('crude-oil')) {
-                    portfolioBox.style.backgroundColor = '#FFA9C33D';
-                } else if (newImage.includes('partnering-procedure')) {
-                    portfolioBox.style.backgroundColor = 'rgb(224, 228, 231)';
-                } else if (newImage.includes('refiners')) {
-                    portfolioBox.style.backgroundColor = 'rgb(255, 214, 177)';
-                } else if (newImage.includes('middle-distillates')) {
-                    portfolioBox.style.backgroundColor = 'rgb(201, 253, 245)';
-                }
-                // Remove 'active-btn' class from all buttons
-                document.querySelectorAll('.new-trading-portfolio-box-btn').forEach(btn => {
-                    btn.classList.remove('trading-portfolio-active-btn');
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.updated-trading-portfolio-button');
+            const imagesContainer = document.querySelector('.updated-trading-portfolio-images');
+
+            const imageSets = {
+                "crude-oil": [
+                    "./assets/images/trading-portfolio-img/crude-oil-img-1.webp",
+                    "./assets/images/trading-portfolio-img/crude-oil-img-2.webp",
+                    "./assets/images/trading-portfolio-img/crude-oil-img-3.webp"
+                ],
+                "partnering-procedure": [
+                    "./assets/images/trading-portfolio-img/partnering-img-1.webp",
+                    "./assets/images/trading-portfolio-img/partnering-img-2.webp",
+                    "./assets/images/trading-portfolio-img/partnering-img-3.webp"
+                ],
+                "working-refiners": [
+                    "./assets/images/trading-portfolio-img/refiners-img-1.webp",
+                    "./assets/images/trading-portfolio-img/refiners-img-2.webp",
+                    "./assets/images/trading-portfolio-img/refiners-img-3.webp"
+                ],
+                "middle-distillates": [
+                    "./assets/images/trading-portfolio-img/middle-distillates-img-1.webp",
+                    "./assets/images/trading-portfolio-img/middle-distillates-img-2.webp",
+                    "./assets/images/trading-portfolio-img/middle-distillates-img-3.webp"
+                ]
+            };
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Get the target image set
+                    const target = this.getAttribute('data-target');
+                    const selectedImages = imageSets[target];
+
+                    // Change the images
+                    const images = imagesContainer.querySelectorAll('img');
+                    images.forEach((img, index) => {
+                        img.src = selectedImages[index];
+                    });
                 });
-                // Add 'active-btn' class to the clicked button to increase font size
-                this.classList.add('trading-portfolio-active-btn');
             });
         });
-        document.querySelector('.new-trading-portfolio-box').style.backgroundColor = '#FFA9C33D';
+
+
+        // TRADING PORTFOLIO BOX SCRIPT
+
+        // document.querySelectorAll('.new-trading-portfolio-box-btn').forEach(button => {
+        //     button.addEventListener('click', function () {
+        //         const newImage = this.getAttribute('data-img');
+        //         document.getElementById('portfolio-img').src = newImage;
+        //         const portfolioBox = document.querySelector('.new-trading-portfolio-box');
+        //         if (newImage.includes('crude-oil')) {
+        //             portfolioBox.style.backgroundColor = '#FFA9C33D';
+        //         } else if (newImage.includes('partnering-procedure')) {
+        //             portfolioBox.style.backgroundColor = 'rgb(224, 228, 231)';
+        //         } else if (newImage.includes('refiners')) {
+        //             portfolioBox.style.backgroundColor = 'rgb(255, 214, 177)';
+        //         } else if (newImage.includes('middle-distillates')) {
+        //             portfolioBox.style.backgroundColor = 'rgb(201, 253, 245)';
+        //         }
+        //         // Remove 'active-btn' class from all buttons
+        //         document.querySelectorAll('.new-trading-portfolio-box-btn').forEach(btn => {
+        //             btn.classList.remove('trading-portfolio-active-btn');
+        //         });
+        //         // Add 'active-btn' class to the clicked button to increase font size
+        //         this.classList.add('trading-portfolio-active-btn');
+        //     });
+        // });
+        // document.querySelector('.new-trading-portfolio-box').style.backgroundColor = '#FFA9C33D';
 
         // BACK TO TOP SCRIPT
 
