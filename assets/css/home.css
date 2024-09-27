@@ -602,14 +602,14 @@ a.dropdown-item.active {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .our-services-top-card {
     flex-direction: column !important;
     align-items: center;
   }
 }
 
-@media (min-width: 768px) and (max-width: 819px) {
+@media (min-width: 767px) and (max-width: 819px) {
   .our-services-top-card {
     flex-direction: row;
   }

@@ -397,7 +397,7 @@
     margin-top: 8px;
 }
 
-.our-team-icon {
+.our-team-icon-special {
     margin: 0 8px;
     color: var(--color-white);
     font-size: 1.2em;
@@ -405,7 +405,7 @@
     transition: color 0.2s ease;
 }
 
-.our-team-icon:hover {
+.our-team-icon-special:hover {
     color: var(--color-orange);
 }
 

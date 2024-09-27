@@ -39,6 +39,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .card-img-top:hover {
+    transform: scale(1);
+  }
+}
+
 .card-body {
   height: calc(100% - 200px);
   overflow-y: auto;

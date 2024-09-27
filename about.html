@@ -30,9 +30,9 @@
 
 <body>
 
-    <!-- NAVBAR NEW -->
+    <!-- NAVBAR OLD -->
 
-    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <!-- <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
         <div class="container-fluid px-5">
             <a class="navbar-brand" href="./index.html">
                 <img src="assets/images/navbarlogo/logo.png" alt="BIPL Logo">
@@ -90,7 +90,101 @@
                 </ul>
             </div>
         </div>
+    </nav> -->
+
+    <!-- NEW NAVBAR -->
+
+    <nav class="new-navbar-container">
+        <!-- Top part of navbar -->
+        <div class="new-navbar-top">
+            <div class="new-navbar-logo">
+                <img src="assets/images/navbarlogo/logo-alt.webp" alt="BIPL Logo">
+            </div>
+            <ul class="new-navbar-links pt-lg-3">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html" class="active">About Us</a></li>
+                <!-- <li><a href="./our-company.html">Our Company</a></li> -->
+                <!-- <li><a href="#">Products</a></li> -->
+                <div class="dropdown">
+                    <button class="products-dropdown-button dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Products
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./edible-and-non-edible-oils.html">Edible & Non-Edible
+                                Oils</a></li>
+                        <!-- <li><a class="dropdown-item" href="./chemicals.html">Chemicals</a></li> -->
+                        <li><a class="dropdown-item" href="./petroleum-and-oil-products.html">Petroleum & Oil
+                                Products</a></li>
+                        <li><a class="dropdown-item" href="./agro-commodities.html">Agro Commodities</a></li>
+                        <li><a class="dropdown-item" href="./biofuels.html">Biofuels</a></li>
+                        <li><a class="dropdown-item" href="./minerals-and-ores.html">Minerals & Ores</a></li>
+                        <li><a class="dropdown-item" href="./cattlefeed-and-fertilizers.html">Cattlefeed &
+                                Fertilizers</a></li>
+                    </ul>
+                </div>
+                <li><a href="./our-services.html">Our Services</a></li>
+                <li><a href="./career.html">Career</a></li>
+                <li><a href="./contact-us.html" class="new-navbar-contact-us-btn">Contact Us</a></li>
+            </ul>
+            <div class="new-navbar-social-icons-2 pe-2">
+                <a href="#" class="our-team-icon"><i class="bi bi-google"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <div class="new-navbar-toggler" id="navbarToggler">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+
+        <!-- Bottom part of navbar -->
+        <div class="new-navbar-bottom">
+            <div class="new-navbar-contact">
+                <i class="bi bi-globe pe-1"></i>
+                <span>info@bhagirathindustries.com | +91 0987654321 / +91 0987654321</span>
+            </div>
+            <div class="new-navbar-social-icons pe-lg-3">
+                <a href="#" class="our-team-icon"><i class="bi bi-google"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
     </nav>
+
+    <!-- Dropdown -->
+    <div class="new-navbar-dropdown">
+        <ul class="new-navbar-dropdown-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html" class="active">About Us</a></li>
+            <!-- <li><a href="./our-company.html">Our Company</a></li> -->
+            <!-- <li><a href="#">Products</a></li> -->
+            <li class="dropdown">
+                <button class="products-dropdown-button dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Products
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./edible-and-non-edible-oils.html">Edible & Non-Edible Oils</a>
+                    </li>
+                    <!-- <li><a class="dropdown-item" href="./chemicals.html">Chemicals</a></li> -->
+                    <li><a class="dropdown-item" href="./petroleum-and-oil-products.html">Petroleum & Oil Products</a>
+                    </li>
+                    <li><a class="dropdown-item" href="./agro-commodities.html">Agro Commodities</a></li>
+                    <li><a class="dropdown-item" href="./biofuels.html">Biofuels</a></li>
+                    <li><a class="dropdown-item" href="./minerals-and-ores.html">Minerals & Ores</a></li>
+                    <li><a class="dropdown-item" href="./cattlefeed-and-fertilizers.html">Cattlefeed & Fertilizers</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./our-services.html">Our Services</a></li>
+            <li><a href="./career.html">Career</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
 
     <!-- CAROUSEL -->
 
@@ -489,10 +583,10 @@
                                     <h3 class="our-team-name">John Doe</h3>
                                     <p class="our-team-designation"><strong>Chief Executive Officer</strong></p>
                                     <div class="our-team-social-icons">
-                                        <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-facebook"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-twitter-x"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-instagram"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -507,10 +601,10 @@
                                     <h3 class="our-team-name">Emily Carter</h3>
                                     <p class="our-team-designation"><strong>Senior Marketing Manager</strong></p>
                                     <div class="our-team-social-icons">
-                                        <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-facebook"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-twitter-x"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-instagram"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -525,10 +619,10 @@
                                     <h3 class="our-team-name">James Roberts</h3>
                                     <p class="our-team-designation"><strong>Lead Software Engineer</strong></p>
                                     <div class="our-team-social-icons">
-                                        <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-facebook"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-twitter-x"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-instagram"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -543,10 +637,10 @@
                                     <h3 class="our-team-name">Sophia Martinez</h3>
                                     <p class="our-team-designation"><strong>Product Design Engineer</strong></p>
                                     <div class="our-team-social-icons">
-                                        <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-facebook"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-twitter-x"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-instagram"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -561,10 +655,10 @@
                                     <h3 class="our-team-name">Liam Johnson</h3>
                                     <p class="our-team-designation"><strong>Chief Financial Officer</strong></p>
                                     <div class="our-team-social-icons">
-                                        <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-facebook"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-twitter-x"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-instagram"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -579,10 +673,10 @@
                                     <h3 class="our-team-name">Olivia Brown</h3>
                                     <p class="our-team-designation"><strong>Operations Coordinator</strong></p>
                                     <div class="our-team-social-icons">
-                                        <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
-                                        <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-facebook"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-twitter-x"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-instagram"></i></a>
+                                        <a href="#" class="our-team-icon our-team-icon-special"><i class="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -621,7 +715,7 @@
                                         <div class="client-success-stories-text">
                                             <h2 class="pt-5 px-md-5">Simran Kaur</h2>
                                             <p class="c-s-p-text px-md-5">HR & manager</p>
-                                            <p class="regular-font px-md-5">Bhagirath BVM Grand (HK) exceeds
+                                            <p class="regular-font px-md-5">Bhagirath Industries exceeds
                                                 expectations in trading goods.
                                                 Their professionalism and dedication ensure seamless transactions and
                                                 superior product quality.
@@ -637,7 +731,7 @@
                                         <div class="client-success-stories-text">
                                             <h2 class="pt-5 px-md-5">John Doe</h2>
                                             <p class="c-s-p-text px-md-5">HR & manager</p>
-                                            <p class="regular-font px-md-5">Bhagirath BVM Grand (HK) exceeds
+                                            <p class="regular-font px-md-5">Bhagirath Industries exceeds
                                                 expectations in trading goods.
                                                 Their professionalism and dedication ensure seamless transactions and
                                                 superior product quality.
@@ -653,7 +747,7 @@
                                         <div class="client-success-stories-text">
                                             <h2 class="pt-5 px-md-5">Donald Hill</h2>
                                             <p class="c-s-p-text px-md-5">HR & manager</p>
-                                            <p class="regular-font px-md-5">Bhagirath BVM Grand (HK) exceeds
+                                            <p class="regular-font px-md-5">Bhagirath Industries exceeds
                                                 expectations in trading goods.
                                                 Their professionalism and dedication ensure seamless transactions and
                                                 superior product quality.
@@ -695,7 +789,7 @@
                                 <button class="accordion-button collapsed regular-font" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                    What is BVM Grand's role in global trade?
+                                    What is Bhagirath Industries' role in global trade?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse"
@@ -712,7 +806,7 @@
                                 <button class="accordion-button collapsed regular-font" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    What is BVM Grand's role in global trade?
+                                    What is Bhagirath Industries' role in global trade?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse"
@@ -729,7 +823,7 @@
                                 <button class="accordion-button collapsed regular-font" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    What is BVM Grand's role in global trade?
+                                    What is Bhagirath Industries' role in global trade?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse"
@@ -746,7 +840,7 @@
                                 <button class="accordion-button collapsed regular-font" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    What is BVM Grand's role in global trade?
+                                    What is Bhagirath Industries' role in global trade?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse"
@@ -763,7 +857,7 @@
                                 <button class="accordion-button collapsed regular-font" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    What is BVM Grand's role in global trade?
+                                    What is Bhagirath Industries' role in global trade?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse"
@@ -780,7 +874,7 @@
                                 <button class="accordion-button collapsed regular-font" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    What is BVM Grand's role in global trade?
+                                    What is Bhagirath Industries' role in global trade?
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse"
@@ -812,7 +906,7 @@
                     class="img-fluid-footer-logo"> -->
                     <img src="./assets/images/footer-section/footer-logo-2.webp" alt="Company Logo"
                         class="img-fluid img-fluid-footer-logo">
-                    <p class="text-light pt-2">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global
+                    <p class="text-light pt-2">At Bhagirath Industries, we are the catalysts of global
                         trade, a company that thrives on connecting the world through commerce.</p>
                 </div>
                 <!-- frame 40 -->
@@ -840,8 +934,7 @@
                 <!-- frame 39 -->
                 <div class="col-md-3 mb-4 text-light pt-3 pt-md-5 pe-lg-5">
                     <h3>Contact Us</h3>
-                    <p class="pt-3">Address - Room TA07, 6th Floor Woon Lee, Commercial Building No. 7-9 Austin Avenue
-                        Tsim Sha Tsui, Kowloon (HK)</p>
+                    <p class="pt-3">Address - Bhagirath Industries Private Limited - 309, Luxuria Business Hub, Near VR Mall, Udhana Magdalla Road, Surat - Dumas Road, Surat Gujarat - 395007</p>
                 </div>
                 <!-- frame 38 -->
                 <div class="col-md-3 mb-4 text-light pt-3 pt-md-5">
@@ -873,7 +966,7 @@
             </div>
             <hr class="hr-line text-white">
             <div class="footer-p-content text-white">
-                <p class="text-md-center copyright-text">© Copyright Bhagirath BVM Grand (HK) Limited. All Rights
+                <p class="text-md-center copyright-text">© Copyright Bhagirath Industries. All Rights
                     Reserved.</p>
             </div>
         </div>
@@ -896,6 +989,7 @@
 
     <script>
         //Back to Top Script
+
         let backToTopBtn = document.getElementById("backToTopBtn");
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
@@ -910,32 +1004,8 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
         };
 
-        //This is the script that makes the navbar vanish when scrolling down on small screens
-        document.addEventListener('DOMContentLoaded', function () {
-            let lastScrollTop = 0;
-            const navbar = document.querySelector('.custom-navbar');
-            const isMobileView = window.matchMedia("(max-width: 767px)");
-            window.addEventListener('scroll', function () {
-                if (isMobileView.matches) { // Apply only on mobile screens
-                    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                    if (currentScrollTop > lastScrollTop) {
-                        navbar.classList.add('navbar-hidden');
-                    } else {
-                        navbar.classList.remove('navbar-hidden');
-                    }
-                    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
-                }
-            });
+        // Swiper Script (Strategic Framework)
 
-            //Screen resize handling
-            window.addEventListener('resize', function () {
-                if (!isMobileView.matches) {
-                    navbar.classList.remove('navbar-hidden'); // Ensure navbar is visible
-                }
-            });
-        });
-
-        //Swiper Script (Strategic Framework)
         var swiper = new Swiper(".mySwiper", {
             // autoHeight: true,
             slidesPerView: 1,
@@ -950,7 +1020,8 @@
             },
         });
 
-        //Swiper Script (OUR TEAM)
+        // Swiper Script (OUR TEAM)
+
         var swiper = new Swiper(".mySwiper-2", {
             slidesPerView: 1,
             spaceBetween: 10,
@@ -975,6 +1046,7 @@
         });
 
         // Client's Success Stories - Image Change
+
         const images = [
             'assets/images/our-services-icon-img/client-success-stories/client-img-1.webp',
             'assets/images/our-services-icon-img/client-success-stories/client-img-2.webp',
@@ -988,6 +1060,75 @@
             imgElement.src = images[newIndex]; // Update the image source
         });
 
+        // THIS IS THE SCRIPT THAT MAKES THE NAVBAR VANISH WHEN SCROLLING DOWN ON SMALL SCREENS
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let lastScrollTop = 0;
+            const navbar = document.querySelector('.new-navbar-container');
+            const isMobileView = window.matchMedia("(max-width: 767px)");
+            // const dropdownSelector = document.querySelector('.new-navbar-dropdown');
+            window.addEventListener('scroll', function () {
+                if (isMobileView.matches) { // Apply only on mobile screens
+                    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    if (currentScrollTop > lastScrollTop) {
+                        navbar.classList.add('navbar-hidden');
+                        // dropdownSelector.classList.remove('show'); // Added later
+                    } else {
+                        navbar.classList.remove('navbar-hidden');
+                    }
+                    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
+                }
+            });
+            //Screen resize handling
+            window.addEventListener('resize', function () {
+                if (!isMobileView.matches) {
+                    navbar.classList.remove('navbar-hidden'); // Ensure navbar is visible
+                }
+            });
+        });
+
+        // NEW NAVBAR TOGGLER/DROPDOWN
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggler = document.getElementById('navbarToggler');
+            const dropdown = document.querySelector('.new-navbar-dropdown');
+            const icon = toggler.querySelector('i');
+
+            toggler.addEventListener('click', function () {
+                // Toggle display property
+                if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                    dropdown.style.display = 'block';
+                } else {
+                    dropdown.style.display = 'none';
+                }
+                // Toggle dropdown visibility
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                    icon.className = 'bi bi-list'; // Change icon back
+                } else {
+                    dropdown.classList.add('show');
+                    icon.className = 'bi bi-x'; // Change icon to close
+                }
+            });
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!toggler.contains(event.target) && !dropdown.contains(event.target)) {
+                    dropdown.classList.remove('show');
+                    icon.className = 'bi bi-list'; // Reset icon if dropdown is closed
+                    if (dropdown.style.display = "block") {
+                        dropdown.style.display = 'none';
+                    }
+                }
+            });
+            // Scroll event - this closes the dropdown when someone scrolls
+            window.addEventListener('scroll', function () {
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                    icon.className = 'bi bi-list'; // Reset icon
+                    dropdown.style.display = 'none'; // Close dropdown
+                }
+            });
+        });
 
     </script>
 

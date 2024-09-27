@@ -26,66 +26,99 @@
 
 <body>
 
-  <!-- NAVBAR NEW -->
+  <!-- NEW NAVBAR -->
 
-  <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
-    <div class="container-fluid px-5">
-      <a class="navbar-brand" href="./index.html">
-        <img src="assets/images/navbarlogo/logo.png" alt="BIPL Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav justify-space-around me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="./about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="./our-company.html">Our Company</a>
-          </li>
+  <nav class="new-navbar-container">
+    <!-- Top part of navbar -->
+    <div class="new-navbar-top">
+      <div class="new-navbar-logo">
+        <img src="assets/images/navbarlogo/logo-alt.webp" alt="BIPL Logo">
+      </div>
+      <ul class="new-navbar-links pt-lg-3">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <!-- <li><a href="./our-company.html">Our Company</a></li> -->
+        <!-- <li><a href="#">Products</a></li> -->
+        <div class="dropdown">
+          <button class="products-dropdown-button dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Products
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./edible-and-non-edible-oils.html">Edible & Non-Edible
+                Oils</a></li>
+            <!-- <li><a class="dropdown-item" href="./chemicals.html">Chemicals</a></li> -->
+            <li><a class="dropdown-item" href="./petroleum-and-oil-products.html">Petroleum & Oil
+                Products</a></li>
+            <li><a class="dropdown-item" href="./agro-commodities.html">Agro Commodities</a></li>
+            <li><a class="dropdown-item" href="./biofuels.html">Biofuels</a></li>
+            <li><a class="dropdown-item" href="./minerals-and-ores.html">Minerals & Ores</a></li>
+            <li><a class="dropdown-item" href="./cattlefeed-and-fertilizers.html">Cattlefeed &
+                Fertilizers</a></li>
+          </ul>
+        </div>
+        <li><a href="./our-services.html">Our Services</a></li>
+        <li><a href="./career.html">Career</a></li>
+        <li><a href="./contact-us.html" class="new-navbar-contact-us-btn">Contact Us</a></li>
+      </ul>
+      <div class="new-navbar-social-icons-2 pe-2">
+        <a href="#" class="our-team-icon"><i class="bi bi-google"></i></a>
+        <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
+      </div>
+      <div class="new-navbar-toggler" id="navbarToggler">
+        <i class="bi bi-list"></i>
+      </div>
+    </div>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Products
-            </a>
-            <ul class="dropdown-menu text-dark">
-              <li><a class="dropdown-item text-dark" href="./edible-and-non-edible-oils.html">Edible & Non-Edible
-                  Oils</a></li>
-              <li><a class="dropdown-item text-dark" href="./chemicals.html">Chemicals</a></li>
-              <li><a class="dropdown-item text-dark" href="./petroleum-and-oil-products.html">Petroleum & Oil
-                  Products</a></li>
-              <li><a class="dropdown-item text-dark" href="./agro-commodities.html">Agro Commodities</a></li>
-              <li><a class="dropdown-item text-dark" href="./biofuels.html">Biofuels</a></li>
-              <li><a class="dropdown-item text-dark" href="./minerals-and-ores.html">Minerals and Ores</a>
-              </li>
-              <li><a class="dropdown-item text-dark" href="./cattlefeed-and-fertilizers.html">Cattlefeed
-                  and Fertilizers</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="./our-services.html">Our Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="./career.html">Careers</a>
-          </li>
-
-          <a href="contact-us.html">
-            <button class="btn btn-orange" href="./contact-us.html" type="button">
-              Contact Us
-            </button>
-          </a>
-        </ul>
+    <!-- Bottom part of navbar -->
+    <div class="new-navbar-bottom">
+      <div class="new-navbar-contact">
+        <i class="bi bi-globe pe-1"></i>
+        <span>info@bhagirathindustries.com | +91 0987654321 / +91 0987654321</span>
+      </div>
+      <div class="new-navbar-social-icons pe-lg-3">
+        <a href="#" class="our-team-icon"><i class="bi bi-google"></i></a>
+        <a href="#" class="our-team-icon"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="our-team-icon"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="our-team-icon"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="our-team-icon"><i class="bi bi-twitter-x"></i></a>
       </div>
     </div>
   </nav>
 
+  <!-- Dropdown -->
+  <div class="new-navbar-dropdown">
+    <ul class="new-navbar-dropdown-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <!-- <li><a href="./our-company.html">Our Company</a></li> -->
+      <!-- <li><a href="#">Products</a></li> -->
+      <li class="dropdown">
+        <button class="products-dropdown-button dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Products
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="./edible-and-non-edible-oils.html">Edible & Non-Edible Oils</a>
+          </li>
+          <!-- <li><a class="dropdown-item" href="./chemicals.html">Chemicals</a></li> -->
+          <li><a class="dropdown-item" href="./petroleum-and-oil-products.html">Petroleum & Oil Products</a>
+          </li>
+          <li><a class="dropdown-item" href="./agro-commodities.html">Agro Commodities</a></li>
+          <li><a class="dropdown-item" href="./biofuels.html">Biofuels</a></li>
+          <li><a class="dropdown-item" href="./minerals-and-ores.html">Minerals & Ores</a></li>
+          <li><a class="dropdown-item" href="./cattlefeed-and-fertilizers.html">Cattlefeed & Fertilizers</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="./our-services.html">Our Services</a></li>
+      <li><a href="./career.html">Career</a></li>
+      <li><a href="./contact-us.html">Contact Us</a></li>
+    </ul>
+  </div>
 
   <!-- make a carousel section  -->
 
@@ -143,7 +176,8 @@
 
       <div class="product-top-content text-center pb-3">
         <h2>PRODUCTS WE SERVE</h2>
-        <p class="text-center regular-font">At BVM, we take pride in serving a diverse range of essential raw materials
+        <p class="text-center regular-font">At Bhagirath Industries, we take pride in serving a diverse range of
+          essential raw materials
           to meet your
           global business needs. From premium-quality rice and soybeans to sugar, wheat, and nutritious dal and pulses,
           our offerings are designed to fuel industries worldwide. Additionally, we excel in providing high-quality
@@ -267,7 +301,7 @@
                   class="img-fluid-footer-logo"> -->
           <img src="./assets/images/footer-section/footer-logo-2.webp" alt="Company Logo"
             class="img-fluid img-fluid-footer-logo">
-          <p class="text-light pt-2">At Bhagirath BVM Grand (HK) Limited, we are the catalysts of global
+          <p class="text-light pt-2">At Bhagirath Industries, we are the catalysts of global
             trade, a company that thrives on connecting the world through commerce.</p>
         </div>
         <!-- frame 40 -->
@@ -290,8 +324,7 @@
         <!-- frame 39 -->
         <div class="col-md-3 mb-4 text-light pt-3 pt-md-5 pe-lg-5">
           <h3>Contact Us</h3>
-          <p class="pt-3">Address - Room TA07, 6th Floor Woon Lee, Commercial Building No. 7-9 Austin Avenue
-            Tsim Sha Tsui, Kowloon (HK)</p>
+          <p class="pt-3">Address - Bhagirath Industries Private Limited - 309, Luxuria Business Hub, Near VR Mall, Udhana Magdalla Road, Surat - Dumas Road, Surat Gujarat - 395007</p>
         </div>
         <!-- frame 38 -->
         <div class="col-md-3 mb-4 text-light pt-3 pt-md-5">
@@ -319,7 +352,7 @@
       </div>
       <hr class="hr-line text-white">
       <div class="footer-p-content text-white">
-        <p class="text-md-center copyright-text">© Copyright Bhagirath BVM Grand (HK) Limited. All Rights
+        <p class="text-md-center copyright-text">© Copyright Bhagirath Industries. All Rights
           Reserved.</p>
       </div>
     </div>
@@ -335,7 +368,8 @@
   <script src="./assets/scripts/script.js"></script>
 
   <script>
-    //Back to Top Script
+    // Back to Top Script
+
     let backToTopBtn = document.getElementById("backToTopBtn");
     window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
@@ -350,23 +384,25 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     };
 
-    //This is the script that makes the navbar vanish when scrolling down on small screens
+    // THIS IS THE SCRIPT THAT MAKES THE NAVBAR VANISH WHEN SCROLLING DOWN ON SMALL SCREENS
+
     document.addEventListener('DOMContentLoaded', function () {
       let lastScrollTop = 0;
-      const navbar = document.querySelector('.custom-navbar');
+      const navbar = document.querySelector('.new-navbar-container');
       const isMobileView = window.matchMedia("(max-width: 767px)");
+      // const dropdownSelector = document.querySelector('.new-navbar-dropdown');
       window.addEventListener('scroll', function () {
         if (isMobileView.matches) { // Apply only on mobile screens
           let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
           if (currentScrollTop > lastScrollTop) {
             navbar.classList.add('navbar-hidden');
+            // dropdownSelector.classList.remove('show'); // Added later
           } else {
             navbar.classList.remove('navbar-hidden');
           }
           lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Prevent negative scroll values
         }
       });
-
       //Screen resize handling
       window.addEventListener('resize', function () {
         if (!isMobileView.matches) {
@@ -374,6 +410,50 @@
         }
       });
     });
+
+    // NEW NAVBAR TOGGLER/DROPDOWN
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggler = document.getElementById('navbarToggler');
+      const dropdown = document.querySelector('.new-navbar-dropdown');
+      const icon = toggler.querySelector('i');
+
+      toggler.addEventListener('click', function () {
+        // Toggle display property
+        if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+          dropdown.style.display = 'block';
+        } else {
+          dropdown.style.display = 'none';
+        }
+        // Toggle dropdown visibility
+        if (dropdown.classList.contains('show')) {
+          dropdown.classList.remove('show');
+          icon.className = 'bi bi-list'; // Change icon back
+        } else {
+          dropdown.classList.add('show');
+          icon.className = 'bi bi-x'; // Change icon to close
+        }
+      });
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function (event) {
+        if (!toggler.contains(event.target) && !dropdown.contains(event.target)) {
+          dropdown.classList.remove('show');
+          icon.className = 'bi bi-list'; // Reset icon if dropdown is closed
+          if (dropdown.style.display = "block") {
+            dropdown.style.display = 'none';
+          }
+        }
+      });
+      // Scroll event - this closes the dropdown when someone scrolls
+      window.addEventListener('scroll', function () {
+        if (dropdown.classList.contains('show')) {
+          dropdown.classList.remove('show');
+          icon.className = 'bi bi-list'; // Reset icon
+          dropdown.style.display = 'none'; // Close dropdown
+        }
+      });
+    });
+
   </script>
 
 </body>

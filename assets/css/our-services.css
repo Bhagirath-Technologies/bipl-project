@@ -52,7 +52,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 819px) {
+/* @media (min-width: 768px) and (max-width: 819px) {
   .our-services-top-card {
     flex-direction: row;
   }
@@ -60,7 +60,7 @@
   .card {
     flex-basis: 50%;
   }
-}
+} */
 
 @media (min-width: 820px) {
   .our-services-top-card {
@@ -75,10 +75,11 @@
 /* MIDDLE CARDS */
 
 .job-card {
-  transform: translateY(-60px);
+  /* transform: translateY(-60px); */
+  transform: translateY(-100px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .job-card {
     transform: translateY(-10px);
   }
@@ -233,6 +234,12 @@
   transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+  .new-our-services-cards-image:hover {
+    transform: scale(1);
+  } 
+}
+
 /* Overlay styles */
 .new-our-services-cards-overlay {
   position: absolute;
@@ -254,10 +261,12 @@
   font-size: 0.9rem;
 }
 
-.new-our-services-cards-image:hover .new-our-services-cards-overlay {
-  /* bottom: -100%; */
-  bottom: -25%;
-  transform: translateX(6px);
+@media (min-width: 769px) {
+  .new-our-services-cards-image:hover .new-our-services-cards-overlay {
+    /* bottom: -100%; */
+    bottom: -25%;
+    transform: translateX(6px);
+  }
 }
 
 /* CLIENT-SUCCESS-STORIES BACKUP */
