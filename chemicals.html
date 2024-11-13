@@ -201,50 +201,10 @@
                 specifications.
             </p>
         </div>
-        <!-- <div class="row"> -->
-        <!-- 1st Card -->
-        <!-- <div class="col-md-4">
-                <div class="chemical_card regular-font">
-                    <h2>Ethylene Vinyl Acetate (EVA)</h2>
-                    <ul class="me-0 pe-0 " style="list-style-type: none; padding-left: 0rem;">
-                        <li class="ms-0 ps-0">CAS Number - 24937-78-8</li>
-                        <li class="ms-0 ps-0">Formula - (C2H4)n(C4H6O2)m</li>
-                        <li class="ms-0 ps-0">Other Names - Poly(ethylene-vinyl acetate)</li>
-                    </ul>
-                </div>
-            </div> -->
 
-        <!-- 2st Card -->
-        <!-- <div class="col-md-4">
-                <div class="chemical_card regular-font">
-                    <h2>Ethylene Vinyl Acetate (EVA)</h2>
-                    <ul class="me-0 pe-0 " style="list-style-type: none; padding-left: 0rem;">
-                        <li class="ms-0 ps-0">CAS Number - 24937-78-8</li>
-                        <li class="ms-0 ps-0">Formula - (C2H4)n(C4H6O2)m</li>
-                        <li class="ms-0 ps-0">Other Names - Poly(ethylene-vinyl acetate)</li>
-                    </ul>
-                </div>
-            </div> -->
-
-        <!-- 3st Card -->
-        <!-- <div class="col-md-4">
-                <div class="chemical_card regular-font">
-                    <h2>Ethylene Vinyl Acetate (EVA)</h2>
-                    <ul class="me-0 pe-0 " style="list-style-type: none; padding-left: 0rem;">
-                        <li class="ms-0 ps-0">CAS Number - 24937-78-8</li>
-                        <li class="ms-0 ps-0">Formula - (C2H4)n(C4H6O2)m</li>
-                        <li class="ms-0 ps-0">Other Names - Poly(ethylene-vinyl acetate)</li>
-                    </ul>
-                </div>
-            </div> -->
-
-        <!-- </div> -->
-
-        <!-- My Card Code Start -->
-        <div class="card-container" id="chemical-cards-container">
-            <!-- Chemical cards will be inserted here -->
-        </div>
-        <!-- My Card Code End -->
+        <!-- Polymer Card Code Start -->
+        <div class="card-container" id="polymer-chemical-cards-container"> </div>
+        <!-- Polymer Card Code End -->
 
     </div>
 
@@ -257,8 +217,39 @@
                 understand the importance of precision when it comes to solvents, and we deliver on that promise.
             </p>
         </div>
+        <!-- Solvent Card Code Start -->
+        <div class="card-container" id="solvent-chemical-cards-container"></div>
+        <!-- Solvent Card Code End -->
+    </div>
 
-        <!-- <div class="card-container" id="chemical-cards-container"></div> -->
+    <div class="container pt-4">
+        <div class="product-top-content text-center pb-3">
+            <h2>Chemicals And Intermediates</h2>
+            <p class="text-center regular-font">
+                We offer a comprehensive range of chemicals and intermediates that are designed to meet the
+                ever-evolving demands of various industries. Our products undergo rigorous quality checks to ensure they
+                are of the highest standard. When you partner with us, you can count on our products to support your
+                processes effectively and efficiently.
+            </p>
+        </div>
+        <!-- Chemicals And Intermediates Card Code Start -->
+        <div class="card-container" id="chemicals-and-intermediates-cards-container"></div>
+        <!-- Chemicals And Intermediates Card Code End -->
+    </div>
+
+    <div class="container pt-4">
+        <div class="product-top-content text-center pb-3">
+            <h2>SPECIALITY CHEMICALS</h2>
+            <p class="text-center regular-font">
+                We are dedicated to providing high-quality solutions that not only meet but also exceed your
+                expectations. Our specialty chemicals are designed to enhance your product formulations, giving you the
+                competitive edge you need in a constantly evolving market. When you choose our specialty chemicals,
+                you're choosing innovation and reliability.
+            </p>
+        </div>
+        <!-- SPECIALITY CHEMICALS Card Code Start -->
+        <div class="card-container" id="speciality-chemicals-cards-container"></div>
+        <!-- SPECIALITY CHEMICALS Card Code End -->
     </div>
 
     <!-- FOOTER -->
@@ -444,63 +435,9 @@
 
     </script>
 
-    <!-- This script code is written by me for chemical card Start -->
-    <script>
-        const chemicals = [
-            {
-                name: "Ethylene Vinyl Acetate (EVA)",
-                casNumber: "24937-78-8",
-                formula: "(C2H4)n(C4H6O2)m",
-                otherNames: "Poly(ethylene-vinyl acetate)"
-            },
-            {
-                name: "Polyethelyne Terephthalate (PET Resin)",
-                casNumber: "25038-59-9",
-                formula: "C10H8O4n",
-                otherNames: "Poly(ethyl-benzene-1,4-dicarboxylate)"
-            },
-            {
-                name: "Polyvinyl Chloride Resin (PVC Resin)",
-                casNumber: "9002-86-2",
-                formula: "(C2H3CL)n",
-                otherNames: "poly(1-chloroethylene)"
-            },
-        ];
-
-        // Function to create a card for each chemical
-        function createChemicalCard(chemical) {
-            const cardDiv = document.createElement('div');
-            cardDiv.classList.add('chemical_card', 'regular-font');
-
-            // Card content
-            cardDiv.innerHTML = `
-                                 <h2>${chemical.name}</h2>
-                                 <ul style="list-style-type: none; padding-left: 0;">
-                                   <li>CAS Number - ${chemical.casNumber}</li>
-                                   <li>Formula - ${chemical.formula}</li>
-                                   <li>Other Names - ${chemical.otherNames}</li>
-                                 </ul>
-                                `;
-
-            return cardDiv;
-        }
-
-        // Function to display all cards
-        function displayChemicalCards() {
-            const container = document.getElementById('chemical-cards-container');
-
-            // Loop through chemicals array and create cards
-            chemicals.forEach(chemical => {
-                const card = createChemicalCard(chemical);
-                container.appendChild(card); // Append each card to the container
-            });
-        }
-
-        // Call the function to display the cards
-        displayChemicalCards();
-
-    </script>
-    <!-- This script code is written by me for chemical card End -->
+    <!-- This script code is written by Abhishek for chemical card Start -->
+    <script src="assets/scripts/chemical-page-data.js"></script>
+    <!-- This script code is written by Abhishek for chemical card End -->
 
 </body>
 
