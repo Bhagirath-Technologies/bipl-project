@@ -99,3 +99,72 @@
     bottom: -10px;
   }
 } */
+
+/* Chemical Page CSS Start */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.chemical_card {
+  width: 100%;
+  max-width: 397px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.chemical_card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chemical_card h2 {
+  font-size: 20px;
+  color: #0b2a4b;
+  margin: 0;
+  font-weight: bold;
+}
+
+.chemical_card li {
+  margin: 8px 0;
+  color: #0b2a4b;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .chemical_card {
+    padding: 15px;
+  }
+
+  .chemical_card h2 {
+    font-size: 16px;
+  }
+
+  .chemical_card li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .chemical_card {
+    padding: 10px;
+  }
+
+  .chemical_card h2 {
+    font-size: 14px;
+  }
+
+  .chemical_card li {
+    font-size: 12px;
+  }
+}
+
+/* Chemical Page CSS END */
