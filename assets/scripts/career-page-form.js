@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = new FormData(jobApplicationForm);
         const urlEncodedData = new URLSearchParams(formData).toString();
 
-        console.log(urlEncodedData);
-
         try {
             document.querySelector("#submitButtonJobApplicationForm").value = "Submitting...";
             document.querySelector("#submitButtonJobApplicationForm").disabled = true;
