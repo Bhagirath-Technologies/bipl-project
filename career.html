@@ -552,21 +552,21 @@
 
     // JOB APPLICATION FORM SCRIPT
 
-    let formJobApplication = document.getElementById("jobApplicationForm");
-    formJobApplication.addEventListener('submit', (e) => {
-      e.preventDefault();
-      document.querySelector("#submitButtonJobApplicationForm").value = "Submitting...";
-      document.querySelector("#submitButtonJobApplicationForm").disabled = true;
-      let data = new FormData(formJobApplication);
-      fetch('https://script.google.com/macros/s/AKfycbzgEr7ARLj3ZNNYs4T-xTDq3hx6uJR6OPUHQlsXR92l4pUMQ0eCBaf28CxLjja2PW7NJA/exec', {
-        method: "POST",
-        body: data,
-      })
-        .then(res => res.text())
-        .then(data => {
-          document.querySelector("#submitButtonJobApplicationForm").value = "Your form has been submitted";
-        })
-    })
+    // let formJobApplication = document.getElementById("jobApplicationForm");
+    // formJobApplication.addEventListener('submit', (e) => {
+    //   e.preventDefault();
+    //   document.querySelector("#submitButtonJobApplicationForm").value = "Submitting...";
+    //   document.querySelector("#submitButtonJobApplicationForm").disabled = true;
+    //   let data = new FormData(formJobApplication);
+    //   fetch('https://script.google.com/macros/s/AKfycbzgEr7ARLj3ZNNYs4T-xTDq3hx6uJR6OPUHQlsXR92l4pUMQ0eCBaf28CxLjja2PW7NJA/exec', {
+    //     method: "POST",
+    //     body: data,
+    //   })
+    //     .then(res => res.text())
+    //     .then(data => {
+    //       document.querySelector("#submitButtonJobApplicationForm").value = "Your form has been submitted";
+    //     })
+    // })
 
     // THIS IS THE SCRIPT THAT MAKES THE NAVBAR VANISH WHEN SCROLLING DOWN ON SMALL SCREENS
 
@@ -639,6 +639,10 @@
     });
 
   </script>
+
+  <!-- Career Page Query Script Start -->
+  <script src="assets/scripts/career-page-from.js"></script>
+  <!-- Career Page Query Script End -->
 
 </body>
 
