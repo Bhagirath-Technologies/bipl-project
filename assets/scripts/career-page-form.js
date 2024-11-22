@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const url = 'https://script.google.com/macros/s/AKfycbz_c1uwg6v3JnxuG78n2P83gU4GeS3RiSYrzMEobzZHLn4hWYjC0H2v8DEvMVF4Badi/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbznGj8Q1y_MEPLbZJF3n8WVwTSWqtF3JWltnYKIompGlZVCy1V3eYD1wklZ2JDHX4LS/exec';
 
     const jobApplicationForm = document.getElementById('jobApplicationForm');
 
@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
 
         const formData = new FormData(jobApplicationForm);
+        formData.append("sheetname", "career query");
         const urlEncodedData = new URLSearchParams(formData).toString();
 
         try {

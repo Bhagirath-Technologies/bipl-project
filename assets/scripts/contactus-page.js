@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const url = 'https://script.google.com/macros/s/AKfycbyuhu4SpAhR12ZmE1nJNWCVJZs-Fx73KCReiDFAwY6YObzBb_PpF2LLSD30BHya-w3o/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbznGj8Q1y_MEPLbZJF3n8WVwTSWqtF3JWltnYKIompGlZVCy1V3eYD1wklZ2JDHX4LS/exec';
 
     const contactUsForm = document.getElementById('contactForm');
 
@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
 
         const formData = new FormData(contactUsForm);
+        formData.append("sheetname", "contact us query");
         const urlEncodedData = new URLSearchParams(formData).toString();
 
         try {
