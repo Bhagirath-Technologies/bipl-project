@@ -366,7 +366,8 @@ a.dropdown-item.active {
 }
 
 .new-navbar-toggler>i {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
+  font-size: 1.8rem;
   color: var(--color-navy-blue);
 }
 
